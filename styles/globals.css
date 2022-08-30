@@ -3,3 +3,42 @@
 @tailwind utilities;
 
 
+
+@layer components{
+
+.nav_item{
+    @apply lg:text-[90px] md:text-[73px] text-[25px] lg:gap-[65px] md:gap-[20px] gap-[14.5px] 
+    lg:leading-[106.2px] md:leading-[86.14px] leading-[29.5px];
+}
+.custom-sec{
+    @apply px-[9px] mt-[26px];
+}
+}
+
+.workBanerBg{
+    background-image: url(../public/images/workBanner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+}
+
+@font-face {
+    font-family: 'FoundersGrotesk-Medium';
+    src: url("../public/fonts/FoundersGrotesk-Medium.ttf");
+  }
+
+  @font-face {
+    font-family: 'FoundersGrotesk-Regular';
+    src: url("../public/fonts/FoundersGrotesk-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: 'Signifier-Regular';
+    src: url("../public/fonts/Signifier-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: 'Signifier-Light';
+    src: url("../public/fonts/Signifier-Light.ttf");
+  }
