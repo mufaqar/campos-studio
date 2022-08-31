@@ -79,15 +79,13 @@ export default function SingleWork() {
                 </div>
             </section>
 
-            <section className="custom-sec gallery-section">
-                <figure className="relative gallery"><Image src={Gallery1} alt="gallery1"></Image></figure>
-                <figure className="relative gallery"><Image src={Gallery2} alt="gallery2"></Image></figure>
-                <figure className="relative gallery"><Image src={Gallery3} alt="gallery3"></Image></figure>
-                <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-1">
-                    <figure className="relative gallery"><Image src={Gallery4} alt="gallery4"></Image></figure>
-                    <figure className="relative gallery"><Image src={Gallery5} alt="gallery5"></Image></figure>
-                </div>
-                <figure className="relative gallery"><Image src={Gallery6} alt="gallery6"></Image></figure>
+            <section className="custom-sec gallery-section grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1">
+                <figure className="relative gallery col-span-2"><Image src={Gallery1} alt="gallery1"></Image></figure>
+                <figure className="relative gallery col-span-2"><Image src={Gallery2} alt="gallery2"></Image></figure>
+                <figure className="relative gallery col-span-2"><Image src={Gallery3} alt="gallery3"></Image></figure>
+                <figure className="relative gallery"><Image src={Gallery4} alt="gallery4"></Image></figure>
+                <figure className="relative gallery"><Image src={Gallery5} alt="gallery5"></Image></figure>
+                <figure className="relative gallery col-span-2"><Image src={Gallery6} alt="gallery6"></Image></figure>
             </section>
             <section className="custom-sec">
                 <div className="lg:w-[899px] md:w-[683px] w-full mx-auto">
