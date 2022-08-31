@@ -61,7 +61,7 @@ export default function SingleWork() {
             </section>
 
             <section className="custom-sec py-7">
-                <div className="lg:w-[899px] mx-auto">
+                <div className="lg:w-[899px] md:w-[683px] w-full mx-auto">
                     <h2 className="font-FoundersGroteskMedium lg:text-[60px] md:text-[56px] text-[36px] leading-[70px] mb-8">Zacatitos 03</h2>
                     <div className="">
                         <Audio />
@@ -90,7 +90,7 @@ export default function SingleWork() {
                 <figure className="relative gallery"><Image src={Gallery6} alt="gallery6"></Image></figure>
             </section>
             <section className="custom-sec">
-                <div className="lg:w-[899px] mx-auto">
+                <div className="lg:w-[899px] md:w-[683px] w-full mx-auto">
                     <ul>
                         <li className="font-FoundersGroteskMedium lg:text-[36px] md:text-[36px] text-[24px] mb-10">
                             <Link href="#">
