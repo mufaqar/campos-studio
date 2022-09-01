@@ -7,7 +7,7 @@ export default function Contact() {
       <section className="custom-sec mt-48 py-7">
         <div className="grid lg:grid-cols-3 md:grid-cols-1 gap-12">
           <div className="lg:w-full md:w-1/2">
-            <h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[42px] text-[22px] border-b-2 border-black">Say Hello</h2>
+            <h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[21px] text-[21px] border-b-2 border-black">Say Hello</h2>
             <p className="font-FoundersGroteskRegular lg:text-[21px]">Malen Fernandez</p>
             <Link href="#">
               <a className="font-FoundersGroteskRegular lg:text-[21px] underline hover:no-underline">
@@ -16,7 +16,7 @@ export default function Contact() {
             </Link>
           </div>
           <div className="lg:w-full md:w-1/2">
-            <h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[42px] text-[22px] border-b-2 border-black">Publishing</h2>
+            <h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[21px] text-[21px] border-b-2 border-black">Publishing</h2>
             <p className="font-FoundersGroteskRegular lg:text-[21px]">Samantha Bush</p>
             <Link href="#">
               <a className="font-FoundersGroteskRegular lg:text-[21px] underline hover:no-underline">
@@ -25,7 +25,7 @@ export default function Contact() {
             </Link>
           </div>
           <div className="lg:w-full md:w-1/2">
-            <h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[42px] text-[22px] border-b-2 border-black">Follow Along</h2>
+            <h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[21px] text-[21px] border-b-2 border-black">Follow Along</h2>
             <Link href="#">
               <a className="font-FoundersGroteskRegular lg:text-[21px] underline hover:no-underline">
                 <span>Join the mailing list</span>
