@@ -5,7 +5,7 @@ export default function Hero() {
         <>
             <section className="custom-sec lg:mt-32 mt-52 ">
                 <div>
-                    <figure className="relative lg:w-[833px] md:w-[834px] w-full lg:h-[625px]  md:h-[625px] h-[268px]  ">
+                    <figure className="relative lg:w-[833px] md:w-[834px] w-full lg:h-[625px] bm sm:h-[500px]  md:h-[625px] h-[268px]  ">
                         <Image src="/images/hippo.gif" alt="hippo" layout='fill' className="object-cover"></Image>
                     </figure>
                 </div>

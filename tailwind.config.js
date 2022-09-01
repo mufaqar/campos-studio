@@ -13,6 +13,7 @@ module.exports = {
         SignifierLight: ['Signifier-Light', 'sans-serif']        
       }
     },
+
   },
   plugins: [],
 };
