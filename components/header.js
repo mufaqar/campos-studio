@@ -30,10 +30,10 @@ export default function Header() {
                     <NavLink to="/works">
                         WORK
                     </NavLink>
-                    <NavLink to="">
+                    <NavLink to="/studio">
                         STUDIO
                     </NavLink>
-                    <NavLink to="">
+                    <NavLink to="/contact">
                         CONTACT
                     </NavLink>
                 </div>
