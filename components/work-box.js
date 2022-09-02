@@ -15,7 +15,7 @@ export default function WorkBox(props) {
               ></Image>
             </figure>
           </Link>
-          <h2 className="font-FoundersGroteskMedium lg:text-[65px] md:text-[51px] text-[42px] leading-[76px]">
+          <h2 className="font-FoundersGroteskMedium lg:text-[65px] md:text-[51px] text-[42px] lg:leading-[76px] md:leading-[60px] leading-[43px]">
             <Link href="/works/single-work"><span>{props.title}</span></Link>
           </h2>
         </div>
