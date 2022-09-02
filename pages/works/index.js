@@ -4,7 +4,7 @@ export default function index() {
   return (
     <>
       <section className="custom-sec mt-48">
-        <WorkBox title="" image_path="" />
+        <WorkBox title="" image_path="123" />
         <WorkBox />
         <WorkBox />
         <WorkBox />
