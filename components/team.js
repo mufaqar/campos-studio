@@ -30,7 +30,7 @@ function TeamContent({ open, setOpen }) {
                 <div className='bg-black col-span-4 float-right'>
                     <div className=' lg:pt-8 lg:pb-6 lg:px-5 p-3 flex lg:flex-row md:flex-col'>
                         <div className='lg:w-[272px]'>
-                            <h3 className='text-white font-SignifierRegular lg:text-[27px] md:text-[24px]'> Javier Campos</h3>
+                            <h3 className='text-white font-SignifierRegular lg:text-[27px] md:text-[24px]'>01 Javier Campos</h3>
                             <p className='text-white font-SignifierRegular lg:text-[18px] md:text-[17px]'>Principal Designer</p>
                         </div>
                         <div className='lg:w-[535px]'>
