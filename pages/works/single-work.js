@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import Image from "next/image";
 import Gallery1 from '../../public/images/gallery1.png'
@@ -51,14 +52,13 @@ function FullContent({ open, setOpen }) {
 }
 
 export default function SingleWork({ title, image_path }) {
+  const [open, setOpen] = useState(false);
 
-    const [open, setOpen] = useState(false)
-
-    return (
-        <>
-            <section className="workBanerBg lg:h-[800px] md:h-[800px] h-[375px]">
-                <div></div>
-            </section>
+  return (
+    <>
+      <section className="workBanerBg lg:h-[800px] md:h-[800px] h-[375px]">
+        <div></div>
+      </section>
 
             <section className="custom-sec py-7">
                 <div className="lg:w-[899px] md:w-[683px] w-full mx-auto">

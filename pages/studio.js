@@ -304,7 +304,7 @@ export default function Studio({ icon, title, info }) {
           </h2>
           <MblTeam />
         </div>
-        <div className="grid gap-2 mt-8 overflow-x-hidden lg:grid-cols-5 md:grid-cols-4 team">
+        <div className="grid gap-2 mt-8 overflow-x-hidden lg:grid-cols-5 md:grid-cols-4 team ">
           {/* creating a team section with onclick team image goes left corner and the detail section goes right side and col-span 1  */}
           {ImageData.map((item, index) => {
             return (
@@ -325,27 +325,64 @@ export default function Studio({ icon, title, info }) {
                     openTeamDetails === item.id ? 'block' : 'hidden'
                   } bg-black -top-[26px] absolute lg:h-[341px] lg:left-[102.5%] w-screen md:h-[318px] z-10 md:left-[103%] text-white custom-sec py-7`}
                 >
-                  <div className="px-10">
-                    <h2 className="font-FoundersGroteskMedium lg:text-[36px] md:text-[31px] text-lg">
-                      Past Collaborators - {countUpdate}
-                    </h2>
-                    <p className="lg:w-[805px] md:w-[754px] font-SignifierRegular lg:text-xl mt-5">
-                      Regan Appleton, Romain Bael, Jacquelyn Bortolussi, Tom
-                      Chung, Sarah Cree, Jessie Croll, Paul Crowley, Alix
-                      Demontrond, Hande Ersoy, Adrien Fera, Mike Fugeta, Ashley
-                      Gesner, Matias T. Grez, Maria Herrera, Paul Holley,
-                      Manuela Hurtavo, Arnold Jung, Zaid Kadhim, Nelly Lachman,
-                      Mario Lambraño, Michael Lis, Michael Lis, Colin Mbugua,
-                      Laura McMurran, David Morar, Juan David Moreno, Kate
-                      Richard, Clara Sabel, Jan Stretzlig, Bardia Tajik, Alex
-                      Vanderlee, Yiming Wang, Yanlan Wang, Loriane Wong, Britney
-                      Yan, Thomas Yuan, David Zeiben
-                    </p>
+                  <div className="flex lg:flex-row flex-col lg:gap-12 px-5">
+                    <div className="lg:w-[200px] w-full flex flex-col justify-between mb-3">
+                      <h3 className="text-white font-SignifierRegular lg:text-[27px] md:text-[24px] lg:block hidden">
+                        {' '}
+                        Javier <br></br>Campos
+                      </h3>
+                      <h3 className="text-white font-SignifierRegular lg:text-[27px] md:text-[24px] lg:hidden block">
+                        {' '}
+                        Javier Campos
+                      </h3>
+                      <p className="text-white font-SignifierRegular lg:text-[18px] md:text-[17px]">
+                        Principal Designer
+                      </p>
+                    </div>
+                    <div className="lg:w-[650px] w-[700px]">
+                      <p className="text-white font-FoundersGroteskRegular lg:text-lg md:text-base">
+                        Javier Campos earned his Architecture Degree from the
+                        University of British Columbia after having completed an
+                        undergraduate degree in Art History. Previously he was
+                        at Acton Ostry Architects where, as lead designer, his
+                        projects were widely published and garnered numerous
+                        awards including Canadian Architect and Lieutenant
+                        Governor Medals in Architecture. His work adopted a
+                        green agenda early and has included off the grid
+                        projects since 2001. He became LEED certified in 2004.
+                        Javier is also involved in Public Art and has won
+                        several competitions with Artist Elspeth Pratt in
+                        Vancouver. Javier served on the board of the
+                        Contemporary Art Gallery for six years and as well being
+                        the current president of the Heritage Vancouver Society,
+                        where he established an award winning outreach series on
+                        issues around Heritage.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             );
           })}
+        </div>
+      </section>
+
+      <section className="custom-sec mt-0 py-5">
+        <div className="lg:w-[805px] md:w-[754px] w-full">
+          <h2 className="font-FoundersGroteskMedium lg:text-4xl md:text-[31px] text-lg">
+            Past Collaborators
+          </h2>
+          <p className="font-SignifierRegular lg:text-xl md:text-xl text-base">
+            Regan Appleton, Romain Bael, Jacquelyn Bortolussi, Tom Chung, Sarah
+            Cree, Jessie Croll, Paul Crowley, Alix Demontrond, Hande Ersoy,
+            Adrien Fera, Mike Fugeta, Ashley Gesner, Matias T. Grez, Maria
+            Herrera, Paul Holley, Manuela Hurtavo, Arnold Jung, Zaid Kadhim,
+            Nelly Lachman, Mario Lambraño, Michael Lis, Michael Lis, Colin
+            Mbugua, Laura McMurran, David Morar, Juan David Moreno, Kate
+            Richard, Clara Sabel, Jan Stretzlig, Bardia Tajik, Alex Vanderlee,
+            Yiming Wang, Yanlan Wang, Britney Yan, Thomas Yuan, David Zeiben,
+            Loriane Wong
+          </p>
         </div>
       </section>
     </>
