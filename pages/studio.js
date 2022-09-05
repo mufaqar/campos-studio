@@ -7,7 +7,7 @@ import Deezen from '../public/images/DEEZEN.png';
 import TheGlobe from '../public/images/THEGLOBE.png';
 import Canadian from '../public/images/CANADIAN.png';
 import Team from '../components/team';
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { AiOutlineCaretDown } from 'react-icons/ai';
 import { AiOutlineCaretUp } from 'react-icons/ai';
 import MblTeam from '../components/mblTeam';
