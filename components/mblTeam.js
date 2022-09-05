@@ -4,7 +4,7 @@ export default function MblTeam() {
   return (
     <>
       <div className="mblTeam md:hidden block">
-        <details className="p-[9px] border-black border-y-2" closed>
+        <details className="border-black border-y-2" closed>
           <summary className="">
             <h2 className="font-SignifierRegular text-xl">Javier Campos</h2>
             <p className="font-SignifierRegular text-sm">Principal Designer</p>
@@ -37,7 +37,7 @@ export default function MblTeam() {
             </div>
           </div>
         </details>
-        <details className="p-[9px] border-black border-b-2" closed>
+        <details className="border-black border-b-2" closed>
           <summary className="">
             <h2 className="font-SignifierRegular text-xl">Czarina Ray</h2>
             <p className="font-SignifierRegular text-sm">Senior Designer</p>
@@ -70,7 +70,7 @@ export default function MblTeam() {
             </div>
           </div>
         </details>
-        <details className="p-[9px] border-black border-b-2" closed>
+        <details className="border-black border-b-2" closed>
           <summary className="">
             <h2 className="font-SignifierRegular text-xl">Malen Fernandez</h2>
             <p className="font-SignifierRegular text-sm">Senior Designer</p>
@@ -103,7 +103,7 @@ export default function MblTeam() {
             </div>
           </div>
         </details>
-        <details className="p-[9px] border-black border-b-2" closed>
+        <details className="border-black border-b-2" closed>
           <summary className="">
             <h2 className="font-SignifierRegular text-xl">Eliane Vares</h2>
             <p className="font-SignifierRegular text-sm">Interior Design</p>
@@ -136,7 +136,7 @@ export default function MblTeam() {
             </div>
           </div>
         </details>
-        <details className="p-[9px] border-black border-b-2" closed>
+        <details className="border-black border-b-2" closed>
           <summary className="">
             <h2 className="font-SignifierRegular text-xl">Andrea Martinez</h2>
             <p className="font-SignifierRegular text-sm">Junior Designer</p>
@@ -169,7 +169,7 @@ export default function MblTeam() {
             </div>
           </div>
         </details>
-        <details className="p-[9px] border-black border-b-2" closed>
+        <details className="border-black border-b-2" closed>
           <summary className="">
             <h2 className="font-SignifierRegular text-xl">Steffen Stupp</h2>
             <p className="font-SignifierRegular text-sm">Junior Designer</p>
@@ -202,7 +202,7 @@ export default function MblTeam() {
             </div>
           </div>
         </details>
-        <details className="p-[9px] border-black border-b-2" closed>
+        <details className="border-black border-b-2" closed>
           <summary className="">
             <h2 className="font-SignifierRegular text-xl">Mollie Roy</h2>
             <p className="font-SignifierRegular text-sm">Office Manager</p>
@@ -235,7 +235,7 @@ export default function MblTeam() {
             </div>
           </div>
         </details>
-        <details className="p-[9px] border-black border-b-2" closed>
+        <details className="border-black border-b-2" closed>
           <summary className="">
             <h2 className="font-SignifierRegular text-xl">Samantha Bush</h2>
             <p className="font-SignifierRegular text-sm">Promotions</p>
@@ -268,7 +268,7 @@ export default function MblTeam() {
             </div>
           </div>
         </details>
-        <details className="p-[9px] border-black border-b-2" closed>
+        <details className="border-black border-b-2" closed>
           <summary className="">
             <h2 className="font-SignifierRegular text-xl">Alizee Ledreck</h2>
             <p className="font-SignifierRegular text-sm">Intern</p>
@@ -301,7 +301,7 @@ export default function MblTeam() {
             </div>
           </div>
         </details>
-        <details className="p-[9px] border-black border-b-2" closed>
+        <details className="border-black border-b-2" closed>
           <summary className="">
             <h2 className="font-SignifierRegular text-xl">Sarah Soudki</h2>
             <p className="font-SignifierRegular text-sm">Intern</p>
@@ -334,7 +334,7 @@ export default function MblTeam() {
             </div>
           </div>
         </details>
-        <details className="p-[9px] border-black border-b-2" closed>
+        <details className="border-black border-b-2" closed>
           <summary className="">
             <h2 className="font-SignifierRegular text-xl">Loriane Wong</h2>
             <p className="font-SignifierRegular text-sm">Intern</p>
