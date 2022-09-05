@@ -121,3 +121,9 @@ summary::marker {
     grid-row-start: 5;
   }
 }
+
+@media (min-width: 300px) and (max-width: 768px){
+.team{
+  display: none;
+}
+}

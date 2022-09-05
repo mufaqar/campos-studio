@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function WorkBox(props) {
   return (
     <>
-      <div className="mt-[83px] mb-2">
+      <div className="mt-[60px] mb-2">
         <div>
           <Link href="/works/single-work">
             <figure className=" relative lg:w-[1023px] md:w-[860px] w-full lg:h-[683px] md:h-[573px] h-[237px] cursor-pointer">

@@ -111,10 +111,12 @@ export default function SingleWork({ title, image_path }) {
                             <p className="font-FoundersGroteskRegular lg:text-lg md:text-lg text-xs">CANADIAN ARCHITECT</p>
                         </li>
                     </ul>
+
+                    <button className="bg-[#FCB450] w-5 h-5"></button>
                 </div>
             </section>
 
-            <section className="custom-sec">
+            <section className="custom-sec mt-0">
                 <WorkBox title="Two Rivers Meat" image_path="/images/project6.png" />
                 <WorkBox title="The Brick House" image_path="/images/project7.png" />
                 <WorkBox title="Music Shed" image_path="/images/project8.png" />
