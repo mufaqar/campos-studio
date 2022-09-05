@@ -1,4 +1,3 @@
-import Audio from "../../components/audio";
 import { useState } from 'react';
 import Image from "next/image";
 import Gallery1 from '../../public/images/gallery1.png'
@@ -10,6 +9,7 @@ import Gallery6 from '../../public/images/gallery6.png'
 import Arrow from '../../public/images/Arrow.png'
 import Link from "next/link";
 import WorkBox from "../../components/work-box";
+import AudioPlayer from "../../components/audioPlayer";
 
 
 function FullContent({ open, setOpen }) {
@@ -20,19 +20,19 @@ function FullContent({ open, setOpen }) {
                 <p className="font-FoundersGroteskRegular lg:text-[23px] md:text-[22px] text-lg text-left mb-7">This project was completed as Campos Leckie Studio.</p>
             </div>
             <ul>
-                <li className="border-b-2 border-black text-left py-2">
+                <li className="py-2 text-left border-b-2 border-black">
                     <p className="font-FoundersGroteskMedium lg:text-[21px]">LOCATION</p>
                     <p className="font-FoundersGroteskRegular lg:text-[21px]">Los Zacatitos, Baja California Sur, Mexico</p>
                 </li>
-                <li className="border-b-2 border-black text-left py-2">
+                <li className="py-2 text-left border-b-2 border-black">
                     <p className="font-FoundersGroteskMedium lg:text-[21px]">YEAR</p>
                     <p className="font-FoundersGroteskRegular lg:text-[21px]">2011</p>
                 </li>
-                <li className="border-b-2 border-black text-left py-2">
+                <li className="py-2 text-left border-b-2 border-black">
                     <p className="font-FoundersGroteskMedium lg:text-[21px]">SQUARE FOOTAGE</p>
                     <p className="font-FoundersGroteskRegular lg:text-[21px]">3800 ft2</p>
                 </li>
-                <li className="border-b-2 border-black text-left py-2">
+                <li className="py-2 text-left border-b-2 border-black">
                     <p className="font-FoundersGroteskMedium lg:text-[21px]">Team</p>
                     <p className="font-FoundersGroteskRegular lg:text-[21px] flex justify-between">
                         <span>Javier Campos</span>
@@ -40,7 +40,7 @@ function FullContent({ open, setOpen }) {
                         <span>Ashley Gesner</span>
                     </p>
                 </li>
-                <li className="border-b-2 border-black text-left py-2">
+                <li className="py-2 text-left border-b-2 border-black">
                     <p className="font-FoundersGroteskMedium lg:text-[21px]">COLLABORATORS</p>
                     <p className="font-FoundersGroteskRegular lg:text-[21px]">General Contractor:  Boydco</p>
                     <p className="font-FoundersGroteskRegular lg:text-[21px]">Project Photography:  Ema Peter</p>
@@ -64,7 +64,7 @@ export default function SingleWork({ title, image_path }) {
                 <div className="lg:w-[899px] md:w-[683px] w-full mx-auto">
                     <h2 className="font-FoundersGroteskMedium lg:text-[60px] md:text-[56px] text-[36px] leading-[70px] mb-8">Zacatitos 03</h2>
                     <div className="">
-                        <Audio />
+                        <AudioPlayer />
                     </div>
                     <div className="mb-4">
                         <p className="font-FoundersGroteskRegular lg:text-[23px] md:text-[22px] text-lg">This project is the third of a series of desert dwelling prototypes that comprise an ongoing body of research into off-grid living in a relatively extreme climate. All three research sites are located in the remote community of Los Zacatitos, in Baja California Sur, Mexico.</p>
@@ -83,7 +83,7 @@ export default function SingleWork({ title, image_path }) {
                 <figure className="relative gallery"><Image src={Gallery1} alt="gallery1"></Image></figure>
                 <figure className="relative gallery"><Image src={Gallery2} alt="gallery2"></Image></figure>
                 <figure className="relative gallery"><Image src={Gallery3} alt="gallery3"></Image></figure>
-                <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-1">
+                <div className="grid grid-cols-1 gap-1 lg:grid-cols-2 md:grid-cols-2">
                     <figure className="relative gallery"><Image src={Gallery4} alt="gallery4"></Image></figure>
                     <figure className="relative gallery"><Image src={Gallery5} alt="gallery5"></Image></figure>
                 </div>
@@ -96,19 +96,19 @@ export default function SingleWork({ title, image_path }) {
                             <Link href="#">
                                 <p className="flex items-center cursor-pointer lg:gap-10">Baja homes that catch a wind<Image src={Arrow} alt="Arrow"></Image></p>
                             </Link>
-                            <p className="font-FoundersGroteskRegular lg:text-lg md:text-lg text-xs">THE GLOBE AND MAIL</p>
+                            <p className="text-xs font-FoundersGroteskRegular lg:text-lg md:text-lg">THE GLOBE AND MAIL</p>
                         </li>
                         <li className="font-FoundersGroteskMedium lg:text-[36px] md:text-[36px] text-[24px] mb-10">
                             <Link href="#">
                                 <p className="flex items-center cursor-pointer lg:gap-10">House 004, Los Zacatitos<Image src={Arrow} alt="Arrow"></Image></p>
                             </Link>
-                            <p className="font-FoundersGroteskRegular lg:text-lg md:text-lg text-xs">WALLPAPER*</p>
+                            <p className="text-xs font-FoundersGroteskRegular lg:text-lg md:text-lg">WALLPAPER*</p>
                         </li>
                         <li className="font-FoundersGroteskMedium lg:text-[36px] md:text-[36px] text-[24px] mb-10">
                             <Link href="#">
                                 <p className="flex items-center cursor-pointer lg:gap-10">Off-Grid in Z-Town<Image src={Arrow} alt="Arrow"></Image></p>
                             </Link>
-                            <p className="font-FoundersGroteskRegular lg:text-lg md:text-lg text-xs">CANADIAN ARCHITECT</p>
+                            <p className="text-xs font-FoundersGroteskRegular lg:text-lg md:text-lg">CANADIAN ARCHITECT</p>
                         </li>
                     </ul>
                 </div>
