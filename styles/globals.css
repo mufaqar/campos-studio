@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* import css files  */
-@import url("./mediaQueries.css");
+@import url('./mediaQueries.css');
 
 @layer components {
   .nav_item {
@@ -24,29 +24,29 @@
 }
 
 summary::marker {
-  content: "";
+  content: '';
 }
 .gallery > span {
   min-width: 100%;
 }
 @font-face {
-  font-family: "FoundersGrotesk-Medium";
-  src: url("../public/fonts/FoundersGrotesk-Medium.ttf");
+  font-family: 'FoundersGrotesk-Medium';
+  src: url('../public/fonts/FoundersGrotesk-Medium.ttf');
 }
 
 @font-face {
-  font-family: "FoundersGrotesk-Regular";
-  src: url("../public/fonts/FoundersGrotesk-Regular.ttf");
+  font-family: 'FoundersGrotesk-Regular';
+  src: url('../public/fonts/FoundersGrotesk-Regular.ttf');
 }
 
 @font-face {
-  font-family: "Signifier-Regular";
-  src: url("../public/fonts/Signifier-Regular.ttf");
+  font-family: 'Signifier-Regular';
+  src: url('../public/fonts/Signifier-Regular.ttf');
 }
 
 @font-face {
-  font-family: "Signifier-Light";
-  src: url("../public/fonts/Signifier-Light.ttf");
+  font-family: 'Signifier-Light';
+  src: url('../public/fonts/Signifier-Light.ttf');
 }
 
 /* custom css */
@@ -119,5 +119,11 @@ summary::marker {
   .team > div.row-num:nth-child(19),
   .team > div.row-num:nth-child(20) {
     grid-row-start: 5;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+  .team {
+    display: none;
   }
 }
