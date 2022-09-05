@@ -10,6 +10,7 @@ import Team from "../components/team";
 import { useRef, useState } from "react";
 import { AiOutlineCaretDown } from 'react-icons/ai';
 import { AiOutlineCaretUp } from 'react-icons/ai';
+import MblTeam from "../components/mblTeam";
 
 
 
@@ -201,7 +202,9 @@ export default function Studio({ icon, title, info }) {
       {/* team section  */}
       <section className="custom-sec py-7">
         <div>
-          <h2 className="font-FoundersGroteskMedium lg:text-[48px] md:text-[42px] text-[22px]">Team</h2>
+          <h2 className="font-FoundersGroteskMedium lg:text-[48px] md:text-[42px] text-[22px] md:mb-0 mb-3 ">Team</h2>
+
+          <MblTeam />
         </div>
         <div className="grid gap-2 mt-8 overflow-x-hidden lg:grid-cols-5 md:grid-cols-4">
           {/* creating a team section with onclick team image goes left corner and the detail section goes right side and col-span 1  */}
