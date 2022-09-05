@@ -28,7 +28,7 @@ export default function MblTeam() {
                     <div className="mt-5">
                         <div>
                             <figure className='relative h-[464px] w-full'>
-                                <Image src="/images/team1.png" layout='fill' className='object-cover'></Image>
+                                <Image src="/images/team/1.png" layout='fill' className='object-cover'></Image>
                             </figure>
                             <p className="font-FoundersGroteskRegular text-lg my-5">Javier Campos earned his Architecture Degree from the University of British Columbia after having completed an undergraduate degree in Art History. Previously he was at Acton Ostry Architects where, as lead designer, his projects were widely published and garnered numerous awards — including Canadian Architect and Lieutenant Governor Medals in Architecture.
                                 His work adopted a green agenda early and has included off the grid projects since 2001.
@@ -44,7 +44,7 @@ export default function MblTeam() {
                     <div className="mt-5">
                         <div>
                             <figure className='relative h-[464px] w-full'>
-                                <Image src="/images/team1.png" layout='fill' className='object-cover'></Image>
+                                <Image src="/images/team/2.png" layout='fill' className='object-cover'></Image>
                             </figure>
                             <p className="font-FoundersGroteskRegular text-lg my-5">Javier Campos earned his Architecture Degree from the University of British Columbia after having completed an undergraduate degree in Art History. Previously he was at Acton Ostry Architects where, as lead designer, his projects were widely published and garnered numerous awards — including Canadian Architect and Lieutenant Governor Medals in Architecture.
                                 His work adopted a green agenda early and has included off the grid projects since 2001.
@@ -60,7 +60,7 @@ export default function MblTeam() {
                     <div className="mt-5">
                         <div>
                             <figure className='relative h-[464px] w-full'>
-                                <Image src="/images/team1.png" layout='fill' className='object-cover'></Image>
+                                <Image src="/images/team/3.png" layout='fill' className='object-cover'></Image>
                             </figure>
                             <p className="font-FoundersGroteskRegular text-lg my-5">Javier Campos earned his Architecture Degree from the University of British Columbia after having completed an undergraduate degree in Art History. Previously he was at Acton Ostry Architects where, as lead designer, his projects were widely published and garnered numerous awards — including Canadian Architect and Lieutenant Governor Medals in Architecture.
                                 His work adopted a green agenda early and has included off the grid projects since 2001.
@@ -76,7 +76,7 @@ export default function MblTeam() {
                     <div className="mt-5">
                         <div>
                             <figure className='relative h-[464px] w-full'>
-                                <Image src="/images/team1.png" layout='fill' className='object-cover'></Image>
+                                <Image src="/images/team/4.png" layout='fill' className='object-cover'></Image>
                             </figure>
                             <p className="font-FoundersGroteskRegular text-lg my-5">Javier Campos earned his Architecture Degree from the University of British Columbia after having completed an undergraduate degree in Art History. Previously he was at Acton Ostry Architects where, as lead designer, his projects were widely published and garnered numerous awards — including Canadian Architect and Lieutenant Governor Medals in Architecture.
                                 His work adopted a green agenda early and has included off the grid projects since 2001.
@@ -92,7 +92,7 @@ export default function MblTeam() {
                     <div className="mt-5">
                         <div>
                             <figure className='relative h-[464px] w-full'>
-                                <Image src="/images/team1.png" layout='fill' className='object-cover'></Image>
+                                <Image src="/images/team/5.png" layout='fill' className='object-cover'></Image>
                             </figure>
                             <p className="font-FoundersGroteskRegular text-lg my-5">Javier Campos earned his Architecture Degree from the University of British Columbia after having completed an undergraduate degree in Art History. Previously he was at Acton Ostry Architects where, as lead designer, his projects were widely published and garnered numerous awards — including Canadian Architect and Lieutenant Governor Medals in Architecture.
                                 His work adopted a green agenda early and has included off the grid projects since 2001.
@@ -108,7 +108,7 @@ export default function MblTeam() {
                     <div className="mt-5">
                         <div>
                             <figure className='relative h-[464px] w-full'>
-                                <Image src="/images/team1.png" layout='fill' className='object-cover'></Image>
+                                <Image src="/images/team/6.png" layout='fill' className='object-cover'></Image>
                             </figure>
                             <p className="font-FoundersGroteskRegular text-lg my-5">Javier Campos earned his Architecture Degree from the University of British Columbia after having completed an undergraduate degree in Art History. Previously he was at Acton Ostry Architects where, as lead designer, his projects were widely published and garnered numerous awards — including Canadian Architect and Lieutenant Governor Medals in Architecture.
                                 His work adopted a green agenda early and has included off the grid projects since 2001.
@@ -124,7 +124,7 @@ export default function MblTeam() {
                     <div className="mt-5">
                         <div>
                             <figure className='relative h-[464px] w-full'>
-                                <Image src="/images/team1.png" layout='fill' className='object-cover'></Image>
+                                <Image src="/images/team/7.png" layout='fill' className='object-cover'></Image>
                             </figure>
                             <p className="font-FoundersGroteskRegular text-lg my-5">Javier Campos earned his Architecture Degree from the University of British Columbia after having completed an undergraduate degree in Art History. Previously he was at Acton Ostry Architects where, as lead designer, his projects were widely published and garnered numerous awards — including Canadian Architect and Lieutenant Governor Medals in Architecture.
                                 His work adopted a green agenda early and has included off the grid projects since 2001.
@@ -140,7 +140,7 @@ export default function MblTeam() {
                     <div className="mt-5">
                         <div>
                             <figure className='relative h-[464px] w-full'>
-                                <Image src="/images/team1.png" layout='fill' className='object-cover'></Image>
+                                <Image src="/images/team/8.png" layout='fill' className='object-cover'></Image>
                             </figure>
                             <p className="font-FoundersGroteskRegular text-lg my-5">Javier Campos earned his Architecture Degree from the University of British Columbia after having completed an undergraduate degree in Art History. Previously he was at Acton Ostry Architects where, as lead designer, his projects were widely published and garnered numerous awards — including Canadian Architect and Lieutenant Governor Medals in Architecture.
                                 His work adopted a green agenda early and has included off the grid projects since 2001.
@@ -156,7 +156,7 @@ export default function MblTeam() {
                     <div className="mt-5">
                         <div>
                             <figure className='relative h-[464px] w-full'>
-                                <Image src="/images/team1.png" layout='fill' className='object-cover'></Image>
+                                <Image src="/images/team/9.png" layout='fill' className='object-cover'></Image>
                             </figure>
                             <p className="font-FoundersGroteskRegular text-lg my-5">Javier Campos earned his Architecture Degree from the University of British Columbia after having completed an undergraduate degree in Art History. Previously he was at Acton Ostry Architects where, as lead designer, his projects were widely published and garnered numerous awards — including Canadian Architect and Lieutenant Governor Medals in Architecture.
                                 His work adopted a green agenda early and has included off the grid projects since 2001.
@@ -172,7 +172,7 @@ export default function MblTeam() {
                     <div className="mt-5">
                         <div>
                             <figure className='relative h-[464px] w-full'>
-                                <Image src="/images/team1.png" layout='fill' className='object-cover'></Image>
+                                <Image src="/images/team/10.png" layout='fill' className='object-cover'></Image>
                             </figure>
                             <p className="font-FoundersGroteskRegular text-lg my-5">Javier Campos earned his Architecture Degree from the University of British Columbia after having completed an undergraduate degree in Art History. Previously he was at Acton Ostry Architects where, as lead designer, his projects were widely published and garnered numerous awards — including Canadian Architect and Lieutenant Governor Medals in Architecture.
                                 His work adopted a green agenda early and has included off the grid projects since 2001.
