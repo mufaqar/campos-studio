@@ -111,6 +111,7 @@ export default function SingleWork({ title, image_path }) {
                             <p className="font-FoundersGroteskRegular lg:text-lg md:text-lg text-xs">CANADIAN ARCHITECT</p>
                         </li>
                     </ul>
+                    
                     <button className="bg-[#FCB450] w-5 h-5"></button>
                 </div>
             </section>
