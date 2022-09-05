@@ -302,12 +302,10 @@ export default function Studio({ icon, title, info }) {
           <h2 className="font-FoundersGroteskMedium lg:text-[48px] md:text-[42px] text-[22px]">
             Team
           </h2>
-
           <MblTeam />
         </div>
         <div className="grid gap-2 mt-8 overflow-x-hidden lg:grid-cols-5 md:grid-cols-4 team">
           {/* creating a team section with onclick team image goes left corner and the detail section goes right side and col-span 1  */}
-
           {ImageData.map((item, index) => {
             return (
               <div
