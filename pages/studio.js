@@ -209,7 +209,7 @@ export default function Studio({ icon, title, info }) {
           {
             ImageData.map((item, index) => {
               return (
-                <div key={index} className={`relative ${openTeamDetails === item.id && 'col-start-1 row-start-1'} `}>
+                <div key={index}   className={`relative ${openTeamDetails === item.id && 'col-start-1 row-start-1'} `}>
                   <div className={`cursor-pointer`} onClick={() => handleTeam(item.id)}>
                     <Team src={item.url} />
                   </div>      
@@ -226,7 +226,6 @@ export default function Studio({ icon, title, info }) {
               )
             })
           }
-
         </div>
       </section>
 
