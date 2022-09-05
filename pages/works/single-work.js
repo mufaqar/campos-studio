@@ -1,4 +1,4 @@
-import Audio from '../../components/audio';
+//import Audio from '../../components/audio';
 import { useState } from 'react';
 import Image from 'next/image';
 import Gallery1 from '../../public/images/gallery1.png';
@@ -83,9 +83,7 @@ export default function SingleWork({ title, image_path }) {
           <h2 className="font-FoundersGroteskMedium lg:text-[60px] md:text-[56px] text-[36px] leading-[70px] mb-8">
             Zacatitos 03
           </h2>
-          <div className="">
-            <Audio />
-          </div>
+          <div className="">{/* <Audio /> */}</div>
           <div className="mb-4">
             <p className="font-FoundersGroteskRegular lg:text-[23px] md:text-[22px] text-lg">
               This project is the third of a series of desert dwelling
