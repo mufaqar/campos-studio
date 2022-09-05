@@ -91,9 +91,9 @@ summary::marker {
 .team > div.row-num:nth-child(20) {
   grid-row-start: 4;
 }
-#waveform>wave:nth-child(1){
+/* #waveform>wave:nth-child(1){
   display: none !important;
-}
+} */
 #waveform{
   width: 100%;
 }
