@@ -75,7 +75,7 @@ export default function Studio({ icon, title, info }) {
   const [openTeamDetails, setOpenTeamDetails] = useState(null); // To handel Team Section
   const [pressActive, setPressActive] = useState(false);
   const [countUpdate, setCountUpdate] = useState(null);
-
+  
   const handleTeam = (id) => {
     if (openTeamDetails === id) {
       return setOpenTeamDetails(null)
@@ -203,17 +203,21 @@ export default function Studio({ icon, title, info }) {
         <div>
           <h2 className="font-FoundersGroteskMedium lg:text-[48px] md:text-[42px] text-[22px]">Team</h2>
         </div>
-        <div className="grid gap-2 mt-8 overflow-x-hidden lg:grid-cols-5 md:grid-cols-4">
+        <div className="grid gap-2 mt-8 overflow-x-hidden lg:grid-cols-5 md:grid-cols-4 team">
           {/* creating a team section with onclick team image goes left corner and the detail section goes right side and col-span 1  */}
 
           {
             ImageData.map((item, index) => {
               return (
+<<<<<<< HEAD
                 <div key={index}   className={`relative ${openTeamDetails === item.id && 'col-start-1 row-start-1'} `}>
+=======
+                <div key={index} className={`relative ${openTeamDetails === item.id && 'col-start-1 row-num' } `}>
+>>>>>>> 33ecdeeaf783628896d6c2f5aaa13e66a44a398d
                   <div className={`cursor-pointer`} onClick={() => handleTeam(item.id)}>
                     <Team src={item.url} />
                   </div>      
-                  <div className={`${openTeamDetails === item.id ? 'block' : 'hidden'} bg-black -top-[26px] absolute lg:h-[341px] lg:left-[102.5%] w-screen md:h-[318px] z-10 md:left-0   text-white custom-sec py-7`}>
+                  <div className={`${openTeamDetails === item.id ? 'block' : 'hidden'} bg-black -top-[26px] absolute lg:h-[341px] lg:left-[102.5%] w-screen md:h-[318px] z-10 md:left-[103%] text-white custom-sec py-7`}>
                     <div className="px-10">
                       <h2 className="font-FoundersGroteskMedium lg:text-[36px] md:text-[31px] text-lg">Past Collaborators - {countUpdate}</h2>
                       <p className="lg:w-[805px] md:w-[754px] font-SignifierRegular lg:text-xl mt-5">Regan Appleton, Romain Bael, Jacquelyn Bortolussi, Tom Chung, Sarah Cree, Jessie Croll, Paul Crowley, Alix Demontrond, Hande Ersoy, Adrien Fera, Mike Fugeta, Ashley Gesner,
