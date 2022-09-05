@@ -356,7 +356,7 @@ function AudioPlayer({ children }) {
                 {/* <div onClick={forward30}>Forward 30</div> */}
 
                 <div className="flex items-center controls">
-                    <div className="contoll-btn" onClick={handlePlayPause}>{!playing ? <BsFillPlayFill /> : <AiOutlinePause />}</div>
+                    <div className="cursor-pointer contoll-btn" onClick={handlePlayPause}>{!playing ? <BsFillPlayFill /> : <AiOutlinePause />}</div>
                     <div id="waveform" ref={waveformRef} />
                 </div>
 
