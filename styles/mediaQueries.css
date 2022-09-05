@@ -37,8 +37,40 @@
   }
 }
 
-@media (min-width: 300px) and (max-width: 768px) {
-  .team {
-    display: none;
+
+@media(min-width: 1024px) and (max-width: 1200px){
+  .team_content{
+    width: 600px !important;
+    margin-left: -5rem;
+  }
+}
+
+@media(min-width: 769px) and (max-width: 780px){
+  .team_content{
+    width: 500px !important ;
+  }
+}
+
+@media(min-width: 781px) and (max-width: 820px){
+  .team_content{
+    width: 553px !important ;
+  }
+}
+
+@media(min-width: 721px) and (max-width: 850px){
+  .team_content{
+    width: 550px !important ;
+  }
+}
+
+@media(min-width: 751px) and (max-width: 900px){
+  .team_content{
+    width: 580px !important ;
+  }
+}
+
+@media(min-width: 901) and (max-width: 1010px){
+  .team_content{
+    width: 600px !important ;
   }
 }

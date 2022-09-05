@@ -14,7 +14,7 @@
     @apply px-[9px] mt-[26px];
   }
   .contoll-btn{
-    @apply text-4xl border inline-block border-black p-3 rounded-full mr-10
+    @apply text-3xl lg:text-4xl border inline-block border-black p-2 lg:p-3 rounded-full mr-10
   }
 }
 
@@ -104,4 +104,9 @@ summary::marker {
 
 
 
+@media (min-width: 300px) and (max-width: 768px) {
+  .team {
+    display: none;
+  }
+}
 

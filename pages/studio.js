@@ -323,23 +323,21 @@ export default function Studio({ icon, title, info }) {
                 <div
                   className={`${
                     openTeamDetails === item.id ? 'block' : 'hidden'
-                  } bg-black -top-[26px] absolute lg:h-[341px] lg:left-[102.5%] w-screen md:h-[318px] z-10 md:left-[103%] text-white custom-sec py-7`}
+                  } bg-black overflow-y-scroll -top-[26px] absolute lg:h-[341px] lg:left-[102.5%] w-screen md:h-[318px] z-10 md:left-[103%] text-white custom-sec py-7`}
                 >
-                  <div className="flex lg:flex-row flex-col lg:gap-12 px-5">
+                  <div className="flex flex-col px-5 lg:flex-row lg:gap-12">
                     <div className="lg:w-[200px] w-full flex flex-col justify-between mb-3">
                       <h3 className="text-white font-SignifierRegular lg:text-[27px] md:text-[24px] lg:block hidden">
-                        {' '}
                         Javier <br></br>Campos
                       </h3>
                       <h3 className="text-white font-SignifierRegular lg:text-[27px] md:text-[24px] lg:hidden block">
-                        {' '}
                         Javier Campos
                       </h3>
                       <p className="text-white font-SignifierRegular lg:text-[18px] md:text-[17px]">
                         Principal Designer
                       </p>
                     </div>
-                    <div className="lg:w-[650px] w-[700px]">
+                    <div className="lg:w-[650px] w-[700px] team_content">
                       <p className="text-white font-FoundersGroteskRegular lg:text-lg md:text-base">
                         Javier Campos earned his Architecture Degree from the
                         University of British Columbia after having completed an
@@ -367,12 +365,12 @@ export default function Studio({ icon, title, info }) {
         </div>
       </section>
 
-      <section className="custom-sec mt-0 py-5">
+      <section className="py-5 mt-0 custom-sec">
         <div className="lg:w-[805px] md:w-[754px] w-full">
           <h2 className="font-FoundersGroteskMedium lg:text-4xl md:text-[31px] text-lg">
             Past Collaborators
           </h2>
-          <p className="font-SignifierRegular lg:text-xl md:text-xl text-base">
+          <p className="text-base font-SignifierRegular lg:text-xl md:text-xl">
             Regan Appleton, Romain Bael, Jacquelyn Bortolussi, Tom Chung, Sarah
             Cree, Jessie Croll, Paul Crowley, Alix Demontrond, Hande Ersoy,
             Adrien Fera, Mike Fugeta, Ashley Gesner, Matias T. Grez, Maria
