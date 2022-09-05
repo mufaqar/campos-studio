@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-//import Audio from '../../components/audio';
-=======
-
->>>>>>> 61218c296c48bde14a4e8396f9a5295f5219eb64
 import { useState } from 'react';
 import Image from "next/image";
 import Gallery1 from '../../public/images/gallery1.png'
@@ -64,36 +59,6 @@ export default function SingleWork({ title, image_path }) {
         <div></div>
       </section>
 
-<<<<<<< HEAD
-      <section className="custom-sec py-7">
-        <div className="lg:w-[899px] md:w-[683px] w-full mx-auto">
-          <h2 className="font-FoundersGroteskMedium lg:text-[60px] md:text-[56px] text-[36px] leading-[70px] mb-8">
-            Zacatitos 03
-          </h2>
-          <div className="">{/* <Audio /> */}</div>
-          <div className="mb-4">
-            <p className="font-FoundersGroteskRegular lg:text-[23px] md:text-[22px] text-lg">
-              This project is the third of a series of desert dwelling
-              prototypes that comprise an ongoing body of research into off-grid
-              living in a relatively extreme climate. All three research sites
-              are located in the remote community of Los Zacatitos, in Baja
-              California Sur, Mexico.
-            </p>
-          </div>
-          <div className="text-center">
-            <button
-              className="font-FoundersGroteskMedium lg:text-lg md:text-[17px] text-[13px]"
-              onClick={() => {
-                setOpen(!open);
-              }}
-            >
-              <span className={`${open ? 'hidden' : 'block'}`}>READ MORE</span>
-            </button>
-            <FullContent open={open} setOpen={setOpen} />
-          </div>
-        </div>
-      </section>
-=======
             <section className="custom-sec py-7">
                 <div className="lg:w-[899px] md:w-[683px] w-full mx-auto">
                     <h2 className="font-FoundersGroteskMedium lg:text-[60px] md:text-[56px] text-[36px] leading-[70px] mb-8">Zacatitos 03</h2>
@@ -112,7 +77,6 @@ export default function SingleWork({ title, image_path }) {
                     </div>
                 </div>
             </section>
->>>>>>> 61218c296c48bde14a4e8396f9a5295f5219eb64
 
             <section className="custom-sec gallery-section">
                 <figure className="relative gallery"><Image src={Gallery1} alt="gallery1"></Image></figure>
