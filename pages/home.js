@@ -1,12 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 // import Player from 'react-wavy-audio'
 
 export default function Home() {
-  return (
-    <>Home</>
-  )
+  return <>Home 123</>;
 }
-
-
-
