@@ -13,6 +13,9 @@
   .custom-sec {
     @apply px-[9px] mt-[26px];
   }
+  .contoll-btn{
+    @apply text-4xl border inline-block border-black p-3 rounded-full mr-10
+  }
 }
 
 .workBanerBg {
@@ -88,42 +91,17 @@ summary::marker {
 .team > div.row-num:nth-child(20) {
   grid-row-start: 4;
 }
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .team > div.row-num:nth-child(1),
-  .team > div.row-num:nth-child(2),
-  .team > div.row-num:nth-child(3),
-  .team > div.row-num:nth-child(4) {
-    grid-row-start: 1;
-  }
-  .team > div.row-num:nth-child(5),
-  .team > div.row-num:nth-child(6),
-  .team > div.row-num:nth-child(7),
-  .team > div.row-num:nth-child(8) {
-    grid-row-start: 2;
-  }
-  .team > div.row-num:nth-child(9),
-  .team > div.row-num:nth-child(10),
-  .team > div.row-num:nth-child(11),
-  .team > div.row-num:nth-child(12) {
-    grid-row-start: 3;
-  }
-  .team > div.row-num:nth-child(13),
-  .team > div.row-num:nth-child(14),
-  .team > div.row-num:nth-child(15),
-  .team > div.row-num:nth-child(16) {
-    grid-row-start: 4;
-  }
-  .team > div.row-num:nth-child(17),
-  .team > div.row-num:nth-child(18),
-  .team > div.row-num:nth-child(19),
-  .team > div.row-num:nth-child(20) {
-    grid-row-start: 5;
-  }
+/* #waveform>wave:nth-child(1){
+  display: none !important;
+} */
+#waveform{
+  width: 100%;
+}
+#waveform>wave>wave{
+  border-right: none !important
 }
 
-@media (min-width: 300px) and (max-width: 768px){
-.team{
-  display: none;
-}
-}
+
+
+
+

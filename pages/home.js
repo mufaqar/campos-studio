@@ -1,8 +1,11 @@
-import WorkBox from '../components/work-box';
+import React from 'react'
+
+
 export default function Home() {
   return (
-    <>
-      
-    </>
-  );
+    <>Home</>
+  )
 }
+
+
+
