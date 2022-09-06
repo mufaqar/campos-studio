@@ -348,8 +348,8 @@ function AudioPlayer({ children }) {
     return (
         <>
             <div className="flex items-center justify-between">
-                <p className="text-2xl">Hear Campos Studio talk about this project </p>
-                <div className="text-2xl progress">( {result} )</div>
+                <p className="md:text-2xl">Hear Campos Studio talk about this project </p>
+                <div className="md:text-2xl progress">( {result} )</div>
             </div>
             <div className="my-10">
                 {/* <div onClick={back30}>Back 30</div> */}
