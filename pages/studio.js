@@ -320,14 +320,9 @@ export default function Studio({ icon, title, info }) {
                   <Team src={item.url} />
                 </div>
                 <div
-<<<<<<< HEAD
-                  className={`${openTeamDetails === item.id ? 'block' : 'hidden'
-                    } bg-black -top-[26px] absolute lg:h-[341px] lg:left-[102.5%] w-screen md:h-[318px] z-10 md:left-[103%] text-white custom-sec py-7`}
-=======
                   className={`${
                     openTeamDetails === item.id ? 'block' : 'hidden'
                   } bg-black overflow-y-scroll -top-[26px] absolute lg:h-[341px] lg:left-[102.5%] w-screen md:h-[318px] z-10 md:left-[103%] text-white custom-sec py-7`}
->>>>>>> bf7de5f614da6959cf13b4c1d613b486f8e94476
                 >
                   <div className="flex flex-col px-5 lg:flex-row lg:gap-12">
                     <div className="lg:w-[200px] w-full flex flex-col justify-between mb-3">
