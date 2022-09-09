@@ -61,66 +61,14 @@ const teamQuery = `*[_type == "team"]{
 
 
 
+
 export default function Studio({ exhibitionsAndTalks, team, publications, books }) {
   console.log('publications', publications)
   console.log('books', books)
   console.log('team', team)
   console.log('exhibitionsAndTalks', exhibitionsAndTalks)
 
-  const ImageData = [
-    {
-      id: 1,
-      url: '1.png',
-    },
-    {
-      id: 2,
-      url: '2.png',
-    },
-    {
-      id: 3,
-      url: '3.png',
-    },
-    {
-      id: 4,
-      url: '4.png',
-    },
-    {
-      id: 5,
-      url: '5.png',
-    },
-    {
-      id: 6,
-      url: '6.png',
-    },
-    {
-      id: 7,
-      url: '7.png',
-    },
-    {
-      id: 8,
-      url: '8.png',
-    },
-    {
-      id: 9,
-      url: '9.png',
-    },
-    {
-      id: 10,
-      url: '10.png',
-    },
-    {
-      id: 11,
-      url: '11.png',
-    },
-    {
-      id: 12,
-      url: '12.png',
-    },
-    {
-      id: 13,
-      url: '13.png',
-    },
-  ];
+
 
 
   const [openTeamDetails, setOpenTeamDetails] = useState(null); // To handel Team Section
@@ -213,7 +161,8 @@ export default function Studio({ exhibitionsAndTalks, team, publications, books 
                 Exhibitions and Talks
               </h2>
             </div>
-            <div className="grid gap-12 mt-8 lg:grid-cols-5 md:grid-cols-2">
+            <div className="grid gap-12 mt-8 eandt lg:grid-cols-5 md:grid-cols-2">
+
               <div>
                 <p className="font-FoundersGroteskMedium text-[22px]">2019</p>
                 <p className="font-FoundersGroteskMedium text-[18px]">
@@ -223,87 +172,126 @@ export default function Studio({ exhibitionsAndTalks, team, publications, books 
                   Lethbridge University, AB
                 </p>
               </div>
+
               <div>
-                <p className="font-FoundersGroteskMedium text-[22px]">2019</p>
+                <p className="font-FoundersGroteskMedium text-[22px]">2016</p>
                 <p className="font-FoundersGroteskMedium text-[18px]">
-                  ARCHITECTURE AND DESIGN NOW TALK
+                  YOUR FUTURE HOME: CREATING THE NEW VANCOUVER
                 </p>
                 <p className="font-FoundersGroteskRegular text-[17px]">
-                  Lethbridge University, AB
+                  Exhibition Name, Museum of Vancouver, BC
                 </p>
               </div>
+
               <div>
-                <p className="font-FoundersGroteskMedium text-[22px]">2019</p>
+                <p className="font-FoundersGroteskMedium text-[22px]">2014</p>
                 <p className="font-FoundersGroteskMedium text-[18px]">
-                  ARCHITECTURE AND DESIGN NOW TALK
+                  THE WEST COAST MODERN HOUSE BOOK
                 </p>
                 <p className="font-FoundersGroteskRegular text-[17px]">
-                  Lethbridge University, AB
+                  Ocean Park, Wallace Street House
                 </p>
               </div>
+
               <div>
-                <p className="font-FoundersGroteskMedium text-[22px]">2019</p>
+                <p className="font-FoundersGroteskMedium text-[22px]">2010</p>
                 <p className="font-FoundersGroteskMedium text-[18px]">
-                  ARCHITECTURE AND DESIGN NOW TALK
+                  20+ CHANGE EXHIBITION
                 </p>
                 <p className="font-FoundersGroteskRegular text-[17px]">
-                  Lethbridge University, AB
-                </p>
-              </div>
-              <div>
-                <p className="font-FoundersGroteskMedium text-[22px]">2019</p>
-                <p className="font-FoundersGroteskMedium text-[18px]">
-                  ARCHITECTURE AND DESIGN NOW TALK
+                  Dalhousie University of Architecture, Halifax, NS
                 </p>
                 <p className="font-FoundersGroteskRegular text-[17px]">
-                  Lethbridge University, AB
-                </p>
-              </div>
-              <div>
-                <p className="font-FoundersGroteskMedium text-[22px]">2019</p>
-                <p className="font-FoundersGroteskMedium text-[18px]">
-                  ARCHITECTURE AND DESIGN NOW TALK
+                  Emily Carr University of Art and Design Vancouver, BC
                 </p>
                 <p className="font-FoundersGroteskRegular text-[17px]">
-                  Lethbridge University, AB
-                </p>
-              </div>
-              <div>
-                <p className="font-FoundersGroteskMedium text-[22px]">2019</p>
-                <p className="font-FoundersGroteskMedium text-[18px]">
-                  ARCHITECTURE AND DESIGN NOW TALK
+                  AIBC Architecture Centre Gallery, Vancouver, BC
                 </p>
                 <p className="font-FoundersGroteskRegular text-[17px]">
-                  Lethbridge University, AB
-                </p>
-              </div>
-              <div>
-                <p className="font-FoundersGroteskMedium text-[22px]">2019</p>
-                <p className="font-FoundersGroteskMedium text-[18px]">
-                  ARCHITECTURE AND DESIGN NOW TALK
+                  La Maison de l’architecture du Quebec, Montreal, QC
                 </p>
                 <p className="font-FoundersGroteskRegular text-[17px]">
-                  Lethbridge University, AB
+                  The Gladstone Hotel, Toronto, ON
                 </p>
-              </div>
-              <div>
-                <p className="font-FoundersGroteskMedium text-[22px]">2019</p>
                 <p className="font-FoundersGroteskMedium text-[18px]">
-                  ARCHITECTURE AND DESIGN NOW TALK
+                  HIGH PERFORMANCE EXHIBITION
                 </p>
                 <p className="font-FoundersGroteskRegular text-[17px]">
-                  Lethbridge University, AB
+                  Emily Carr University of Art and Design Vancouver, BC
                 </p>
               </div>
+
+
               <div>
-                <p className="font-FoundersGroteskMedium text-[22px]">2019</p>
+                <p className="font-FoundersGroteskMedium text-[22px]">2009</p>
                 <p className="font-FoundersGroteskMedium text-[18px]">
-                  ARCHITECTURE AND DESIGN NOW TALK
+                  IIDEX / NEOCON EXHIBITION
                 </p>
                 <p className="font-FoundersGroteskRegular text-[17px]">
-                  Lethbridge University, AB
+                  Venue, Toronto, ON
                 </p>
               </div>
+
+              <div>
+                <p className="font-FoundersGroteskMedium text-[22px]">2017</p>
+                <p className="font-FoundersGroteskMedium text-[18px]">
+                  MoV ECO CITIES
+                </p>
+                <p className="font-FoundersGroteskRegular text-[17px]">
+                  Museum of Vancouver, BC
+                </p>
+                <p className="font-FoundersGroteskMedium text-[18px]">
+                  URBANARIUM
+                </p>
+                <p className="font-FoundersGroteskRegular text-[17px]">
+                  Robson Square, Vancouver, BC
+                </p>
+                <p className="font-FoundersGroteskMedium text-[18px]">
+                  GRAY MAGAZINE PANEL
+                </p>
+                <p className="font-FoundersGroteskRegular text-[17px]">
+                  Venue, Seattle, WA, United States of America
+                </p>
+              </div>
+
+              <div>
+                <p className="font-FoundersGroteskMedium text-[22px]">2012</p>
+                <p className="font-FoundersGroteskMedium text-[18px]">
+                  PECHA KULCHA TALK
+                </p>
+                <p className="font-FoundersGroteskRegular text-[17px]">
+                  Venue, City of Richmond Culture Days, BC
+                </p>
+                <p className="font-FoundersGroteskMedium text-[18px]">
+                  PECHA KULCHA 21 TALK
+                </p>
+                <p className="font-FoundersGroteskRegular text-[17px]">
+                  Vogue Theatre, Vancouver, BC
+                </p>
+              </div>
+
+              <div>
+                <p className="font-FoundersGroteskMedium text-[22px]">2011</p>
+                <p className="font-FoundersGroteskMedium text-[18px]">
+                  VIEW FROM THE EDGE EXHIBITION
+                </p>
+                <p className="font-FoundersGroteskRegular text-[17px]">
+                  Architectural Institue of British Columbia, Vancouver, BC
+                </p>
+              </div>
+
+              <div></div>
+
+              <div>
+                <p className="font-FoundersGroteskMedium text-[22px]">2004</p>
+                <p className="font-FoundersGroteskMedium text-[18px]">
+                  MAKING OUT EXHIBITION
+                </p>
+                <p className="font-FoundersGroteskRegular text-[17px]">
+                  Emily Carr University of Art and Design Vancouver, BC
+                </p>
+              </div>
+
             </div>
           </div>
         </div>
@@ -316,7 +304,7 @@ export default function Studio({ exhibitionsAndTalks, team, publications, books 
             Team
           </h2>
           {team.map((item, index) => (
-            <MblTeam item={item} key={index}/> 
+            <MblTeam item={item} key={index} />
           ))}
         </div>
         <div className="grid gap-2 mt-8 overflow-x-hidden lg:grid-cols-5 md:grid-cols-4 team ">
@@ -325,9 +313,8 @@ export default function Studio({ exhibitionsAndTalks, team, publications, books 
             return (
               <div
                 key={index}
-                className={`relative ${
-                  openTeamDetails === item._id && 'col-start-1 row-num'
-                } `}
+                className={`relative ${openTeamDetails === item._id && 'col-start-1 row-num'
+                  } `}
               >
                 <div
                   className={`cursor-pointer`}
@@ -336,9 +323,8 @@ export default function Studio({ exhibitionsAndTalks, team, publications, books 
                   <Team src={item.profileimage.asset.url} />
                 </div>
                 <div
-                  className={`${
-                    openTeamDetails === item._id ? 'block' : 'hidden'
-                  } bg-black overflow-y-scroll -top-[26px] absolute lg:h-[341px] xl:h-[360px] lg:left-[102.5%] w-screen md:h-[318px] z-10 md:left-[103%] text-white custom-sec py-7`}
+                  className={`${openTeamDetails === item._id ? 'block' : 'hidden'
+                    } bg-black overflow-y-scroll -top-[26px] absolute lg:h-[341px] xl:h-[360px] lg:left-[102.5%] w-screen md:h-[318px] z-10 md:left-[103%] text-white custom-sec py-7`}
                 >
                   <div className="flex flex-col px-5 lg:flex-row lg:gap-12">
                     <div className="lg:w-[200px] w-full flex flex-col justify-between mb-3">

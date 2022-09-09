@@ -13,8 +13,8 @@
   .custom-sec {
     @apply px-[9px] mt-[26px];
   }
-  .contoll-btn{
-    @apply text-3xl lg:text-4xl border inline-block border-black p-2 lg:p-3 rounded-full mr-10
+  .contoll-btn {
+    @apply inline-block p-2 mr-10 text-3xl border border-black rounded-full lg:text-4xl lg:p-3;
   }
 }
 
@@ -94,20 +94,35 @@ summary::marker {
 /* #waveform>wave:nth-child(1){
   display: none !important;
 } */
-#waveform{
+#waveform {
   width: 100%;
 }
-#waveform>wave>wave{
-  border-right: none !important
+#waveform > wave > wave {
+  border-right: none !important;
 }
-.gtop:nth-child(3){
+.gtop:nth-child(3) {
   margin-top: 12px !important;
 }
 
+@media (min-width: 1024px) and (max-width: 1120px) {
+  div.eandt > div:nth-child(6),
+  div.eandt > div:nth-child(7),
+  div.eandt > div:nth-child(8),
+  div.eandt > div:nth-child(10) {
+    margin-top: -22rem !important;
+  }
+}
+@media (min-width: 1121px) {
+  div.eandt > div:nth-child(6),
+  div.eandt > div:nth-child(7),
+  div.eandt > div:nth-child(8),
+  div.eandt > div:nth-child(10) {
+    margin-top: -15rem !important;
+  }
+}
 
 @media (min-width: 300px) and (max-width: 768px) {
   .team {
     display: none;
   }
 }
-
