@@ -136,13 +136,13 @@ function FullContent({ open, setOpen, project }) {
   );
 }
 
-export default function SingleWork({ data, preview }) {
+export default function SingleWork({ project }) {
   const [open, setOpen] = useState(false);
-  const { data: project } = usePreviewSubscription(projectSlugQuery, {
-    params: { slug: data.project?.slug.current },
-    initialData: data,
-    enabled: preview,
-  });
+  // const { data: project } = usePreviewSubscription(projectSlugQuery, {
+  //   params: { slug: data.project?.slug.current },
+  //   initialData: data,
+  //   enabled: preview,
+  // });
 
   console.log('project', project);
 
@@ -163,7 +163,7 @@ export default function SingleWork({ data, preview }) {
       <section className="custom-sec py-7">
         <div className="lg:w-[899px] md:w-[683px] w-full mx-auto">
           <h2 className="font-FoundersGroteskMedium lg:text-[60px] md:text-[56px] text-[36px] leading-[70px] mb-8">
-            {project?.title}
+            {project.title}
           </h2>
           <div className="">
             <AudioPlayer audioURL={project.audio?.asset.url} />
@@ -277,8 +277,9 @@ export async function getStaticProps({ params }) {
   const project = await sanityClient.fetch(projectSlugQuery, { slug });
   return {
     props: {
-      data: { project },
-      preview: true
+      // data: { project },
+      project
+      // preview: true
     }
   };
 }
