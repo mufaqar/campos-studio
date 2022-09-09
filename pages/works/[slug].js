@@ -269,15 +269,9 @@ export async function getStaticProps({ params }) {
   const project = await sanityClient.fetch(projectSlugQuery, { slug });
   return {
     props: {
-<<<<<<< HEAD
       // data: { project },
-      project
+      project,
       // preview: true
     }
-=======
-      data: { project },
-      preview: true,
-    },
->>>>>>> e94523eb73c6e902306e684981e22439b9cb5775
-  };
+  }
 }
