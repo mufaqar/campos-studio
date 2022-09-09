@@ -31,8 +31,8 @@ function AudioPlayer({ audioURL }) {
 
     console.log('audioURL', audioURL)
 
-
-    const url = String(audioURL);
+    // String
+    const url = String(`${audioURL}`)
 
     function unmute(context) { // for ios playing when users lock their screen
         // Determine page visibility api
@@ -356,8 +356,8 @@ function AudioPlayer({ audioURL }) {
                 {/* <div onClick={forward30}>Forward 30</div> */}
 
                 <div className="flex items-center controls">
-                    <div className="mr-40 cursor-pointer contoll-btn" onClick={handlePlayPause}>{!playing ? <BiPlay /> : <AiOutlinePause />}</div>
-                    <div className="w-1/2"> <div id="waveform"  ref={waveformRef} /></div>
+                    <div className="mr-8 cursor-pointer md:mr-20 lg:mr-40 contoll-btn" onClick={handlePlayPause}>{!playing ? <BiPlay /> : <AiOutlinePause />}</div>
+                    <div className="lg:w-1/2"> <div id="waveform"  ref={waveformRef} /></div>
                 </div>
 
             </div>
