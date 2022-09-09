@@ -17,22 +17,22 @@ const formWaveSurferOptions = (ref) => ({
     plugins: [],
 });
 
-function AudioPlayer({ children }) {
+function AudioPlayer({ audioURL }) {
     const waveformRef = useRef(null);
     const wavesurfer = useRef(null);
     const [playing, setPlaying] = useState(false);
     const [progress, setProgress] = useState(0);
     let time = Math.floor(progress)
     
-    
     const seconds = time;
     // ✅ get hh:mm:ss string
     // convert secound into mints & hour 
     const result = new Date(seconds * 1000).toISOString().slice(11, 19);
 
+    console.log('audioURL', audioURL)
 
 
-    const url = "https://www.mfiles.co.uk/mp3-downloads/brahms-st-anthony-chorale-theme-two-pianos.mp3";
+    const url = String(audioURL);
 
     function unmute(context) { // for ios playing when users lock their screen
         // Determine page visibility api

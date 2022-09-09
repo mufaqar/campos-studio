@@ -19,6 +19,11 @@ const projectSlugQuery = `*[_type == "projects" && slug.current == $slug][0]{
   area,
   detail,
   excerpt,
+  audio{
+    asset->{
+      url
+    },
+  },
   featureimage{
     asset->{
       url
@@ -161,7 +166,7 @@ export default function SingleWork({ data, preview }) {
             {project?.title}
           </h2>
           <div className="">
-            <AudioPlayer />
+            <AudioPlayer audioURL={project.audio?.asset.url} />
           </div>
           <div className="mb-4">
             <p className="font-FoundersGroteskRegular lg:text-[23px] md:text-[22px] text-lg">
