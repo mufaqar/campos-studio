@@ -112,18 +112,14 @@ export default function Contact() {
           <div className="grid order-1 lg:w-full md:w-1/2 place-content-between lg:order-3">
             <ul>
               <li>
-                <Link href="#">
-                  <a className="font-FoundersGroteskRegular lg:text-[21px] underline hover:no-underline">
+                  <a href="https://www.instagram.com/campos_studio/" target="_blank" rel="noreferrer" className="font-FoundersGroteskRegular lg:text-[21px] underline hover:no-underline">
                     <span>Instagram</span>
                   </a>
-                </Link>
               </li>
               <li>
-                <Link href="#">
-                  <a className="font-FoundersGroteskRegular lg:text-[21px] underline hover:no-underline">
+                  <a href="https://www.pinterest.ca/camposstudio/" target="_blank" rel="noreferrer" className="font-FoundersGroteskRegular lg:text-[21px] underline hover:no-underline">
                     <span>Pinterest</span>
                   </a>
-                </Link>
               </li>
             </ul>
             <div className="mt-8">
