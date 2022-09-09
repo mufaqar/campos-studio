@@ -32,7 +32,7 @@ function AudioPlayer({ audioURL }) {
     console.log('audioURL', audioURL)
 
     // String
-    const url = audioURL
+    const url = "https://cdn.sanity.io/files/3vo3hgzm/production/eb2e6896dd822ce2a3e0f14412edbf4b50ed90e6.mp3"
     //String(`${audioURL}`)
 
     function unmute(context) { // for ios playing when users lock their screen
