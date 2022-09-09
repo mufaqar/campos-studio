@@ -5,7 +5,7 @@ export default function Hippo() {
   return (
     <>
       <Hero />
-      <section className="custom-sec h-[692px] flex items-center justify-center">
+      <section className="custom-sec h-[692px] flex items-center lg:ml-[21%]">
         <div className="flex items-center ">
           <p className="font-SignifierLight lg:text-[26px] md:text-[32px] text-[18px] leading-[33.62px] lg:w-[1071px] md:w-[877px] w-[233px]">
             Architecture informed by <br></br>critical regionalism in the

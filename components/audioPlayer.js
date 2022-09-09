@@ -1,6 +1,6 @@
 // npm install wavesurfer.js 
 import React, { useState, useEffect, useRef } from "react";
-import { BsFillPlayFill } from 'react-icons/bs';
+import { BiPlay } from 'react-icons/bi';
 import { AiOutlinePause } from 'react-icons/ai';
 
 const formWaveSurferOptions = (ref) => ({
@@ -356,8 +356,8 @@ function AudioPlayer({ children }) {
                 {/* <div onClick={forward30}>Forward 30</div> */}
 
                 <div className="flex items-center controls">
-                    <div className="cursor-pointer contoll-btn" onClick={handlePlayPause}>{!playing ? <BsFillPlayFill /> : <AiOutlinePause />}</div>
-                    <div id="waveform" ref={waveformRef} />
+                    <div className="mr-40 cursor-pointer contoll-btn" onClick={handlePlayPause}>{!playing ? <BiPlay /> : <AiOutlinePause />}</div>
+                    <div className="w-1/2"> <div id="waveform"  ref={waveformRef} /></div>
                 </div>
 
             </div>

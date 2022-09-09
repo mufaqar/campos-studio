@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Book from '../components/book';
-import StudioBg from '../public/images/pressBg.png';
 import Wallpeper from '../public/images/wallpeper.png';
 import Gray from '../public/images/GRAY.png';
 import Deezen from '../public/images/DEEZEN.png';
@@ -11,8 +10,63 @@ import { useState } from 'react';
 import { AiOutlineCaretDown } from 'react-icons/ai';
 import { AiOutlineCaretUp } from 'react-icons/ai';
 import MblTeam from '../components/mblTeam';
+import { sanityClient } from '../lib/sanity';
+// import video from '../public/video.mp4'
 
-export default function Studio({ icon, title, info }) {
+
+// sanity Queries 
+
+const pressPublicationsQuery = `*[_type == "press" && (categories == "publications")]{
+  brand_name,
+  title,
+  image{
+    asset->{
+      url
+    }
+  },
+}`
+
+const pressBooksQuery = `*[_type == "press" && (categories == "books")]{
+  brand_name,
+  title,
+  image{
+    asset->{
+      url
+    }
+  },
+}`
+
+const eAndTQuery = `*[_type == "exhibitions_and_talks"]{
+  year,
+  fields_data[]{
+    title,
+    place
+  }
+}`
+
+const teamQuery = `*[_type == "team"]{
+  _id,
+  member_name,
+  designation,
+  profileimage{
+    asset->{
+      url
+    }
+  },
+  about
+}`
+
+
+
+
+
+
+export default function Studio({ exhibitionsAndTalks, team, publications, books }) {
+  console.log('publications', publications)
+  console.log('books', books)
+  console.log('team', team)
+  console.log('exhibitionsAndTalks', exhibitionsAndTalks)
+
   const ImageData = [
     {
       id: 1,
@@ -68,6 +122,7 @@ export default function Studio({ icon, title, info }) {
     },
   ];
 
+
   const [openTeamDetails, setOpenTeamDetails] = useState(null); // To handel Team Section
   const [pressActive, setPressActive] = useState(false);
   const [countUpdate, setCountUpdate] = useState(null);
@@ -91,7 +146,10 @@ export default function Studio({ icon, title, info }) {
           <h2 className="font-FoundersGroteskMedium lg:text-[48px] md:text-[42px] text-[22px]">
             Process
           </h2>
-          <Image src={StudioBg} alt="pressBG.png"></Image>
+          <video className='w-screen videoTag' autoPlay loop muted>
+            <source src='/video.mp4' type='video/mp4' />
+          </video>
+
         </div>
       </section>
       {/* Press */}
@@ -117,61 +175,17 @@ export default function Studio({ icon, title, info }) {
               </h2>
             </div>
             <div className="grid gap-8 mt-8 lg:grid-cols-4 md:grid-cols-3">
-              <Book
-                icon={Wallpeper}
-                title="WALLPAPER*"
-                info="House 004, Los Zacatitos"
-              />
-              <Book
-                icon={Gray}
-                title="GRAY MAGAZINE*"
-                info="Los Zacatitos Houses"
-              />
-              <Book icon={Deezen} title="DEEZEN*" info="Sooke House" />
-              <Book icon={Deezen} title="DEEZEN*" info="Point Grey Laneway" />
-              <Book
-                icon={TheGlobe}
-                title="THE GLOBE AND MAIL*"
-                info="Los Zacatitos Houses"
-              />
-              <Book
-                icon={Canadian}
-                title="CANADIAN ARCHITECT*"
-                info="Sooke House"
-              />
-              <Book
-                icon={Wallpeper}
-                title="WALLPAPER*"
-                info="House 004, Los Zacatitos"
-              />
-              <Book
-                icon={Gray}
-                title="GRAY MAGAZINE*"
-                info="Los Zacatitos Houses"
-              />
-              <Book icon={Deezen} title="DEEZEN*" info="Sooke House" />
-              <Book icon={Deezen} title="DEEZEN*" info="Point Grey Laneway" />
-              <Book
-                icon={TheGlobe}
-                title="THE GLOBE AND MAIL*"
-                info="Los Zacatitos Houses"
-              />
-              <Book
-                icon={Canadian}
-                title="CANADIAN ARCHITECT*"
-                info="Sooke House"
-              />
-              <Book
-                icon={Wallpeper}
-                title="WALLPAPER*"
-                info="House 004, Los Zacatitos"
-              />
-              <Book
-                icon={Gray}
-                title="GRAY MAGAZINE*"
-                info="Los Zacatitos Houses"
-              />
-              <Book icon={Deezen} title="DEEZEN*" info="Sooke House" />
+              {
+                publications.map((publication, index) => (
+                  <Book
+                    icon={publication.image.asset.url}
+                    title={publication.title}
+                    info={publication.brand_name}
+                    key={index}
+                  />
+                ))
+              }
+
             </div>
           </div>
           <div className="mt-8 Books-sec">
@@ -181,17 +195,16 @@ export default function Studio({ icon, title, info }) {
               </h2>
             </div>
             <div className="grid gap-8 mt-8 lg:grid-cols-4 md:grid-cols-3">
-              <Book
-                icon={Wallpeper}
-                title="WALLPAPER*"
-                info="House 004, Los Zacatitos"
-              />
-              <Book
-                icon={Gray}
-                title="GRAY MAGAZINE*"
-                info="Los Zacatitos Houses"
-              />
-              <Book icon={Deezen} title="DEEZEN*" info="Sooke House" />
+              {
+                books.map((book, index) => (
+                  <Book
+                    icon={book.image.asset.url}
+                    title={book.title}
+                    info={book.brand_name}
+                    key={index}
+                  />
+                ))
+              }
             </div>
           </div>
           <div className="mt-8 Exhibitions-sec">
@@ -302,59 +315,46 @@ export default function Studio({ icon, title, info }) {
           <h2 className="font-FoundersGroteskMedium lg:text-[48px] md:text-[42px] text-[22px]">
             Team
           </h2>
-          <MblTeam />
+          {team.map((item, index) => (
+            <MblTeam item={item} key={index}/> 
+          ))}
         </div>
         <div className="grid gap-2 mt-8 overflow-x-hidden lg:grid-cols-5 md:grid-cols-4 team ">
           {/* creating a team section with onclick team image goes left corner and the detail section goes right side and col-span 1  */}
-          {ImageData.map((item, index) => {
+          {team.map((item, index) => {
             return (
               <div
                 key={index}
                 className={`relative ${
-                  openTeamDetails === item.id && 'col-start-1 row-num'
+                  openTeamDetails === item._id && 'col-start-1 row-num'
                 } `}
               >
                 <div
                   className={`cursor-pointer`}
-                  onClick={() => handleTeam(item.id)}
+                  onClick={() => handleTeam(item._id)}
                 >
-                  <Team src={item.url} />
+                  <Team src={item.profileimage.asset.url} />
                 </div>
                 <div
                   className={`${
-                    openTeamDetails === item.id ? 'block' : 'hidden'
-                  } bg-black overflow-y-scroll -top-[26px] absolute lg:h-[341px] lg:left-[102.5%] w-screen md:h-[318px] z-10 md:left-[103%] text-white custom-sec py-7`}
+                    openTeamDetails === item._id ? 'block' : 'hidden'
+                  } bg-black overflow-y-scroll -top-[26px] absolute lg:h-[341px] xl:h-[360px] lg:left-[102.5%] w-screen md:h-[318px] z-10 md:left-[103%] text-white custom-sec py-7`}
                 >
                   <div className="flex flex-col px-5 lg:flex-row lg:gap-12">
                     <div className="lg:w-[200px] w-full flex flex-col justify-between mb-3">
                       <h3 className="text-white font-SignifierRegular lg:text-[27px] md:text-[24px] lg:block hidden">
-                        Javier <br></br>Campos
+                        {item?.member_name}
                       </h3>
                       <h3 className="text-white font-SignifierRegular lg:text-[27px] md:text-[24px] lg:hidden block">
-                        Javier Campos
+                        {item?.member_name}
                       </h3>
                       <p className="text-white font-SignifierRegular lg:text-[18px] md:text-[17px]">
-                        Principal Designer
+                        {item?.designation}
                       </p>
                     </div>
                     <div className="lg:w-[650px] w-[700px] team_content">
                       <p className="text-white font-FoundersGroteskRegular lg:text-lg md:text-base">
-                        Javier Campos earned his Architecture Degree from the
-                        University of British Columbia after having completed an
-                        undergraduate degree in Art History. Previously he was
-                        at Acton Ostry Architects where, as lead designer, his
-                        projects were widely published and garnered numerous
-                        awards including Canadian Architect and Lieutenant
-                        Governor Medals in Architecture. His work adopted a
-                        green agenda early and has included off the grid
-                        projects since 2001. He became LEED certified in 2004.
-                        Javier is also involved in Public Art and has won
-                        several competitions with Artist Elspeth Pratt in
-                        Vancouver. Javier served on the board of the
-                        Contemporary Art Gallery for six years and as well being
-                        the current president of the Heritage Vancouver Society,
-                        where he established an award winning outreach series on
-                        issues around Heritage.
+                        {item?.about}
                       </p>
                     </div>
                   </div>
@@ -364,6 +364,7 @@ export default function Studio({ icon, title, info }) {
           })}
         </div>
       </section>
+
 
       <section className="py-5 mt-0 custom-sec">
         <div className="lg:w-[805px] md:w-[754px] w-full">
@@ -386,3 +387,22 @@ export default function Studio({ icon, title, info }) {
     </>
   );
 }
+
+
+
+
+export async function getStaticProps() {
+  const publications = await sanityClient.fetch(pressPublicationsQuery);
+  const books = await sanityClient.fetch(pressBooksQuery);
+  const exhibitionsAndTalks = await sanityClient.fetch(eAndTQuery);
+  const team = await sanityClient.fetch(teamQuery);
+  return {
+    props: {
+      publications,
+      books,
+      exhibitionsAndTalks,
+      team
+    }
+  };
+}
+
