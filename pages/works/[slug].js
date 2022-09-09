@@ -144,7 +144,15 @@ export default function SingleWork({ data, preview }) {
 
   return (
     <>
-      <section className="workBanerBg lg:h-screen md:h-[800px] h-[375px]">
+      <section className="workBanerBg lg:h-screen md:h-[800px] h-[375px]" 
+        style={{
+          backgroundImage: `url(${project.featureimage?.asset.url})`,
+          // backgroundImage: `url(${externalImage})`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
+        }}
+      >
         <div></div>
       </section>
 
@@ -179,7 +187,7 @@ export default function SingleWork({ data, preview }) {
       <section className="custom-sec gallery-section space-y-[4px]">
         {
           project.gallery?.images.slice(0, 3).map((img, index) => (
-            <figure key={index} className="relative gallery lg:h-[900px] md:h-[670px] h-[240px] sm:h-[480px] mb-3">
+            <figure key={index} className="relative gallery gtop lg:h-[900px] md:h-[670px] h-[240px] sm:h-[480px] mb-3">
               <Image src={img.asset.url} alt="gallery1" layout="fill"></Image>
             </figure>
           ))
@@ -190,7 +198,7 @@ export default function SingleWork({ data, preview }) {
         <div className="grid grid-cols-1 gap-[6px] lg:gap-[9px] lg:grid-cols-2 md:grid-cols-2">
           {
             project.gallery?.images.slice(3, 5).map((img, index) => (
-              <figure key={index} className="relative gallery">
+              <figure key={index} className="relative mt-2 gallery">
                 <Image src={Gallery4} alt="gallery4"></Image>
               </figure>
             ))
@@ -256,7 +264,7 @@ export async function getStaticPaths() {
   `);
   return {
     paths,
-    fallback: true,
+    fallback: false,
   }
 }
 

@@ -100,7 +100,9 @@ summary::marker {
 #waveform>wave>wave{
   border-right: none !important
 }
-
+.gtop:nth-child(3){
+  margin-top: 12px !important;
+}
 
 
 @media (min-width: 300px) and (max-width: 768px) {
