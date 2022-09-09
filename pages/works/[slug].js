@@ -12,8 +12,6 @@ import WorkBox from '../../components/work-box';
 import AudioPlayer from '../../components/audioPlayer';
 import { sanityClient, usePreviewSubscription } from '../../lib/sanity';
 
-
-
 const projectSlugQuery = `*[_type == "projects" && slug.current == $slug][0]{
   Collaborators,
   area,
@@ -70,11 +68,7 @@ const projectSlugQuery = `*[_type == "projects" && slug.current == $slug][0]{
     },
     title
   }
-}`
-
-
-
-
+}`;
 
 function FullContent({ open, setOpen, project }) {
   return (
@@ -96,40 +90,44 @@ function FullContent({ open, setOpen, project }) {
         </li>
         <li className="py-2 text-left border-b-2 border-black">
           <p className="font-FoundersGroteskMedium lg:text-[21px]">YEAR</p>
-          <p className="font-FoundersGroteskRegular lg:text-[21px]">{project?.year}</p>
+          <p className="font-FoundersGroteskRegular lg:text-[21px]">
+            {project?.year}
+          </p>
         </li>
         <li className="py-2 text-left border-b-2 border-black">
           <p className="font-FoundersGroteskMedium lg:text-[21px]">
             SQUARE FOOTAGE
           </p>
-          <p className="font-FoundersGroteskRegular lg:text-[21px]">{project?.area}</p>
+          <p className="font-FoundersGroteskRegular lg:text-[21px]">
+            {project?.area}
+          </p>
         </li>
         <li className="py-2 text-left border-b-2 border-black">
           <p className="font-FoundersGroteskMedium lg:text-[21px]">Team</p>
 
-          {
-            project.teammember?.map((team, index) => {
-              return (
-                <p key={index} className="font-FoundersGroteskRegular lg:text-[21px] flex justify-between">
-                  <span>{team?.member_name}</span>
-                </p>
-              )
-            })
-          }
-
+          {project.teammember?.map((team, index) => {
+            return (
+              <p
+                key={index}
+                className="font-FoundersGroteskRegular lg:text-[21px] flex justify-between"
+              >
+                <span>{team?.member_name}</span>
+              </p>
+            );
+          })}
         </li>
         <li className="py-2 text-left border-b-2 border-black">
           <p className="font-FoundersGroteskMedium lg:text-[21px]">
             COLLABORATORS
           </p>
-          {
-            project.Collaborators?.map((col, index) => (
-              <p key={index} className="font-FoundersGroteskRegular lg:text-[21px]">
-                {col}
-              </p>
-            ))
-          }
-
+          {project.Collaborators?.map((col, index) => (
+            <p
+              key={index}
+              className="font-FoundersGroteskRegular lg:text-[21px]"
+            >
+              {col}
+            </p>
+          ))}
         </li>
       </ul>
     </div>
@@ -146,10 +144,10 @@ export default function SingleWork({ data, preview }) {
 
   console.log('project', project);
 
-
   return (
     <>
-      <section className="workBanerBg lg:h-screen md:h-[800px] h-[375px]" 
+      <section
+        className="workBanerBg lg:h-screen md:h-[800px] h-[375px]"
         style={{
           backgroundImage: `url(${project.featureimage?.asset.url})`,
           backgroundSize: 'cover',
@@ -183,80 +181,74 @@ export default function SingleWork({ data, preview }) {
               <span className={`${open ? 'hidden' : 'block'}`}>READ MORE</span>
             </button>
             <FullContent open={open} setOpen={setOpen} project={project} />
-
           </div>
         </div>
       </section>
 
       <section className="custom-sec gallery-section space-y-[4px]">
-        {
-          project.gallery?.images.slice(0, 3).map((img, index) => (
-            <figure key={index} className="relative gallery gtop lg:h-[900px] md:h-[670px] h-[240px] sm:h-[480px] mb-3">
-              <Image src={img.asset.url} alt="gallery1" layout="fill"></Image>
-            </figure>
-          ))
-        }
-
-
+        {project.gallery?.images.slice(0, 3).map((img, index) => (
+          <figure
+            key={index}
+            className="relative gallery gtop lg:h-[900px] md:h-[670px] h-[240px] sm:h-[480px] mb-3"
+          >
+            <Image src={img.asset.url} alt="gallery1" layout="fill"></Image>
+          </figure>
+        ))}
 
         <div className="grid grid-cols-1 gap-[6px] lg:gap-[9px] lg:grid-cols-2 md:grid-cols-2">
-          {
-            project.gallery?.images.slice(3, 5).map((img, index) => (
-              <figure key={index} className="relative mt-2 gallery">
-                <Image src={Gallery4} alt="gallery4"></Image>
-              </figure>
-            ))
-          }
+          {project.gallery?.images.slice(3, 5).map((img, index) => (
+            <figure key={index} className="relative mt-2 gallery">
+              <Image src={Gallery4} alt="gallery4"></Image>
+            </figure>
+          ))}
         </div>
 
-
-        {
-          project.gallery?.images.slice(5, project.gallery?.images.length).map((img, index) => (
+        {project.gallery?.images
+          .slice(5, project.gallery?.images.length)
+          .map((img, index) => (
             <figure key={index} className="relative gallery">
               <Image src={Gallery6} alt="gallery6"></Image>
             </figure>
-          ))
-        }
-
+          ))}
       </section>
       <section className="custom-sec">
         <div className="lg:w-[899px] md:w-[683px] w-full mx-auto">
           <ul>
-            {
-              project.links?.map((link, index) => (
-                <li key={index} className="font-FoundersGroteskMedium lg:text-[36px] md:text-[36px] text-[24px] mb-10">
-                  <a href={link.link} target="_blank">
-                    <p className="flex items-center cursor-pointer lg:gap-10">
-                      {link.hading}
-                      <Image src={Arrow} alt="Arrow"></Image>
-                    </p>
-                  </a>
-                  <p className="text-xs font-FoundersGroteskRegular lg:text-lg md:text-lg">
-                    {link.short_text}
+            {project.links?.map((link, index) => (
+              <li
+                key={index}
+                className="font-FoundersGroteskMedium lg:text-[36px] md:text-[36px] text-[24px] mb-10"
+              >
+                <a href={link.link} target="_blank" rel="noreferrer">
+                  <p className="flex items-center cursor-pointer lg:gap-10">
+                    {link.hading}
+                    <Image src={Arrow} alt="Arrow"></Image>
                   </p>
-                </li>
-              ))
-            }
-
+                </a>
+                <p className="text-xs font-FoundersGroteskRegular lg:text-lg md:text-lg">
+                  {link.short_text}
+                </p>
+              </li>
+            ))}
           </ul>
           <button className="bg-[#FCB450] w-5 h-5"></button>
         </div>
       </section>
 
       <section className="custom-sec">
-        {
-          project.related_project?.map((project, index)=>(
-            <WorkBox key={index} title={project.title} imageURL={project.featureimage.asset.url} imageCaption={project.featureimage.caption} slug={project.slug.current}/>
-          ))
-        }
-       
+        {project.related_project?.map((project, index) => (
+          <WorkBox
+            key={index}
+            title={project.title}
+            imageURL={project.featureimage.asset.url}
+            imageCaption={project.featureimage.caption}
+            slug={project.slug.current}
+          />
+        ))}
       </section>
     </>
   );
-} 
-
-
-
+}
 
 export async function getStaticPaths() {
   const paths = await sanityClient.fetch(`
@@ -269,7 +261,7 @@ export async function getStaticPaths() {
   return {
     paths,
     fallback: false,
-  }
+  };
 }
 
 export async function getStaticProps({ params }) {
@@ -278,7 +270,7 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       data: { project },
-      preview: true
-    }
+      preview: true,
+    },
   };
 }
