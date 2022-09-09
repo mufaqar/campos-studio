@@ -104,7 +104,7 @@ function FullContent({ open, setOpen, project }) {
         </li>
         <li className="py-2 text-left border-b-2 border-black">
           <p className="font-FoundersGroteskMedium lg:text-[21px]">Team</p>
-
+          <div className='flex justify-between'>
           {project.teammember?.map((team, index) => {
             return (
               <p
@@ -115,6 +115,7 @@ function FullContent({ open, setOpen, project }) {
               </p>
             );
           })}
+          </div>
         </li>
         <li className="py-2 text-left border-b-2 border-black">
           <p className="font-FoundersGroteskMedium lg:text-[21px]">

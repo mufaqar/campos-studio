@@ -1,11 +1,30 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
+
 
 export default function Contact() {
+
+  const [showForm, setShowForm] = useState(false)
+  const [input, setInput] = useState({
+    name: '',
+    email: '',
+    country: '',
+  })
+  const OpenForm=()=>{
+    setShowForm(true)
+  }
+  const handleChange = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    setInput({ ...input, [name]: value });
+  }
+
+
   return (
     <>
-      <section className="custom-sec mt-48 py-7">
-        <div className="grid lg:grid-cols-3 md:grid-cols-1 gap-12">
+      <section className="mt-48 custom-sec py-7">
+        <div className="grid gap-12 lg:grid-cols-3 md:grid-cols-1">
           <div className="lg:w-full md:w-1/2">
             <h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[21px] text-[21px] border-b-2 border-black">
               Say Hello
@@ -36,17 +55,32 @@ export default function Contact() {
             <h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[21px] text-[21px] border-b-2 border-black">
               Follow Along
             </h2>
-            <Link href="#">
-              <a className="font-FoundersGroteskRegular lg:text-[21px] underline hover:no-underline">
+            <div onClick={OpenForm} className={showForm && 'hidden'}>
+              <p className="font-FoundersGroteskRegular cursor-pointer lg:text-[21px] underline hover:no-underline">
                 <span>Join the mailing list</span>
-              </a>
-            </Link>
+              </p>
+            </div>
+            <form className={showForm ? 'block' : 'hidden'}>
+              <div className="flex items-center justify-between mt-1">
+                <input type='text' name="name" value={input.name} onChange={handleChange} className='input_field'  placeholder="Name"/> 
+                <p className={input.name ? 'hidden' : 'block'}>Required Field</p>
+              </div>
+              <div className="flex items-center justify-between mt-1">
+                <input type='email' name="email" value={input.email} onChange={handleChange} className='input_field' placeholder="Email"/> 
+                <p className={input.email ? 'hidden' : 'block'}>Required Field</p>
+              </div>
+              <div className="flex items-center justify-between mt-1">
+                <input type='text' name="country" value={input.country} onChange={handleChange} className='input_field' placeholder="Country"/> 
+                <p className={input.country ? 'hidden' : 'block'}>Enter an email address</p>
+              </div>
+              <button type='submit' className='text-xl input_field'>Enter</button>
+            </form>
           </div>
         </div>
       </section>
-      <section className="custom-sec mt-16 py-7">
-        <div className="grid lg:grid-cols-3 md:grid-cols-1 gap-12">
-          <div className="lg:w-full md:w-full flex md:gap-64 gap-0 lg:order-1 order-3 ">
+      <section className="mt-16 custom-sec py-7">
+        <div className="grid gap-12 lg:grid-cols-3 md:grid-cols-1">
+          <div className="flex order-3 gap-0 lg:w-full md:w-full md:gap-64 lg:order-1 ">
             <div className="w-full md:w-1/2">
               <Link href="#">
                 <a className="font-FoundersGroteskRegular lg:text-[21px] underline hover:no-underline">
@@ -70,12 +104,12 @@ export default function Contact() {
               </figure>
             </div>
           </div>
-          <div className="lg:w-full md:w-1/2 lg:block md:hidden order-2">
+          <div className="order-2 lg:w-full md:w-1/2 lg:block md:hidden">
             <figure className="relative h-[321px] gallery">
               <Image src="/images/contactBg.png" layout="fill" alt=""></Image>
             </figure>
           </div>
-          <div className="lg:w-full md:w-1/2 grid place-content-between lg:order-3 order-1">
+          <div className="grid order-1 lg:w-full md:w-1/2 place-content-between lg:order-3">
             <ul>
               <li>
                 <Link href="#">
