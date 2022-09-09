@@ -147,7 +147,6 @@ export default function SingleWork({ data, preview }) {
       <section className="workBanerBg lg:h-screen md:h-[800px] h-[375px]" 
         style={{
           backgroundImage: `url(${project.featureimage?.asset.url})`,
-          // backgroundImage: `url(${externalImage})`,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',

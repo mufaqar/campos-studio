@@ -18,13 +18,13 @@
   }
 }
 
-.workBanerBg {
+/* .workBanerBg {
   background-image: url(../public/images/workBanner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: bottom;
-}
+} */
 
 summary::marker {
   content: "";

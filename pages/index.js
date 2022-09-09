@@ -1,7 +1,23 @@
 import Hero from '../components/hero';
 import WorkBox from '../components/work-box';
+import { sanityClient } from '../lib/sanity';
 
-export default function Hippo() {
+
+// sanity Queries 
+const projectQuery = `*[_type == "projects"]{
+  title,
+  featureimage{
+    asset->{
+      url
+    },
+    caption,
+  },
+  slug,
+}`
+
+
+
+export default function Hippo({projects}) {
   return (
     <>
       <Hero />
@@ -15,19 +31,24 @@ export default function Hippo() {
       </section>
 
       <section className="custom-sec">
-        <WorkBox title="Two Rivers Meat" image_path="/images/project6.png" />
-        <WorkBox title="The Brick House" image_path="/images/project7.png" />
-        <WorkBox title="Music Shed" image_path="/images/project8.png" />
-        <WorkBox title="Yew House" image_path="/images/project9.png" />
-        <WorkBox title="Iamota" image_path="/images/project10.png" />
-        <WorkBox title="Zacatitos 01" image_path="/images/project11.png" />
-        <WorkBox title="Sooke 02" image_path="/images/project12.png" />
-        <WorkBox title="Hasting Sunrise Studio" image_path="/images/project14.png" />
-        <WorkBox title="Green Lake House" image_path="/images/project13.png" />
-        <WorkBox title="Zacatitos 04" image_path="/images/project15.png" />
-        <WorkBox title="Inter|section" image_path="/images/project16.png" />
-        <WorkBox title="Grandview Renovation" image_path="/images/project17.png" />
+        {
+          projects.map((item,index)=>(
+            <WorkBox title={item.title} imageURL={item.featureimage.asset.url} imageCaption={item.featureimage.caption} slug={item.slug.current}  key={index}/>
+          ))
+        }
       </section>
     </>
   );
+}
+
+
+
+
+export async function getStaticProps() {
+  const projects = await sanityClient.fetch(projectQuery);
+  return {
+    props: {
+      projects
+    }
+  };
 }
