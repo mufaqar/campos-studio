@@ -32,7 +32,8 @@ function AudioPlayer({ audioURL }) {
     console.log('audioURL', audioURL)
 
     // String
-    const url = String(`${audioURL}`)
+    const url = audioURL
+    //String(`${audioURL}`)
 
     function unmute(context) { // for ios playing when users lock their screen
         // Determine page visibility api
