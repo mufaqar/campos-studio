@@ -29,6 +29,10 @@
   background-position-y: bottom;
 } */
 
+body{
+  overflow-x: hidden;
+}
+
 summary::marker {
   content: "";
 }
