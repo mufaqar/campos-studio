@@ -165,7 +165,7 @@ export default function SingleWork({ project }) {
             {project.title}
           </h2>
           <div className="">
-            <AudioPlayer audioURL={project.audio?.asset.url} />
+            <AudioPlayer audioURL={project.audio.asset.url} />
           </div>
           <div className="mb-4">
             <p className="font-FoundersGroteskRegular lg:text-[23px] md:text-[22px] text-lg">

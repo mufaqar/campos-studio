@@ -11,7 +11,12 @@ module.exports = {
         FoundersGroteskRegular: ['FoundersGrotesk-Regular', 'sans-serif'],
         SignifierRegular: ['Signifier-Regular', 'sans-serif'],
         SignifierLight: ['Signifier-Light', 'sans-serif']        
-      }
+      },
+      screens: {
+        'w1366': '1366px',
+        'w1728': '1728px',
+        'w2560': '2560px',
+      },
     },
 
   },

@@ -6,7 +6,7 @@ export default function WorkBox({title, imageURL, imageCaption, slug}) {
       <div className="mt-[60px] mb-2">
         <div>
           <Link href={`/works/${slug}`}>
-            <figure className=" relative lg:w-[1023px] md:w-[860px] w-full lg:h-[683px] md:h-[573px] h-[237px] cursor-pointer">
+            <figure className=" relative lg:w-[83%] md:w-[860px] w-full lg:h-[683px] w1366:w-[80%] w1366:h-[740px] w1728:w-[86%] w1728:h-[900px] w2560:w-[64%] md:h-[573px] h-[237px] cursor-pointer">
               <Image
                 src={imageURL}
                 alt={imageCaption}
