@@ -2,6 +2,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux'
+import { changeState } from '../slices/hippoShow'
+import { useRouter } from 'next/router'
+
 
 function NavLink({ to, children }) {
     return <Link href={to} className={``}>
@@ -15,6 +19,9 @@ export default function Header() {
     const [headerSticky, setHeaderSticky] = useState(false);
     const [scrollTop, setScrollTop] = useState(0);
   
+    const dispatch = useDispatch()
+    const router = useRouter()
+    
     useEffect(() => {
       function onScroll() {
         let currentPosition = window.pageYOffset;
@@ -30,6 +37,12 @@ export default function Header() {
         });
     }, [scrollTop]);
     // x Header sticky when scroll up word x
+    
+    function handleClick() {
+        dispatch(changeState())
+        router.push('/')
+    }
+
 
 
     return (
@@ -41,13 +54,13 @@ export default function Header() {
 
             <nav className={`mt-8 md:mt-3 lg:mt-0 min-w-full max-w-full lg:h-[106px] md:h-[91px] h-[50px] flex items-center px-[9px] top-0 z-10 ${ headerSticky ? 'fixed' : 'absolute'}`}>
                 <div className="flex items-center justify-around max-w-full min-w-full py-2 font-FoundersGroteskMedium nav_item">
-                    <Link href="/">
-                        <a className="flex">
-                            <figure className='relative mt-2 md:mt-3 lg:mt-4 xl:mt-5 lg:w-[170px] lg:h-[66px] sm:w-[95px] sm:h-[40px] md:w-[144px] md:h-[55px] w-[49px] h-[20px]'>
+                    <div>
+                        <div className="flex" onClick={handleClick}>
+                            <figure className='cursor-pointer relative mt-2 md:mt-3 lg:mt-4 xl:mt-5 lg:w-[170px] lg:h-[66px] sm:w-[95px] sm:h-[40px] md:w-[144px] md:h-[55px] w-[49px] h-[20px]'>
                                 <Image src="/images/logo.png" alt="logo" layout='fill' className='object-cover'></Image>
                             </figure>
-                        </a>
-                    </Link>
+                        </div>
+                    </div>
                     
                     <NavLink to="/works">
                         WORK

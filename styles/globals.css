@@ -110,6 +110,20 @@ summary::marker {
 .gtop:nth-child(3) {
   margin-top: 12px !important;
 }
+.iframe-container {
+  overflow: hidden;
+  /* 16:9 aspect ratio */
+  padding-top: 56.25%;
+  position: relative;
+}
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 
 @media (min-width: 1024px) and (max-width: 1120px) {
   div.eandt > div:nth-child(6),
@@ -134,3 +148,13 @@ summary::marker {
   }
 }
 
+@media (min-width: 340px) and (max-width: 468px) {
+  .workbox {
+    height: 340px !important
+  }
+}
+@media (min-width: 468px) and (max-width: 640px) {
+  .workbox {
+    height: 400px !important
+  }
+}

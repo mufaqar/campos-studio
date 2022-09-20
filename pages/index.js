@@ -1,7 +1,7 @@
 import Hero from '../components/hero';
 import WorkBox from '../components/work-box';
 import { sanityClient } from '../lib/sanity';
-
+import { useSelector } from 'react-redux'
 
 // sanity Queries 
 const projectQuery = `*[_type == "projects"]{
@@ -18,9 +18,15 @@ const projectQuery = `*[_type == "projects"]{
 
 
 export default function Hippo({projects}) {
+
+  const state = useSelector((state) => state.hippo.value)
+  
   return (
     <>
-      <Hero />
+      <div className={state ? 'block' : 'hidden'}>
+        <Hero />
+      </div>
+      
       <section className="custom-sec h-[692px] flex items-center lg:ml-[21%]">
         <div className="flex items-center ">
           <p className="font-SignifierLight lg:text-[26px] md:text-[32px] text-[18px] leading-[33.62px] lg:w-[1071px] md:w-[877px] w-[233px]">

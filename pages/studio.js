@@ -94,9 +94,18 @@ export default function Studio({ exhibitionsAndTalks, team, publications, books 
           <h2 className="font-FoundersGroteskMedium lg:text-[48px] md:text-[42px] text-[22px]">
             Process
           </h2>
-          <video className='w-screen videoTag' autoPlay loop muted>
+          {/* <video className='w-screen videoTag' autoPlay loop muted>
             <source src='/video.mp4' type='video/mp4' />
-          </video>
+          </video> */}
+          <div className='iframe-container'>
+            <iframe src="https://player.vimeo.com/video/34901903?h=a1b3cf7c37&title=0&byline=0&portrait=0" 
+              width="1200" height="800" 
+              className="w-screen"
+              frameborder="0" allow="autoplay; fullscreen; picture-in-picture" 
+              allowfullscreen>
+              
+            </iframe>
+          </div>
 
         </div>
       </section>
