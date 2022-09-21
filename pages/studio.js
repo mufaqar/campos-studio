@@ -13,8 +13,7 @@ import MblTeam from '../components/mblTeam';
 import { sanityClient } from '../lib/sanity';
 // import video from '../public/video.mp4'
 
-
-// sanity Queries 
+// sanity Queries
 
 const pressPublicationsQuery = `*[_type == "press" && (categories == "publications")]{
   brand_name,
@@ -24,7 +23,7 @@ const pressPublicationsQuery = `*[_type == "press" && (categories == "publicatio
       url
     }
   },
-}`
+}`;
 
 const pressBooksQuery = `*[_type == "press" && (categories == "books")]{
   brand_name,
@@ -34,7 +33,7 @@ const pressBooksQuery = `*[_type == "press" && (categories == "books")]{
       url
     }
   },
-}`
+}`;
 
 const eAndTQuery = `*[_type == "exhibitions_and_talks"]{
   year,
@@ -42,7 +41,7 @@ const eAndTQuery = `*[_type == "exhibitions_and_talks"]{
     title,
     place
   }
-}`
+}`;
 
 const teamQuery = `*[_type == "team"]{
   _id,
@@ -54,22 +53,18 @@ const teamQuery = `*[_type == "team"]{
     }
   },
   about
-}`
+}`;
 
-
-
-
-
-
-
-export default function Studio({ exhibitionsAndTalks, team, publications, books }) {
-  console.log('publications', publications)
-  console.log('books', books)
-  console.log('team', team)
-  console.log('exhibitionsAndTalks', exhibitionsAndTalks)
-
-
-
+export default function Studio({
+  exhibitionsAndTalks,
+  team,
+  publications,
+  books,
+}) {
+  console.log('publications', publications);
+  console.log('books', books);
+  console.log('team', team);
+  console.log('exhibitionsAndTalks', exhibitionsAndTalks);
 
   const [openTeamDetails, setOpenTeamDetails] = useState(null); // To handel Team Section
   const [pressActive, setPressActive] = useState(false);
@@ -97,16 +92,17 @@ export default function Studio({ exhibitionsAndTalks, team, publications, books 
           {/* <video className='w-screen videoTag' autoPlay loop muted>
             <source src='/video.mp4' type='video/mp4' />
           </video> */}
-          <div className='iframe-container'>
-            <iframe src="https://player.vimeo.com/video/34901903?h=a1b3cf7c37&title=0&byline=0&portrait=0" 
-              width="1200" height="800" 
+          <div className="iframe-container">
+            <iframe
+              src="https://player.vimeo.com/video/34901903?h=a1b3cf7c37&title=0&byline=0&portrait=0"
+              width="1200"
+              height="800"
               className="w-screen"
-              frameborder="0" allow="autoplay; fullscreen; picture-in-picture" 
-              allowfullscreen>
-              
-            </iframe>
+              frameBorder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
-
         </div>
       </section>
       {/* Press */}
@@ -132,17 +128,14 @@ export default function Studio({ exhibitionsAndTalks, team, publications, books 
               </h2>
             </div>
             <div className="grid gap-8 mt-8 lg:grid-cols-4 md:grid-cols-3">
-              {
-                publications.map((publication, index) => (
-                  <Book
-                    icon={publication.image.asset.url}
-                    title={publication.title}
-                    info={publication.brand_name}
-                    key={index}
-                  />
-                ))
-              }
-
+              {publications.map((publication, index) => (
+                <Book
+                  icon={publication.image.asset.url}
+                  title={publication.title}
+                  info={publication.brand_name}
+                  key={index}
+                />
+              ))}
             </div>
           </div>
           <div className="mt-8 Books-sec">
@@ -152,16 +145,14 @@ export default function Studio({ exhibitionsAndTalks, team, publications, books 
               </h2>
             </div>
             <div className="grid gap-8 mt-8 lg:grid-cols-4 md:grid-cols-3">
-              {
-                books.map((book, index) => (
-                  <Book
-                    icon={book.image.asset.url}
-                    title={book.title}
-                    info={book.brand_name}
-                    key={index}
-                  />
-                ))
-              }
+              {books.map((book, index) => (
+                <Book
+                  icon={book.image.asset.url}
+                  title={book.title}
+                  info={book.brand_name}
+                  key={index}
+                />
+              ))}
             </div>
           </div>
           <div className="mt-8 Exhibitions-sec">
@@ -171,7 +162,6 @@ export default function Studio({ exhibitionsAndTalks, team, publications, books 
               </h2>
             </div>
             <div className="grid gap-12 mt-8 eandt lg:grid-cols-5 md:grid-cols-2">
-
               <div>
                 <p className="font-FoundersGroteskMedium text-[22px]">2019</p>
                 <p className="font-FoundersGroteskMedium text-[18px]">
@@ -229,7 +219,6 @@ export default function Studio({ exhibitionsAndTalks, team, publications, books 
                   Emily Carr University of Art and Design Vancouver, BC
                 </p>
               </div>
-
 
               <div>
                 <p className="font-FoundersGroteskMedium text-[22px]">2009</p>
@@ -300,7 +289,6 @@ export default function Studio({ exhibitionsAndTalks, team, publications, books 
                   Emily Carr University of Art and Design Vancouver, BC
                 </p>
               </div>
-
             </div>
           </div>
         </div>
@@ -322,8 +310,9 @@ export default function Studio({ exhibitionsAndTalks, team, publications, books 
             return (
               <div
                 key={index}
-                className={`relative ${openTeamDetails === item._id && 'col-start-1 row-num'
-                  } `}
+                className={`relative ${
+                  openTeamDetails === item._id && 'col-start-1 row-num'
+                } `}
               >
                 <div
                   className={`cursor-pointer`}
@@ -332,8 +321,9 @@ export default function Studio({ exhibitionsAndTalks, team, publications, books 
                   <Team src={item.profileimage.asset.url} />
                 </div>
                 <div
-                  className={`${openTeamDetails === item._id ? 'block' : 'hidden'
-                    } bg-black overflow-y-scroll -top-[26px] absolute lg:h-[341px] xl:h-[360px] lg:left-[102.5%] w-screen md:h-[318px] z-10 md:left-[103%] text-white custom-sec py-7`}
+                  className={`${
+                    openTeamDetails === item._id ? 'block' : 'hidden'
+                  } bg-black overflow-y-scroll -top-[26px] absolute lg:h-[341px] xl:h-[360px] lg:left-[102.5%] w-screen md:h-[318px] z-10 md:left-[103%] text-white custom-sec py-7`}
                 >
                   <div className="flex flex-col px-5 lg:flex-row lg:gap-12">
                     <div className="lg:w-[200px] w-full flex flex-col justify-between mb-3">
@@ -360,7 +350,6 @@ export default function Studio({ exhibitionsAndTalks, team, publications, books 
         </div>
       </section>
 
-
       <section className="py-5 mt-0 custom-sec">
         <div className="lg:w-[805px] md:w-[754px] w-full">
           <h2 className="font-FoundersGroteskMedium lg:text-4xl md:text-[31px] text-lg">
@@ -383,9 +372,6 @@ export default function Studio({ exhibitionsAndTalks, team, publications, books 
   );
 }
 
-
-
-
 export async function getStaticProps() {
   const publications = await sanityClient.fetch(pressPublicationsQuery);
   const books = await sanityClient.fetch(pressBooksQuery);
@@ -396,8 +382,7 @@ export async function getStaticProps() {
       publications,
       books,
       exhibitionsAndTalks,
-      team
-    }
+      team,
+    },
   };
 }
-
