@@ -1,33 +1,21 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import CustomForm from '../components/CustomForm';
+import MailchimpFormContainer from '../components/NewsletterForm';
 import Logo from '../public/images/logo.png';
 
-export default function Contact() {
+export default function Contact({ status, message, onValidated }) {
   const [showForm, setShowForm] = useState(false);
-  const [confirmMsg, setConfirmMsg] = useState(false);
-
-  const [input, setInput] = useState({
-    name: '',
-    email: '',
-    country: '',
-  });
-  const OpenForm = () => {
-    setShowForm(true);
-  };
-  const handleChange = (e) => {
-    const name = e.target.name;
-    const value = e.target.value;
-    setInput({ ...input, [name]: value });
-  };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!input.name || !input.email || !input.country) {
-    } else {
-      setConfirmMsg(true);
-      setShowForm(false);
-    }
-  };
+  const [hideFields, setHideFields] = useState(true)
+  
+  const OpenForm =()=> {
+    setShowForm(true)
+  }
+  
+  const PassState = (state) => {
+    setHideFields(state)
+  }
 
   return (
     <>
@@ -63,69 +51,18 @@ export default function Contact() {
             <h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[21px] text-[21px] border-b-2 border-black">
               Follow Along
             </h2>
-            <div onClick={OpenForm} className={showForm && 'hidden'}>
-              <p className="font-FoundersGroteskRegular cursor-pointer lg:text-[21px] underline hover:no-underline">
-                <span className={confirmMsg ? 'hidden' : 'block'}>
-                  Join the mailing list
-                </span>
-              </p>
-            </div>
-            <div className={confirmMsg ? 'block' : 'hidden'}>
-              <div className="font-FoundersGroteskRegular flex items-center lg:text-[21px]">
-                <p>Thank You</p>
-                <figure className="mt-3">
-                  <Image src={Logo} alt="hippo" width={50} height={20}></Image>
-                </figure>
+            <div>
+              <div onClick={OpenForm} className={showForm && 'hidden'}>
+                <p className="font-FoundersGroteskRegular cursor-pointer lg:text-[21px] underline hover:no-underline">
+                  <span>
+                    Join the mailing list
+                  </span>
+                </p>
               </div>
             </div>
-
-            <form
-              className={showForm ? 'block' : 'hidden'}
-              onSubmit={handleSubmit}
-            >
-              <div className="flex items-center justify-between mt-1">
-                <input
-                  type="text"
-                  name="name"
-                  value={input.name}
-                  onChange={handleChange}
-                  className="input_field placeholder:text-lg placeholder:md:text-xl font-FoundersGroteskRegular lg:text-[21px]"
-                  placeholder="Name"
-                />
-                <p className={input.name ? 'hidden' : 'block text-right'}>
-                  Required Field
-                </p>
-              </div>
-              <div className="flex items-center justify-between mt-1">
-                <input
-                  type="email"
-                  name="email"
-                  value={input.email}
-                  onChange={handleChange}
-                  className="input_field placeholder:text-lg placeholder:md:text-xl font-FoundersGroteskRegular lg:text-[21px]"
-                  placeholder="Email"
-                />
-                <p className={input.email ? 'hidden' : 'block text-right'}>
-                  Required Field
-                </p>
-              </div>
-              <div className="flex items-center justify-between mt-1">
-                <input
-                  type="text"
-                  name="country"
-                  value={input.country}
-                  onChange={handleChange}
-                  className="input_field placeholder:text-lg placeholder:md:text-xl font-FoundersGroteskRegular lg:text-[21px]"
-                  placeholder="Country"
-                />
-                <p className={input.country ? 'hidden' : 'block text-right'}>
-                  Enter an email address
-                </p>
-              </div>
-              <button type="submit" className="text-lg md:text-xl input_field">
-                Enter
-              </button>
-            </form>
+            <div className={showForm ? 'block' : 'hidden'}>
+              <MailchimpFormContainer sendState={PassState} hideFields={hideFields}/>
+            </div>
           </div>
         </div>
       </section>
