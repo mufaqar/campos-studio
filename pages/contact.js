@@ -1,36 +1,33 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import Logo from '../public/images/logo.png'
+import Logo from '../public/images/logo.png';
 
 export default function Contact() {
-
-  const [showForm, setShowForm] = useState(false)
-  const [confirmMsg, setConfirmMsg] = useState(false)
+  const [showForm, setShowForm] = useState(false);
+  const [confirmMsg, setConfirmMsg] = useState(false);
 
   const [input, setInput] = useState({
     name: '',
     email: '',
     country: '',
-  })
-  const OpenForm=()=>{
-    setShowForm(true)
-  }
+  });
+  const OpenForm = () => {
+    setShowForm(true);
+  };
   const handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
     setInput({ ...input, [name]: value });
-  }
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(!input.name || !input.email || !input.country){
-      alert('Your input fields must be filed')
-    }else{
+    if (!input.name || !input.email || !input.country) {
+    } else {
       setConfirmMsg(true);
       setShowForm(false);
     }
-  }
-
+  };
 
   return (
     <>
@@ -68,30 +65,66 @@ export default function Contact() {
             </h2>
             <div onClick={OpenForm} className={showForm && 'hidden'}>
               <p className="font-FoundersGroteskRegular cursor-pointer lg:text-[21px] underline hover:no-underline">
-                <span className={confirmMsg ? 'hidden' : 'block'}>Join the mailing list</span>
+                <span className={confirmMsg ? 'hidden' : 'block'}>
+                  Join the mailing list
+                </span>
               </p>
             </div>
             <div className={confirmMsg ? 'block' : 'hidden'}>
               <div className="font-FoundersGroteskRegular flex items-center lg:text-[21px]">
                 <p>Thank You</p>
-                <figure className='mt-3'><Image src={Logo} alt="hippo" width={50} height={20} ></Image></figure>
+                <figure className="mt-3">
+                  <Image src={Logo} alt="hippo" width={50} height={20}></Image>
+                </figure>
               </div>
             </div>
-            
-            <form className={showForm ? 'block' : 'hidden'} onSubmit={handleSubmit}>
+
+            <form
+              className={showForm ? 'block' : 'hidden'}
+              onSubmit={handleSubmit}
+            >
               <div className="flex items-center justify-between mt-1">
-                <input type='text' name="name" value={input.name} onChange={handleChange} className='input_field placeholder:text-lg placeholder:md:text-xl font-FoundersGroteskRegular lg:text-[21px]'  placeholder="Name"/> 
-                <p className={input.name ? 'hidden' : 'block text-right'}>Required Field</p>
+                <input
+                  type="text"
+                  name="name"
+                  value={input.name}
+                  onChange={handleChange}
+                  className="input_field placeholder:text-lg placeholder:md:text-xl font-FoundersGroteskRegular lg:text-[21px]"
+                  placeholder="Name"
+                />
+                <p className={input.name ? 'hidden' : 'block text-right'}>
+                  Required Field
+                </p>
               </div>
               <div className="flex items-center justify-between mt-1">
-                <input type='email' name="email" value={input.email} onChange={handleChange} className='input_field placeholder:text-lg placeholder:md:text-xl font-FoundersGroteskRegular lg:text-[21px]' placeholder="Email"/> 
-                <p className={input.email ? 'hidden' : 'block text-right'}>Required Field</p>
+                <input
+                  type="email"
+                  name="email"
+                  value={input.email}
+                  onChange={handleChange}
+                  className="input_field placeholder:text-lg placeholder:md:text-xl font-FoundersGroteskRegular lg:text-[21px]"
+                  placeholder="Email"
+                />
+                <p className={input.email ? 'hidden' : 'block text-right'}>
+                  Required Field
+                </p>
               </div>
               <div className="flex items-center justify-between mt-1">
-                <input type='text' name="country" value={input.country} onChange={handleChange} className='input_field placeholder:text-lg placeholder:md:text-xl font-FoundersGroteskRegular lg:text-[21px]'  placeholder="Country"/> 
-                <p className={input.country ? 'hidden' : 'block text-right'}>Enter an email address</p>
+                <input
+                  type="text"
+                  name="country"
+                  value={input.country}
+                  onChange={handleChange}
+                  className="input_field placeholder:text-lg placeholder:md:text-xl font-FoundersGroteskRegular lg:text-[21px]"
+                  placeholder="Country"
+                />
+                <p className={input.country ? 'hidden' : 'block text-right'}>
+                  Enter an email address
+                </p>
               </div>
-              <button type="submit" className='text-lg md:text-xl input_field'>Enter</button>
+              <button type="submit" className="text-lg md:text-xl input_field">
+                Enter
+              </button>
             </form>
           </div>
         </div>
@@ -130,22 +163,35 @@ export default function Contact() {
           <div className="grid order-1 lg:w-full md:w-1/2 place-content-between lg:order-3">
             <ul>
               <li>
-                  <a href="https://www.instagram.com/campos_studio/" target="_blank" rel="noreferrer" className="font-FoundersGroteskRegular lg:text-[21px] underline hover:no-underline">
-                    <span>Instagram</span>
-                  </a>
+                <a
+                  href="https://www.instagram.com/campos_studio/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-FoundersGroteskRegular lg:text-[21px] underline hover:no-underline"
+                >
+                  <span>Instagram</span>
+                </a>
               </li>
               <li>
-                  <a href="https://www.pinterest.ca/camposstudio/" target="_blank" rel="noreferrer" className="font-FoundersGroteskRegular lg:text-[21px] underline hover:no-underline">
-                    <span>Pinterest</span>
-                  </a>
+                <a
+                  href="https://www.pinterest.ca/camposstudio/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-FoundersGroteskRegular lg:text-[21px] underline hover:no-underline"
+                >
+                  <span>Pinterest</span>
+                </a>
               </li>
             </ul>
             <div className="mt-8">
-              
-                <a href="https://www.makerbros.co" target="_blank" rel="noreferrer" className="font-FoundersGroteskRegular lg:text-[21px] underline hover:no-underline">
-                  <span>Site by Maker Brothers Worldwide</span>
-                </a>
-              
+              <a
+                href="https://www.makerbros.co"
+                target="_blank"
+                rel="noreferrer"
+                className="font-FoundersGroteskRegular lg:text-[21px] underline hover:no-underline"
+              >
+                <span>Site by Maker Brothers Worldwide</span>
+              </a>
             </div>
           </div>
         </div>
