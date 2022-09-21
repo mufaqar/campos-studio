@@ -1,9 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
-import CustomForm from '../components/CustomForm';
+import { useState } from 'react';
 import MailchimpFormContainer from '../components/NewsletterForm';
-import Logo from '../public/images/logo.png';
+
 
 export default function Contact({ status, message, onValidated }) {
   const [showForm, setShowForm] = useState(false);
