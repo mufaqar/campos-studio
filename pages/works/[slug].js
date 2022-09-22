@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Arrow from '../../public/images/Arrow.png';
-import Link from 'next/link';
 import WorkBox from '../../components/work-box';
 import AudioPlayer from '../../components/audioPlayer';
 import { sanityClient, usePreviewSubscription } from '../../lib/sanity';
@@ -68,6 +67,7 @@ const projectSlugQuery = `*[_type == "projects" && slug.current == $slug][0]{
 
 function FullContent({ open, setOpen, project }) {
   console.log("🚀 ~ file: [slug].js ~ line 77 ~ FullContent ~ project", project.gallery.images)
+  
 
   return (
     <div className={`${open ? 'block' : 'hidden'}`}>
@@ -140,9 +140,7 @@ export default function SingleWork({ project }) {
   //   initialData: data,
   //   enabled: preview,
   // });
-
-  console.log('project', project);
-
+  
   return (
     <>
       <section>
@@ -176,14 +174,13 @@ export default function SingleWork({ project }) {
         </div>
       </section>
 
-      <section className="custom-sec gallery-section space-y-[4px]">
+      <section className="custom-sec gallery-section gap-x-2 space-y-[4px]">
         {
           project.gallery?.images.map((img, index) => {
-
             if (img.size === "half") {
               return (
-                <div className="inline-block w-1/2 mt-0 halfimage" key={index}>
-                  <figure className="relative mt-[5px] gallery ">
+                <div className="inline-block w-1/2 p-1 mt-0 halfimage" key={index}>
+                  <figure className="relative mt-[5px] gallery"> 
                     <OwnImage url={img.asset.url} alt="gallery4"></OwnImage>
                   </figure>
                 </div>
