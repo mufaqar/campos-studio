@@ -1,7 +1,6 @@
 import Hero from '../components/hero';
 import WorkBox from '../components/work-box';
 import { sanityClient } from '../lib/sanity';
-import { useSelector } from 'react-redux'
 
 // sanity Queries 
 const projectQuery = `*[_type == "projects"]{
@@ -33,6 +32,7 @@ export default function Hippo({projects}) {
           </p>
         </div>
       </section>
+
 
       <section className="custom-sec">
         {
