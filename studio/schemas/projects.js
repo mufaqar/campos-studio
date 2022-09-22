@@ -118,7 +118,12 @@ export default {
                 {
                   name: 'alt',
                   type: 'string',
-                  title: 'Alternative text',
+                  title: 'Alternative2 text',
+                },
+                {
+                  name: 'tag',
+                  type: 'string',
+                  title: 'Tag',
                 },
               ],
             },
