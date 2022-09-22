@@ -167,12 +167,17 @@ summary::marker {
   margin-top: 9px !important;
 }
 
-.gallery-section > .halfimage:nth-child(even) {
-  padding-right: 4.5px;
-  padding-top: 4.5px;
+.halfimage{
+  position: relative;
+  padding-top: 6px;
 }
-
-.gallery-section > .halfimage:nth-child(odd) {
-  padding-left: 4.5px;
-  padding-top: 4.5px;
+.gallery-section > .halfimage::after{
+  content: '';
+  width: 9px;
+  height: 100%;
+  background: white;
+  position: absolute;
+  z-index: 10;
+  right: -9px;
+  top:0;
 }
