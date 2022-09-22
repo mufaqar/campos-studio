@@ -162,3 +162,9 @@ summary::marker {
 .navlinks{
   font-size: 6vw !important;
 }
+.gallery-section  .halfimage:nth-child(even) {
+  padding-right: 6px;
+}
+.gallery-section  .halfimage:nth-child(odd) {
+  padding-left: 6px;
+}

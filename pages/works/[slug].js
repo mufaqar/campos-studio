@@ -1,11 +1,5 @@
 import { useState } from 'react';
 import Image from 'next/image';
-import Gallery1 from '../../public/images/gallery1.png';
-import Gallery2 from '../../public/images/gallery2.png';
-import Gallery3 from '../../public/images/gallery3.png';
-import Gallery4 from '../../public/images/gallery4.png';
-import Gallery5 from '../../public/images/gallery5.png';
-import Gallery6 from '../../public/images/gallery6.png';
 import Arrow from '../../public/images/Arrow.png';
 import Link from 'next/link';
 import WorkBox from '../../components/work-box';
@@ -33,8 +27,8 @@ const projectSlugQuery = `*[_type == "projects" && slug.current == $slug][0]{
     images[]{
       asset->{
         url,
-      }
-     
+      },
+      size
     }
   },
   links[]{
@@ -73,8 +67,8 @@ const projectSlugQuery = `*[_type == "projects" && slug.current == $slug][0]{
 }`;
 
 function FullContent({ open, setOpen, project }) {
-  console.log("🚀 ~ file: [slug].js ~ line 77 ~ FullContent ~ project", project)
-  
+  console.log("🚀 ~ file: [slug].js ~ line 77 ~ FullContent ~ project", project.gallery.images)
+
   return (
     <div className={`${open ? 'block' : 'hidden'}`}>
       <div className="border-b-2 border-black">
@@ -109,16 +103,16 @@ function FullContent({ open, setOpen, project }) {
         <li className="py-2 text-left border-b-2 border-black">
           <p className="font-FoundersGroteskMedium lg:text-[21px]">Team</p>
           <div className='flex justify-between'>
-          {project.teammember?.map((team, index) => {
-            return (
-              <p
-                key={index}
-                className="font-FoundersGroteskRegular lg:text-[21px] flex justify-between"
-              >
-                <span>{team?.member_name}</span>
-              </p>
-            );
-          })}
+            {project.teammember?.map((team, index) => {
+              return (
+                <p
+                  key={index}
+                  className="font-FoundersGroteskRegular lg:text-[21px] flex justify-between"
+                >
+                  <span>{team?.member_name}</span>
+                </p>
+              );
+            })}
           </div>
         </li>
         <li className="py-2 text-left border-b-2 border-black">
@@ -152,7 +146,7 @@ export default function SingleWork({ project }) {
   return (
     <>
       <section>
-        <OwnImage url={project.featureimage?.asset.url} alt={project.title}/>
+        <OwnImage url={project.featureimage?.asset.url} alt={project.title} />
       </section>
 
       <section className="custom-sec py-7">
@@ -183,29 +177,45 @@ export default function SingleWork({ project }) {
       </section>
 
       <section className="custom-sec gallery-section space-y-[4px]">
-        {project.gallery?.images.slice(0, 3).map((img, index) => (
-          <figure
-            key={index}
-          >
-            <OwnImage url={img.asset.url} alt="gallery1" ></OwnImage>
-          </figure>
-        ))}
+        {
+          // project.gallery.images.size ? console.log('half') : ''
+          project.gallery?.images.map((img, index) => {
 
-        <div className="grid grid-cols-1 gap-[6px] lg:gap-[9px] lg:grid-cols-2 md:grid-cols-2">
+            if (img.size === "half") {
+              return (
+                <div className="inline-block w-1/2 gap-x-2 halfimage">
+                  <figure key={index} className="relative mt-2 gallery ">
+                    <OwnImage url={img.asset.url} alt="gallery4"></OwnImage>
+                  </figure>
+                </div>
+              )
+            } else {
+              return (
+                <figure key={index}>
+                  <OwnImage url={img.asset.url} alt="gallery1" ></OwnImage>
+                </figure>
+              )
+            }
+
+          })
+
+        }
+
+        {/* <div className="grid grid-cols-1 gap-[6px] lg:gap-[9px] lg:grid-cols-2 md:grid-cols-2">
           {project.gallery?.images.slice(3, 5).map((img, index) => (
             <figure key={index} className="relative mt-2 gallery">
               <OwnImage url={img.asset.url} alt="gallery4"></OwnImage>
             </figure>
           ))}
-        </div>
+        </div> */}
 
-        {project.gallery?.images
+        {/* {project.gallery?.images
           .slice(5, project.gallery?.images.length)
           .map((img, index) => (
             <figure key={index}>
               <OwnImage url={img.asset.url} alt="gallery6"></OwnImage>
             </figure>
-          ))}
+          ))} */}
       </section>
       <section className="custom-sec">
         <div className="lg:w-[899px] md:w-[683px] w-full mx-auto">
