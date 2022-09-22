@@ -182,17 +182,19 @@ export default function SingleWork({ project }) {
 
             if (img.size === "half") {
               return (
-                <div className="inline-block w-1/2 gap-x-2 halfimage" key={index}>
-                  <figure className="relative mt-2 gallery ">
+                <div className="inline-block w-1/2 mt-0 halfimage" key={index}>
+                  <figure className="relative mt-[5px] gallery ">
                     <OwnImage url={img.asset.url} alt="gallery4"></OwnImage>
                   </figure>
                 </div>
               )
             } else {
               return (
-                <figure key={index}>
+               <div className='fullimage'>
+                 <figure key={index}>
                   <OwnImage url={img.asset.url} alt="gallery1" ></OwnImage>
                 </figure>
+               </div>
               )
             }
           })
