@@ -19,17 +19,15 @@ const projectQuery = `*[_type == "projects"]{
 
 export default function Hippo({projects}) {
 
-  const state = useSelector((state) => state.hippo.value)
+  
   
   return (
     <>
-      <div className={state ? 'block' : 'hidden'}>
-        <Hero />
-      </div>
       
-      <section className="custom-sec h-[692px] flex items-center lg:ml-[21%]">
+      
+      <section className="custom-sec h-screen flex items-center lg:ml-[21%]">
         <div className="flex items-center ">
-          <p className="font-SignifierLight lg:text-[26px] md:text-[32px] text-[18px] leading-[33.62px] lg:w-[1071px] md:w-[877px] w-[233px]">
+          <p className="font-SignifierLight lg:text-[26px] md:text-[32px] text-[18px] leading-[33.62px] ">
             Architecture informed by <br></br>critical regionalism in the
             expanded field
           </p>
