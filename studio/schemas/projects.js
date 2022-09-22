@@ -121,9 +121,17 @@ export default {
                   title: 'Alternative2 text',
                 },
                 {
-                  name: 'tag',
-                  type: 'string',
-                  title: 'Tag',
+                  name: "size",
+                  title: "Size",
+                  description: "Choose a Size",
+                  type: "string",
+                  options: {
+                    layout: "radio",
+                    list: [
+                      { title: "Full", value: "full" },
+                      { title: "Half", value: "half" },
+                    ],
+                  },
                 },
               ],
             },

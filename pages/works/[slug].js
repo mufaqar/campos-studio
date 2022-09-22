@@ -32,8 +32,9 @@ const projectSlugQuery = `*[_type == "projects" && slug.current == $slug][0]{
   gallery{
     images[]{
       asset->{
-        url
+        url,
       }
+     
     }
   },
   links[]{
@@ -72,6 +73,8 @@ const projectSlugQuery = `*[_type == "projects" && slug.current == $slug][0]{
 }`;
 
 function FullContent({ open, setOpen, project }) {
+  console.log("🚀 ~ file: [slug].js ~ line 77 ~ FullContent ~ project", project)
+  
   return (
     <div className={`${open ? 'block' : 'hidden'}`}>
       <div className="border-b-2 border-black">
@@ -191,7 +194,7 @@ export default function SingleWork({ project }) {
         <div className="grid grid-cols-1 gap-[6px] lg:gap-[9px] lg:grid-cols-2 md:grid-cols-2">
           {project.gallery?.images.slice(3, 5).map((img, index) => (
             <figure key={index} className="relative mt-2 gallery">
-              <Image src={Gallery4} alt="gallery4"></Image>
+              <OwnImage url={img.asset.url} alt="gallery4"></OwnImage>
             </figure>
           ))}
         </div>
@@ -200,7 +203,7 @@ export default function SingleWork({ project }) {
           .slice(5, project.gallery?.images.length)
           .map((img, index) => (
             <figure key={index}>
-              <OwnImage url={Gallery6} alt="gallery6"></OwnImage>
+              <OwnImage url={img.asset.url} alt="gallery6"></OwnImage>
             </figure>
           ))}
       </section>
