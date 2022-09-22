@@ -9,7 +9,7 @@ export default function WorkBox({title, imageURL, imageCaption, slug}) {
         <div>
           <Link href={`/works/${slug}`}>
             <figure className="cursor-pointer md:pr-[30%]">
-              <OwnImage url={imageURL} altText={imageCaption}/>
+              <OwnImage url={imageURL} alt={imageCaption}/>
             </figure>
           </Link>
           <h2 className="font-FoundersGroteskMedium cursor-pointer lg:text-[65px] md:text-[51px] text-[42px] leading-[42px] md:leading-[77px]">

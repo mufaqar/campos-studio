@@ -11,6 +11,7 @@ import Link from 'next/link';
 import WorkBox from '../../components/work-box';
 import AudioPlayer from '../../components/audioPlayer';
 import { sanityClient, usePreviewSubscription } from '../../lib/sanity';
+import OwnImage from '../../components/OwnImage';
 
 const projectSlugQuery = `*[_type == "projects" && slug.current == $slug][0]{
   Collaborators,
@@ -147,16 +148,8 @@ export default function SingleWork({ project }) {
 
   return (
     <>
-      <section
-        className="workBanerBg lg:h-screen md:h-[800px] h-[375px]"
-        style={{
-          backgroundImage: `url(${project.featureimage?.asset.url})`,
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center',
-        }}
-      >
-        <div></div>
+      <section>
+        <OwnImage url={project.featureimage?.asset.url} alt={project.title}/>
       </section>
 
       <section className="custom-sec py-7">
@@ -190,9 +183,8 @@ export default function SingleWork({ project }) {
         {project.gallery?.images.slice(0, 3).map((img, index) => (
           <figure
             key={index}
-            className="relative gallery gtop lg:h-[900px] md:h-[670px] h-[240px] sm:h-[480px] mb-3"
           >
-            <Image src={img.asset.url} alt="gallery1" layout="fill"></Image>
+            <OwnImage url={img.asset.url} alt="gallery1" ></OwnImage>
           </figure>
         ))}
 
@@ -207,8 +199,8 @@ export default function SingleWork({ project }) {
         {project.gallery?.images
           .slice(5, project.gallery?.images.length)
           .map((img, index) => (
-            <figure key={index} className="relative gallery">
-              <Image src={Gallery6} alt="gallery6"></Image>
+            <figure key={index}>
+              <OwnImage url={Gallery6} alt="gallery6"></OwnImage>
             </figure>
           ))}
       </section>
