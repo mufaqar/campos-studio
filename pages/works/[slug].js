@@ -187,8 +187,8 @@ export default function SingleWork({ project }) {
               )
             } else {
               return (
-               <div className='fullimage'>
-                 <figure key={index}>
+               <div className='fullimage' key={index}>
+                 <figure>
                   <OwnImage url={img.asset.url} alt="gallery1" ></OwnImage>
                 </figure>
                </div>
