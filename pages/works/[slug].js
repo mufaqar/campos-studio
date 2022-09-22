@@ -66,8 +66,10 @@ const projectSlugQuery = `*[_type == "projects" && slug.current == $slug][0]{
 }`;
 
 function FullContent({ open, setOpen, project }) {
-  console.log("🚀 ~ file: [slug].js ~ line 77 ~ FullContent ~ project", project.gallery.images)
-  
+  console.log(
+    '🚀 ~ file: [slug].js ~ line 77 ~ FullContent ~ project',
+    project.gallery.images
+  );
 
   return (
     <div className={`${open ? 'block' : 'hidden'}`}>
@@ -102,7 +104,7 @@ function FullContent({ open, setOpen, project }) {
         </li>
         <li className="py-2 text-left border-b-2 border-black">
           <p className="font-FoundersGroteskMedium lg:text-[21px]">Team</p>
-          <div className='flex justify-between'>
+          <div className="flex justify-between">
             {project.teammember?.map((team, index) => {
               return (
                 <p
@@ -140,7 +142,7 @@ export default function SingleWork({ project }) {
   //   initialData: data,
   //   enabled: preview,
   // });
-  
+
   return (
     <>
       <section>
@@ -175,28 +177,28 @@ export default function SingleWork({ project }) {
       </section>
 
       <section className="custom-sec gallery-section gap-x-2 space-y-[4px]">
-        {
-          project.gallery?.images.map((img, index) => {
-            if (img.size === "half") {
-              return (
-                <div className="inline-block w-1/2 p-1 mt-0 halfimage" key={index}>
-                  <figure className="relative mt-[5px] gallery"> 
-                    <OwnImage url={img.asset.url} alt="gallery4"></OwnImage>
-                  </figure>
-                </div>
-              )
-            } else {
-              return (
-               <div className='fullimage' key={index}>
-                 <figure>
-                  <OwnImage url={img.asset.url} alt="gallery1" ></OwnImage>
+        {project.gallery?.images.map((img, index) => {
+          if (img.size === 'half') {
+            return (
+              <div
+                className="inline-block w-1/2 p-1 mt-0 halfimage  "
+                key={index}
+              >
+                <figure className="relative gallery">
+                  <OwnImage url={img.asset.url} alt="gallery4"></OwnImage>
                 </figure>
-               </div>
-              )
-            }
-          })
-        }
-
+              </div>
+            );
+          } else {
+            return (
+              <div className="fullimage" key={index}>
+                <figure>
+                  <OwnImage url={img.asset.url} alt="gallery1"></OwnImage>
+                </figure>
+              </div>
+            );
+          }
+        })}
       </section>
       <section className="custom-sec">
         <div className="lg:w-[899px] md:w-[683px] w-full mx-auto">
@@ -259,6 +261,6 @@ export async function getStaticProps({ params }) {
       // data: { project },
       project,
       // preview: true
-    }
-  }
+    },
+  };
 }

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* import css files  */
-@import url("./mediaQueries.css");
+@import url('./mediaQueries.css');
 
 @layer components {
   .nav_item {
@@ -17,7 +17,7 @@
     @apply inline-block p-2 mr-10 text-3xl border border-black rounded-full lg:text-4xl lg:p-3;
   }
   .input_field {
-    @apply outline-none border-none placeholder-black placeholder:text-[21px] mt-1
+    @apply outline-none border-none placeholder-black placeholder:text-[21px] mt-1;
   }
 }
 
@@ -29,34 +29,34 @@
   background-position-y: bottom;
 } */
 
-body{
+body {
   overflow-x: hidden;
 }
 
 summary::marker {
-  content: "";
+  content: '';
 }
 .gallery > span {
   min-width: 100%;
 }
 @font-face {
-  font-family: "FoundersGrotesk-Medium";
-  src: url("../public/fonts/FoundersGrotesk-Medium.ttf");
+  font-family: 'FoundersGrotesk-Medium';
+  src: url('../public/fonts/FoundersGrotesk-Medium.ttf');
 }
 
 @font-face {
-  font-family: "FoundersGrotesk-Regular";
-  src: url("../public/fonts/FoundersGrotesk-Regular.ttf");
+  font-family: 'FoundersGrotesk-Regular';
+  src: url('../public/fonts/FoundersGrotesk-Regular.ttf');
 }
 
 @font-face {
-  font-family: "Signifier-Regular";
-  src: url("../public/fonts/Signifier-Regular.ttf");
+  font-family: 'Signifier-Regular';
+  src: url('../public/fonts/Signifier-Regular.ttf');
 }
 
 @font-face {
-  font-family: "Signifier-Light";
-  src: url("../public/fonts/Signifier-Light.ttf");
+  font-family: 'Signifier-Light';
+  src: url('../public/fonts/Signifier-Light.ttf');
 }
 
 /* custom css */
@@ -150,20 +150,28 @@ summary::marker {
 
 @media (min-width: 340px) and (max-width: 468px) {
   .workbox {
-    height: 340px !important
+    height: 340px !important;
   }
 }
 @media (min-width: 468px) and (max-width: 640px) {
   .workbox {
-    height: 400px !important
+    height: 400px !important;
   }
 }
 
-.navlinks{
+.navlinks {
   font-size: 6vw !important;
 }
 
-
-.gallery-section .fullimage{
+.gallery-section .fullimage {
   margin-top: 9px !important;
+}
+
+.gallery-section > .halfimage:nth-child(even) {
+  padding-right: 4.5px;
+  padding-top: 4.5px;
+}
+
+.gallery-section > .halfimage:nth-child(odd) {
+  padding-left: 4.5px;
 }
