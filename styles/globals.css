@@ -174,4 +174,5 @@ summary::marker {
 
 .gallery-section > .halfimage:nth-child(odd) {
   padding-left: 4.5px;
+  padding-top: 4.5px;
 }

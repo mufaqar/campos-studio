@@ -181,7 +181,7 @@ export default function SingleWork({ project }) {
           if (img.size === 'half') {
             return (
               <div
-                className="inline-block w-1/2 p-1 mt-0 halfimage  "
+                className="inline-block w-1/2 mt-0 halfimage "
                 key={index}
               >
                 <figure className="relative gallery">
@@ -191,7 +191,7 @@ export default function SingleWork({ project }) {
             );
           } else {
             return (
-              <div className="fullimage" key={index}>
+              <div className="mt-0 fullimage" key={index}>
                 <figure>
                   <OwnImage url={img.asset.url} alt="gallery1"></OwnImage>
                 </figure>
@@ -201,7 +201,7 @@ export default function SingleWork({ project }) {
         })}
       </section>
       <section className="custom-sec">
-        <div className="lg:w-[899px] md:w-[683px] w-full mx-auto">
+        <div className="lg:w-[899px] md:w-[683px] w-full  mx-auto">
           <ul>
             {project.links?.map((link, index) => (
               <li
