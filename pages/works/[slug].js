@@ -178,13 +178,12 @@ export default function SingleWork({ project }) {
 
       <section className="custom-sec gallery-section space-y-[4px]">
         {
-          // project.gallery.images.size ? console.log('half') : ''
           project.gallery?.images.map((img, index) => {
 
             if (img.size === "half") {
               return (
-                <div className="inline-block w-1/2 gap-x-2 halfimage">
-                  <figure key={index} className="relative mt-2 gallery ">
+                <div className="inline-block w-1/2 gap-x-2 halfimage" key={index}>
+                  <figure className="relative mt-2 gallery ">
                     <OwnImage url={img.asset.url} alt="gallery4"></OwnImage>
                   </figure>
                 </div>
@@ -196,26 +195,9 @@ export default function SingleWork({ project }) {
                 </figure>
               )
             }
-
           })
-
         }
 
-        {/* <div className="grid grid-cols-1 gap-[6px] lg:gap-[9px] lg:grid-cols-2 md:grid-cols-2">
-          {project.gallery?.images.slice(3, 5).map((img, index) => (
-            <figure key={index} className="relative mt-2 gallery">
-              <OwnImage url={img.asset.url} alt="gallery4"></OwnImage>
-            </figure>
-          ))}
-        </div> */}
-
-        {/* {project.gallery?.images
-          .slice(5, project.gallery?.images.length)
-          .map((img, index) => (
-            <figure key={index}>
-              <OwnImage url={img.asset.url} alt="gallery6"></OwnImage>
-            </figure>
-          ))} */}
       </section>
       <section className="custom-sec">
         <div className="lg:w-[899px] md:w-[683px] w-full mx-auto">
