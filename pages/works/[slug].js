@@ -176,7 +176,7 @@ export default function SingleWork({ project }) {
         </div>
       </section>
 
-      <section className="custom-sec gallery-section gap-x-2 space-y-[4px]">
+      <section className="custom-sec gallery-section">
         {project.gallery?.images.map((img, index) => {
           if (img.size === 'half') {
             return (

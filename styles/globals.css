@@ -169,7 +169,7 @@ summary::marker {
 
 .halfimage{
   position: relative;
-  padding-top: 6px;
+  padding-top: 9px;
 }
 .gallery-section > .halfimage::after{
   content: '';
