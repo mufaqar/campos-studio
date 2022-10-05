@@ -18,7 +18,7 @@ export default function Contact({ status, message, onValidated }) {
 
   return (
     <>
-      <section className="mt-48 custom-sec py-7">
+      <section className="mt-48 custom-sec min-h-[240px] pt-7">
         <div className="grid gap-12 lg:grid-cols-3 md:grid-cols-1">
           <div className="lg:w-full md:w-1/2">
             <h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[21px] text-[21px] border-b-2 border-black">
@@ -65,7 +65,7 @@ export default function Contact({ status, message, onValidated }) {
           </div>
         </div>
       </section>
-      <section className="mt-16 custom-sec py-7">
+      <section className="custom-sec py-7">
         <div className="grid gap-12 lg:grid-cols-3 md:grid-cols-1">
           <div className="flex order-3 gap-0 lg:w-full md:w-full md:gap-64 lg:order-1 ">
             <div className="w-full md:w-1/2">

@@ -1,6 +1,6 @@
 .imageContainer {
   max-width: 120px;
-  width:  12vw;
+  width:  11vw;
 }
 
 .imageContainer > span {
@@ -14,3 +14,9 @@
   height: unset !important;
 }
 
+@media(min-width: 650px) and (max-width: 1200){
+  .imageContainer {
+    max-width: 120px;
+    width:  9.5vw;
+  }
+}

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Hero from '../components/hero';
 import WorkBox from '../components/work-box';
 import { sanityClient } from '../lib/sanity';
@@ -16,14 +17,14 @@ const projectQuery = `*[_type == "projects"]{
 
 
 
-export default function Hippo({projects}) {
+export default function Hippo({ projects }) {
 
-  
-  
+ 
+
   return (
     <>
       
-      
+
       <section className="custom-sec h-screen flex items-center lg:ml-[21%]">
         <div className="flex items-center ">
           <p className="font-SignifierLight lg:text-[26px] md:text-[32px] text-[18px] leading-[33.62px] ">
@@ -36,8 +37,8 @@ export default function Hippo({projects}) {
 
       <section className="custom-sec">
         {
-          projects.map((item,index)=>(
-            <WorkBox title={item.title} imageURL={item.featureimage.asset.url} imageCaption={item.featureimage.caption} slug={item.slug.current}  key={index}/>
+          projects.map((item, index) => (
+            <WorkBox title={item.title} imageURL={item.featureimage.asset.url} imageCaption={item.featureimage.caption} slug={item.slug.current} key={index} />
           ))
         }
       </section>

@@ -82,6 +82,10 @@ export default function Studio({
     setCountUpdate(id);
   };
 
+  const TeamDetailClick=()=>{
+    setOpenTeamDetails(null);
+  }
+
   return (
     <>
       <section className="mt-40 custom-sec">
@@ -321,6 +325,7 @@ export default function Studio({
                   <Team src={item.profileimage.asset.url} />
                 </div>
                 <div
+                  onClick={()=>TeamDetailClick()}
                   className={`${
                     openTeamDetails === item._id ? 'block' : 'hidden'
                   } bg-black overflow-y-scroll -top-[26px] absolute lg:h-[341px] xl:h-[360px] lg:left-[102.5%] w-screen md:h-[318px] z-10 md:left-[103%] text-white custom-sec py-7`}

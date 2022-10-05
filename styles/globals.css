@@ -181,3 +181,6 @@ summary::marker {
   right: -9px;
   top:0;
 }
+#waveform>wave::wave-webkit-scrollbar {
+  display: none;
+}
