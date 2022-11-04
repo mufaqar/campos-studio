@@ -37,9 +37,16 @@ export default function Header() {
 
     function handleClick() {
         router.push('/');
-        setShowHippo(!showHippo);
+        // setShowHippo(!showHippo);
     }
 
+    const MouseEnter = () => {
+        router.pathname === '/' && setShowHippo(true)
+    }
+
+    const MouseLeave = () => {
+        router.pathname === '/' && setShowHippo(false)
+    }
 
 
 
@@ -53,7 +60,7 @@ export default function Header() {
             <nav className={`mt-8 md:mt-3 lg:mt-0 min-w-full max-w-full lg:h-[106px] md:h-[91px] h-[50px] flex items-center px-[9px] top-0 z-10 ${headerSticky ? 'fixed' : 'absolute'}`}>
                 <div className="flex items-center justify-between max-w-full min-w-full py-2 font-FoundersGroteskMedium ">
                     <div>
-                        <div className="flex" onClick={handleClick} >
+                        <div className="flex" onMouseEnter={MouseEnter} onMouseLeave={MouseLeave} onClick={handleClick}>
                             <div className={`lg:mt-2 cursor-pointer ${styles.imageContainer}`}>
                                 <Image src="/images/logo.png" alt="logo" layout='fill' className={styles.image}></Image>
                             </div>

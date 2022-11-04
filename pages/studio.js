@@ -61,10 +61,7 @@ export default function Studio({
   publications,
   books,
 }) {
-  console.log('publications', publications);
-  console.log('books', books);
-  console.log('team', team);
-  console.log('exhibitionsAndTalks', exhibitionsAndTalks);
+
 
   const [openTeamDetails, setOpenTeamDetails] = useState(null); // To handel Team Section
   const [pressActive, setPressActive] = useState(false);

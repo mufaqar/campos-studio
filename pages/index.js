@@ -25,7 +25,7 @@ export default function Hippo({ projects }) {
     <>
       
 
-      <section className="custom-sec h-screen flex items-center lg:ml-[21%]">
+      <section className="custom-sec h-screen flex items-center lg:ml-[18%] 2xl:ml-[16%]">
         <div className="flex items-center ">
           <p className="font-SignifierLight lg:text-[26px] md:text-[32px] text-[18px] leading-[33.62px] ">
             Architecture informed by <br></br>critical regionalism in the

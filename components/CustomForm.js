@@ -68,7 +68,7 @@ export default function CustomForm({
             onChange={(e) => setFirstName(e.target.value)}
             type="text"
             value={firstName}
-            className="input_field w-[70%] bg-transparent placeholder:text-lg placeholder:md:text-xl font-FoundersGroteskRegular lg:text-[21px]"
+            className="input_field w-[70%] bg-transparent placeholder:text-base md:placeholder:text-xl font-FoundersGroteskRegular lg:text-[21px]"
             placeholder="Name"
             isRequired
           />
@@ -84,7 +84,7 @@ export default function CustomForm({
             onChange={(e) => setEmail(e.target.value)}
             type="email"
             value={email}
-            className="input_field w-[70%] bg-transparent placeholder:text-lg placeholder:md:text-xl font-FoundersGroteskRegular lg:text-[21px]"
+            className="input_field w-[70%] bg-transparent placeholder:text-base md:placeholder:text-xl font-FoundersGroteskRegular lg:text-[21px]"
             placeholder="Email"
             isRequired
           />
@@ -100,14 +100,14 @@ export default function CustomForm({
             onChange={(e) => setCountry(e.target.value)}
             type="text"
             value={country}
-            className="input_field w-[70%] bg-transparent placeholder:text-lg placeholder:md:text-xl font-FoundersGroteskRegular lg:text-[21px]"
+            className="input_field w-[70%] bg-transparent placeholder:text-base md:placeholder:text-xl font-FoundersGroteskRegular lg:text-[21px]"
             placeholder="Country"
             isRequired
           />
           <p
             className={countryExist ? 'block text-right' : 'hidden'}
           >
-            Enter an email address
+            Required Field
           </p>
         </div>
       </div>
@@ -116,7 +116,7 @@ export default function CustomForm({
         label="subscribe"
         type="submit"
         value="Enter"
-        className={`text-lg cursor-pointer md:text-xl input_field ${
+        className={`text-base cursor-pointer lg:text-xl input_field ${
           hideFields ? 'block' : 'hidden'
         }`}
         formValues={[email, firstName, country]}
