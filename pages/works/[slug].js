@@ -211,7 +211,7 @@ export default function SingleWork({ project }) {
                 <a href={link.link} target="_blank" rel="noreferrer">
                   <p className="flex items-center cursor-pointer lg:gap-10">
                     {link.hading}
-                    <Image src={Arrow} alt="Arrow"></Image>
+                    {/* <Image src={Arrow} alt="Arrow"></Image> */}
                   </p>
                 </a>
                 <p className="text-xs font-FoundersGroteskRegular lg:text-lg md:text-lg">
