@@ -325,7 +325,7 @@ export default function Studio({
                   onClick={()=>TeamDetailClick()}
                   className={`${
                     openTeamDetails === item._id ? 'block' : 'hidden'
-                  } bg-black overflow-y-scroll -top-[26px] absolute lg:h-[341px] xl:h-[360px] lg:left-[102.5%] w-screen md:h-[318px] z-10 md:left-[103%] text-white custom-sec py-7`}
+                  } bg-black overflow-y-scroll -top-[26px] absolute h-full lg:left-[102.5%] w-screen  z-10 md:left-[103%] text-white custom-sec py-7`}
                 >
                   <div className="flex flex-col px-5 lg:flex-row lg:gap-12">
                     <div className="lg:w-[200px] w-full flex flex-col justify-between mb-3">

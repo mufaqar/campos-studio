@@ -5,7 +5,7 @@ export default function Team({ src, item }) {
   return (
     <>
       <div className="">
-        <figure className="relative lg:h-[341px] xl:h-[360px] md:h-[318px] w-full gallery overflow-hidden">
+        <figure className="relative w-full overflow-hidden gallery">
           {/* <Image
             src={src}
             layout="fill"
