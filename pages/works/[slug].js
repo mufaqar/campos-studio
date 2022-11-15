@@ -66,10 +66,6 @@ const projectSlugQuery = `*[_type == "projects" && slug.current == $slug][0]{
 }`;
 
 function FullContent({ open, setOpen, project }) {
-  console.log(
-    '🚀 ~ file: [slug].js ~ line 77 ~ FullContent ~ project',
-    project.gallery.images
-  );
 
   return (
     <div className={`${open ? 'block' : 'hidden'}`}>
@@ -137,11 +133,6 @@ function FullContent({ open, setOpen, project }) {
 
 export default function SingleWork({ project }) {
   const [open, setOpen] = useState(false);
-  // const { data: project } = usePreviewSubscription(projectSlugQuery, {
-  //   params: { slug: data.project?.slug.current },
-  //   initialData: data,
-  //   enabled: preview,
-  // });
 
   return (
     <>
@@ -149,20 +140,20 @@ export default function SingleWork({ project }) {
         <OwnImage url={project.featureimage?.asset.url} alt={project.title} />
       </section>
 
-      <section className="custom-sec py-7">
+      <section className="custom-sec">
         <div className="lg:w-[899px] md:w-[683px] w-full mx-auto">
-          <h2 className="font-FoundersGroteskMedium lg:text-[60px] md:text-[56px] text-[36px] leading-[70px] mb-8">
+          <h2 className="font-FoundersGroteskMedium text-center lg:text-[60px] md:text-[56px] text-[36px] leading-[70px]">
             {project.title}
           </h2>
           <div className="">
             <AudioPlayer audioURL={project.audio.asset.url} />
           </div>
-          <div className="mb-4">
+          <div className="mt-[21px]">
             <p className="font-FoundersGroteskRegular lg:text-[23px] md:text-[22px] text-lg">
               {project?.excerpt}
             </p>
           </div>
-          <div className="text-center">
+          <div className="text-center my-[21px]">
             <button
               className="font-FoundersGroteskMedium lg:text-lg md:text-[17px] text-[13px]"
               onClick={() => {
@@ -176,7 +167,7 @@ export default function SingleWork({ project }) {
         </div>
       </section>
 
-      <section className="custom-sec gallery-section">
+      <section className="custom-sec gallery-section mt-0">
         {project.gallery?.images.map((img, index) => {
           if (img.size === 'half') {
             return (
@@ -206,7 +197,7 @@ export default function SingleWork({ project }) {
             {project.links?.map((link, index) => (
               <li
                 key={index}
-                className="font-FoundersGroteskMedium lg:text-[36px] md:text-[36px] text-[24px] mb-10"
+                className="font-FoundersGroteskMedium lg:text-[36px] md:text-[36px] text-[24px] mb-[13px]"
               >
                 <a href={link.link} target="_blank" rel="noreferrer">
                   <p className="flex items-center cursor-pointer lg:gap-10">
@@ -220,7 +211,7 @@ export default function SingleWork({ project }) {
               </li>
             ))}
           </ul>
-          <button className="bg-[#FCB450] w-5 h-5"></button>
+          <button className="bg-[#FCB450] w-[18px] h-[18px]"></button>
         </div>
       </section>
 

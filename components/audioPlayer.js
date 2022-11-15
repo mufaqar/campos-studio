@@ -348,11 +348,11 @@ function AudioPlayer({ audioURL }) {
 
     return (
         <>
-            <div className="flex items-center justify-between">
-                <p className="md:text-2xl">Hear Campos Studio talk about this project </p>
-                <div className="md:text-2xl progress">( {result} )</div>
+            <div className="flex items-center justify-center mt-[21px]">
+                {/* <p className="md:text-2xl">Hear Campos Studio talk about this project </p> */}
+                <div className="md:text-2xl progress"> {result} </div>
             </div>
-            <div className="my-10">
+            <div className="my-[21px]">
                 {/* <div onClick={back30}>Back 30</div> */}
                 {/* <div onClick={forward30}>Forward 30</div> */}
 
