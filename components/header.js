@@ -57,8 +57,8 @@ export default function Header() {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Head>
 
-            <nav className={`mt-8 md:mt-3 lg:mt-0 min-w-full max-w-full lg:h-[106px] md:h-[91px] h-[50px] flex items-center px-[9px] top-0 z-10 ${headerSticky ? 'fixed' : 'absolute'}`}>
-                <div className="flex items-center justify-between max-w-full min-w-full py-2 font-FoundersGroteskMedium ">
+            <nav className={`mt-[9px] min-w-full max-w-full  flex items-center px-[9px] top-0 z-10 ${headerSticky ? 'fixed' : 'absolute'}`}>
+                <div className="flex items-center justify-between max-w-full min-w-full font-FoundersGroteskMedium ">
                     <div>
                         <div className="flex" onMouseEnter={MouseEnter} onMouseLeave={MouseLeave} onClick={handleClick}>
                             <div className={`lg:mt-2 cursor-pointer ${styles.imageContainer}`}>
@@ -68,13 +68,13 @@ export default function Header() {
                     </div>
 
                     <Link href="/works" >
-                        <a className='navlinks'>WORK</a>
+                        <a className='navlinks text-[6.8vw] sm:text-[7.2vw] leading-[0px]'>WORK</a>
                     </Link>
                     <Link href="/studio">
-                        <a className='navlinks'>STUDIO</a>
+                        <a className='navlinks text-[6.8vw] sm:text-[7.2vw]  leading-[0px]'>STUDIO</a>
                     </Link>
                     <Link href="/contact">
-                        <a className='navlinks'>CONTACT</a>
+                        <a className='navlinks text-[6.8vw] sm:text-[7.2vw]  leading-[0px]'>CONTACT</a>
                     </Link>
                 </div>
             </nav>

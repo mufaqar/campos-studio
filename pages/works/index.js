@@ -19,7 +19,7 @@ export default function index({ projects }) {
   console.log('projects', projects)
   return (
     <>
-      <section className="mt-48 custom-sec">
+      <section className="pt-[24px] md:pt-[38px] lg:pt-[72px] 2xl:pt-[56px] custom-sec">
         {
           projects.map((item,index)=>(
             <WorkBox title={item.title} imageURL={item.featureimage.asset.url} imageCaption={item.featureimage.caption} slug={item.slug.current}  key={index}/>

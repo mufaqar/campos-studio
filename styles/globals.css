@@ -11,7 +11,7 @@
      md:leading-[86.14px] leading-[29.5px];
   }
   .custom-sec {
-    @apply px-[9px] mt-[26px];
+    @apply px-[9px] mt-[42px];
   }
   .contoll-btn {
     @apply inline-block p-2 mr-10 text-3xl border border-black rounded-full lg:text-4xl lg:p-3;

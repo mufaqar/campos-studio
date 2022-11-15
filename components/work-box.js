@@ -5,14 +5,14 @@ import OwnImage from './OwnImage';
 export default function WorkBox({ title, imageURL, imageCaption, slug }) {
   return (
     <>
-      <div className="mt-[60px] mb-2">
+      <div className="mt-[84px] mb-2">
         <div>
           <Link href={`/works/${slug}`}>
             <figure className="cursor-pointer md:pr-[25%]">
               <OwnImage url={imageURL} alt={imageCaption} />
             </figure>
           </Link>
-          <h2 className="font-FoundersGroteskMedium cursor-pointer lg:text-[65px] md:text-[51px] text-[42px] leading-[42px] md:leading-[77px]">
+          <h2 className="font-FoundersGroteskMedium cursor-pointer lg:text-[65px] md:text-[51px] text-[42px] leading-[50px]">
             <Link href={`/works/${slug}`}>
               <span>{title}</span>
             </Link>

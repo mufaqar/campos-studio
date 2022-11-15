@@ -85,7 +85,7 @@ export default function Studio({
 
   return (
     <>
-      <section className="mt-40 custom-sec">
+      <section className="pt-[24px] md:pt-[38px] mt-[42px] lg:pt-[72px] 2xl:pt-[56px] custom-sec">
         <div className="gallery">
           <h2 className="font-FoundersGroteskMedium lg:text-[48px] md:text-[42px] text-[22px]">
             Process
@@ -107,7 +107,7 @@ export default function Studio({
         </div>
       </section>
       {/* Press */}
-      <section className="custom-sec py-7">
+      <section className="custom-sec mt-[42px]">
         <div
           className="flex items-center justify-between"
           onClick={() => setPressActive(!pressActive)}
@@ -124,11 +124,9 @@ export default function Studio({
         >
           <div className="Press-sec">
             <div>
-              <h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[28px] text-[20px]">
-                Publications
-              </h2>
+              {/* <h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[28px] text-[20px]"> Publications </h2> */}
             </div>
-            <div className="grid gap-8 mt-8 lg:grid-cols-4 md:grid-cols-3">
+            <div className="grid gap-[21px] mt-8 lg:grid-cols-4 md:grid-cols-3">
               {publications.map((publication, index) => (
                 <Book
                   icon={publication.image.asset.url}
@@ -141,11 +139,11 @@ export default function Studio({
           </div>
           <div className="mt-8 Books-sec">
             <div>
-              <h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[28px] text-[20px]">
+              {/*<h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[28px] text-[20px]">
                 Books
-              </h2>
+              </h2>*/}
             </div>
-            <div className="grid gap-8 mt-8 lg:grid-cols-4 md:grid-cols-3">
+            <div className="grid gap-[21px] mt-12 lg:grid-cols-4 md:grid-cols-3">
               {books.map((book, index) => (
                 <Book
                   icon={book.image.asset.url}
@@ -156,13 +154,13 @@ export default function Studio({
               ))}
             </div>
           </div>
-          <div className="mt-8 Exhibitions-sec">
+          <div className="mt-[42px] Exhibitions-sec">
             <div>
               <h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[28px] text-[20px]">
                 Exhibitions and Talks
               </h2>
             </div>
-            <div className="grid gap-12 mt-8 eandt lg:grid-cols-5 md:grid-cols-2">
+            <div className="grid gap-[13px] mt-8 eandt lg:grid-cols-5 md:grid-cols-2">
               <div>
                 <p className="font-FoundersGroteskMedium text-[22px]">2019</p>
                 <p className="font-FoundersGroteskMedium text-[18px]">
@@ -296,7 +294,7 @@ export default function Studio({
       </section>
 
       {/* team section  */}
-      <section className="custom-sec py-7">
+      <section className="custom-sec">
         <div>
           <h2 className="font-FoundersGroteskMedium lg:text-[48px] md:text-[42px] text-[22px]">
             Team
@@ -352,7 +350,7 @@ export default function Studio({
         </div>
       </section>
 
-      <section className="py-5 mt-0 custom-sec">
+      <section className="mt-[42px] mb-4 custom-sec">
         <div className="lg:w-[805px] md:w-[754px] w-full">
           <h2 className="font-FoundersGroteskMedium lg:text-4xl md:text-[31px] text-lg">
             Past Collaborators
