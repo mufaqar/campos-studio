@@ -104,6 +104,9 @@ summary::marker {
 #waveform {
   width: 100%;
 }
+#waveform>wave{
+  overflow: hidden !important;
+}
 #waveform > wave > wave {
   border-right: none !important;
 }
