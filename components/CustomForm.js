@@ -73,7 +73,7 @@ export default function CustomForm({
             isRequired
           />
           <p
-            className={firstNameExist ? 'block' : 'hidden'}
+            className={firstNameExist ? 'block text-right' : 'hidden'}
           >
             Required Field
           </p>
@@ -89,7 +89,7 @@ export default function CustomForm({
             isRequired
           />
           <p
-            className={emailExist ? 'block' : 'hidden'}
+            className={emailExist ? 'block text-right' : 'hidden'}
           >
             Required Field
           </p>

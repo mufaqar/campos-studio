@@ -332,11 +332,11 @@ export default function Studio({
                   } bg-black overflow-y-scroll -top-[42px] absolute h-full lg:left-[102.5%] w-screen  z-10 md:left-[103%] text-white custom-sec pl-[18px] pt-[13px]`}
                 >
                   <div className="lg:flex-row lg:gap-12">
-                    <div className=" w-full flex flex-col justify-between mb-3">
-                      <h3 className="text-white font-serif lg:text-[27px] italic md:text-[24px] lg:block hidden">
+                    <div className="w-full flex flex-col justify-between mb-3">
+                      <h3 className="text-white font-normal font-serif lg:text-[27px] italic md:text-[24px] lg:block hidden">
                         {item?.member_name}
                       </h3>
-                      <h3 className="text-white font-serif lg:text-[27px] md:text-[24px] italic lg:hidden block">
+                      <h3 className="text-white font-normal font-serif lg:text-[27px] md:text-[24px] italic lg:hidden block">
                         {item?.member_name}
                       </h3>
                       <p className="text-white font-SignifierRegular lg:text-[18px] md:text-[17px]">
