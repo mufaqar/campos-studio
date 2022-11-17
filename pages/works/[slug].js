@@ -78,19 +78,19 @@ function FullContent({ open, setOpen, project }) {
         </p>
       </div>
       <ul>
-        <li className="py-2 text-left border-b-2 border-black">
+        <li className=" text-left border-b-2 border-black">
           <p className="font-FoundersGroteskMedium lg:text-[21px]">LOCATION</p>
           <p className="font-FoundersGroteskRegular lg:text-[21px]">
             {project?.location}
           </p>
         </li>
-        <li className="py-2 text-left border-b-2 border-black">
+        <li className=" text-left border-b-2 border-black">
           <p className="font-FoundersGroteskMedium lg:text-[21px]">YEAR</p>
           <p className="font-FoundersGroteskRegular lg:text-[21px]">
             {project?.year}
           </p>
         </li>
-        <li className="py-2 text-left border-b-2 border-black">
+        <li className=" text-left border-b-2 border-black">
           <p className="font-FoundersGroteskMedium lg:text-[21px]">
             SQUARE FOOTAGE
           </p>
@@ -98,7 +98,7 @@ function FullContent({ open, setOpen, project }) {
             {project?.area}
           </p>
         </li>
-        <li className="py-2 text-left border-b-2 border-black">
+        <li className=" text-left border-b-2 border-black">
           <p className="font-FoundersGroteskMedium lg:text-[21px]">Team</p>
           <div className="flex justify-between">
             {project.teammember?.map((team, index) => {
@@ -113,7 +113,7 @@ function FullContent({ open, setOpen, project }) {
             })}
           </div>
         </li>
-        <li className="py-2 text-left border-b-2 border-black">
+        <li className=" text-left border-b-2 border-black">
           <p className="font-FoundersGroteskMedium lg:text-[21px]">
             COLLABORATORS
           </p>
