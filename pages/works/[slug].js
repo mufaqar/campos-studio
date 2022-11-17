@@ -70,7 +70,7 @@ function FullContent({ open, setOpen, project }) {
   return (
     <div className={`${open ? 'block' : 'hidden'}`}>
       <div className="border-b-2 border-black">
-        <p className="font-FoundersGroteskRegular lg:text-[23px] md:text-[22px] text-lg text-left mb-4">
+        <p className="font-FoundersGroteskRegular lg:text-[23px] md:text-[22px] text-lg text-left mb-4 -mt-[22px]">
           {project?.detail}
         </p>
         <p className="font-FoundersGroteskRegular lg:text-[23px] md:text-[22px] text-lg text-left mb-7">
@@ -148,12 +148,12 @@ export default function SingleWork({ project }) {
           <div className="">
             <AudioPlayer audioURL={project.audio.asset.url} />
           </div>
-          <div className="mt-[21px]">
+          <div className="mt-[21px] mb-[13px]">
             <p className="font-FoundersGroteskRegular lg:text-[23px] md:text-[22px] text-lg">
               {project?.excerpt}
             </p>
           </div>
-          <div className="text-center my-[21px]">
+          <div className="text-center mb-[42px]">
             <button
               className="font-FoundersGroteskMedium lg:text-lg md:text-[17px] text-[13px]"
               onClick={() => {
