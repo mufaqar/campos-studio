@@ -57,7 +57,7 @@ export default function Contact({ status, message, onValidated }) {
                 </p>
               </div>
             </div>
-            <div className={showForm ? "block lg:absolute" : "hidden"}>
+            <div className={showForm ? "block w-full lg:absolute" : "hidden"}>
               <MailchimpFormContainer
                 sendState={PassState}
                 hideFields={hideFields}

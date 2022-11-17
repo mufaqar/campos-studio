@@ -61,6 +61,7 @@ export default function Studio({
   publications,
   books,
 }) {
+
   const [openTeamDetails, setOpenTeamDetails] = useState(null); // To handel Team Section
   const [pressActive, setPressActive] = useState(false);
   const [countUpdate, setCountUpdate] = useState(null);
@@ -328,21 +329,21 @@ export default function Studio({
                   onClick={() => TeamDetailClick()}
                   className={`${
                     openTeamDetails === item._id ? "block" : "hidden"
-                  } bg-black overflow-y-scroll -top-[42px] absolute h-full lg:left-[102.5%] w-screen  z-10 md:left-[103%] text-white custom-sec py-7`}
+                  } bg-black overflow-y-scroll -top-[42px] absolute h-full lg:left-[102.5%] w-screen  z-10 md:left-[103%] text-white custom-sec pl-[18px] pt-[13px]`}
                 >
-                  <div className="flex flex-col px-5 lg:flex-row lg:gap-12">
-                    <div className="lg:w-[200px] w-full flex flex-col justify-between mb-3">
-                      <h3 className="text-white font-SignifierRegular lg:text-[27px] md:text-[24px] lg:block hidden">
+                  <div className="lg:flex-row lg:gap-12">
+                    <div className=" w-full flex flex-col justify-between mb-3">
+                      <h3 className="text-white font-serif lg:text-[27px] italic md:text-[24px] lg:block hidden">
                         {item?.member_name}
                       </h3>
-                      <h3 className="text-white font-SignifierRegular lg:text-[27px] md:text-[24px] lg:hidden block">
+                      <h3 className="text-white font-serif lg:text-[27px] md:text-[24px] italic lg:hidden block">
                         {item?.member_name}
                       </h3>
                       <p className="text-white font-SignifierRegular lg:text-[18px] md:text-[17px]">
-                        {item?.designation}
+                        {item?.designation ? item?.designation : 'Principal Designer'}
                       </p>
                     </div>
-                    <div className="lg:w-[650px] w-[700px] team_content">
+                    <div className="lg:max-w-[900px] w-[700px] team_content mt-[21px]">
                       <p className="text-white font-FoundersGroteskRegular lg:text-lg md:text-base">
                         {item?.about}
                       </p>
