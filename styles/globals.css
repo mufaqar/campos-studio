@@ -14,7 +14,7 @@
     @apply px-[9px] mt-[42px];
   }
   .contoll-btn {
-    @apply inline-block p-2 mr-10 text-3xl border border-black rounded-full lg:text-4xl lg:p-3;
+    @apply inline-block p-2 mr-10 text-3xl rounded-full lg:text-4xl lg:p-3;
   }
   .input_field {
     @apply outline-none border-none placeholder-black placeholder:text-[21px] mt-1;
