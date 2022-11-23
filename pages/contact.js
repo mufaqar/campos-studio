@@ -18,42 +18,38 @@ export default function Contact({ status, message, onValidated }) {
 
   return (
     <>
-      <section className="mt-[132px] custom-sec">
-        <div className="grid gap-12 lg:grid-cols-3 md:grid-cols-1">
+      <section className="md:mt-[132px] mt-[64px] custom-sec">
+        <div className="grid gap-[13px] lg:grid-cols-3 md:grid-cols-1">
           <div className="lg:w-full md:w-1/2">
-            <h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[21px] text-[21px] border-b-2 border-black">
-              Say Hello
+            <h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[21px] text-[13px] ">
+              Say hello
             </h2>
-            <p className="font-FoundersGroteskRegular lg:text-[21px]">
-              Malen Fernandez
-            </p>
-            <Link href="#">
-              <a className="font-FoundersGroteskRegular lg:text-[21px] underline hover:no-underline">
-                <span>mfernandez@camposstudio.ca</span>
-              </a>
-            </Link>
+
+            <a href="mailto:mfernandez@camposstudio.ca">
+              <span className="font-FoundersGroteskRegular lg:text-[21px] text-[18px] underline hover:no-underline">
+                <span> Malen Fernandez</span>
+              </span>
+            </a>
           </div>
           <div className="lg:w-full md:w-1/2">
-            <h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[21px] text-[21px] border-b-2 border-black">
+            <h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[21px] text-[13px] ">
               Publishing
             </h2>
-            <p className="font-FoundersGroteskRegular lg:text-[21px]">
-              Samantha Bush
-            </p>
-            <Link href="#">
-              <a className="font-FoundersGroteskRegular lg:text-[21px] underline hover:no-underline">
-                <span>sbush@camposstudio.ca</span>
-              </a>
-            </Link>
+            <p className="font-FoundersGroteskRegular lg:text-[21px] text-[18px]"></p>
+            <a href="mailto:sbush@camposstudio.ca">
+              <span className="font-FoundersGroteskRegular lg:text-[21px] underline hover:no-underline">
+                <span> Samantha Bush</span>
+              </span>
+            </a>
           </div>
           <div className="lg:w-full md:w-1/2 relative">
-            <h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[21px] text-[21px] border-b-2 border-black">
-              Follow Along
+            <h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[21px] text-[13px] ">
+              Read on
             </h2>
             <div>
               <div onClick={OpenForm} className={showForm && 'hidden'}>
                 <p className="font-FoundersGroteskRegular cursor-pointer lg:text-[21px] underline hover:no-underline">
-                  <span>Join the mailing list</span>
+                  <span>Hipo mail</span>
                 </p>
               </div>
             </div>
@@ -83,7 +79,7 @@ export default function Contact({ status, message, onValidated }) {
                   href="https://www.instagram.com/campos_studio/"
                   target="_blank"
                   rel="noreferrer"
-                  className="font-FoundersGroteskRegular lg:text-[21px] underline hover:no-underline"
+                  className="font-FoundersGroteskRegular lg:text-[21px] text-[18px] underline hover:no-underline"
                 >
                   <span>Instagram</span>
                 </a>
@@ -93,7 +89,7 @@ export default function Contact({ status, message, onValidated }) {
                   href="https://www.pinterest.ca/camposstudio/"
                   target="_blank"
                   rel="noreferrer"
-                  className="font-FoundersGroteskRegular lg:text-[21px] underline hover:no-underline"
+                  className="font-FoundersGroteskRegular lg:text-[21px]  text-[18px] underline hover:no-underline"
                 >
                   <span>Pinterest</span>
                 </a>
@@ -104,7 +100,7 @@ export default function Contact({ status, message, onValidated }) {
                 href="https://www.makerbros.co"
                 target="_blank"
                 rel="noreferrer"
-                className="font-FoundersGroteskRegular lg:text-[21px] underline hover:no-underline"
+                className="font-FoundersGroteskRegular lg:text-[21px] text-[18px] underline hover:no-underline"
               >
                 <span>Site by Maker Brothers Worldwide</span>
               </a>
@@ -113,14 +109,15 @@ export default function Contact({ status, message, onValidated }) {
           <div className="flex order-3 gap-0 lg:w-full md:w-full md:gap-64 ">
             <div className="w-full md:w-2/3">
               <Link href="#">
-                <a className="font-FoundersGroteskRegular lg:text-[21px] underline hover:no-underline">
+                <a className="font-FoundersGroteskRegular lg:text-[21px] text-[18px] underline hover:no-underline">
                   <span>+ 1 604 558 1881</span>
                 </a>
               </Link>
-              <p className="font-FoundersGroteskRegular lg:text-[21px] lg:w-[260px] mt-[13px]">
-                1395 Odlum Drive Vancouver, BC V5L 3M1 Canada
+              <p className="font-FoundersGroteskRegular lg:text-[21px] text-[18px] lg:w-[260px] mt-[13px]">
+                1395 Odlum Drive <br /> Vancouver, BC V5L 3M1 <br />
+                Canada
               </p>
-              <p className="font-FoundersGroteskRegular lg:text-[21px]  mt-[42px]">
+              <p className="font-FoundersGroteskRegular lg:text-[21px] text-[18px]  mt-[42px] mb-[9px]">
                 Campos Studio is located in Vancouver British Columbia’s
                 Strathcona neighborhood. Steered by a compact group of
                 individuals, the studio maintains a vast body of work—including

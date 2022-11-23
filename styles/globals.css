@@ -59,6 +59,11 @@ summary::marker {
   src: url('../public/fonts/Signifier-Light.ttf');
 }
 
+@font-face {
+  font-family: 'Signifier-RI';
+  src: url('../public/fonts/Signifier-Light.ttf');
+}
+
 /* custom css */
 .activeTeamDetail {
   display: block !important;

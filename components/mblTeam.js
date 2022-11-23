@@ -4,13 +4,15 @@ export default function MblTeam({ item }) {
   return (
     <>
       <div className="block mblTeam md:hidden">
-        <details className="py-2 border-black border-y-[1px]" closed>
+        <details className="py-[13px] " closed>
           <summary className="">
             <h2 className="text-xl font-SignifierRegular">
               {' '}
               {item?.member_name}
             </h2>
-            <p className="text-sm font-SignifierRegular">{item?.designation}</p>
+            <p className="text-sm font-SignifierRegular">
+              {item?.designation} Designer
+            </p>
           </summary>
           <div className="mt-5">
             <div>

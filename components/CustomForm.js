@@ -20,13 +20,11 @@ export default function CustomForm({
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    firstName === '' ? setFirstNameExist(true) : setFirstNameExist(false)
-    email === '' ? setEmailExist(true) : setEmailExist(false)
-    country === '' ? setCountryExist(true) : setCountryExist(false)
-    
-    
+    firstName === '' ? setFirstNameExist(true) : setFirstNameExist(false);
+    email === '' ? setEmailExist(true) : setEmailExist(false);
+    country === '' ? setCountryExist(true) : setCountryExist(false);
+
     if (!email || !firstName || !country) {
-      
     } else {
       email &&
         firstName &&
@@ -38,7 +36,6 @@ export default function CustomForm({
           COUNTRY1: country,
         });
       state(false);
-      
     }
   };
 
@@ -68,13 +65,11 @@ export default function CustomForm({
             onChange={(e) => setFirstName(e.target.value)}
             type="text"
             value={firstName}
-            className="input_field w-[70%] bg-transparent placeholder:text-base md:placeholder:text-xl font-FoundersGroteskRegular lg:text-[21px]"
+            className="input_field w-[70%] bg-transparent placeholder:text-base md:placeholder:text-xl font-FoundersGroteskRegular lg:text-[21px] text-[18px]"
             placeholder="Name"
             isRequired
           />
-          <p
-            className={firstNameExist ? 'block text-right' : 'hidden'}
-          >
+          <p className={firstNameExist ? 'block text-right' : 'hidden'}>
             Required Field
           </p>
         </div>
@@ -84,13 +79,11 @@ export default function CustomForm({
             onChange={(e) => setEmail(e.target.value)}
             type="email"
             value={email}
-            className="input_field w-[70%] bg-transparent placeholder:text-base md:placeholder:text-xl font-FoundersGroteskRegular lg:text-[21px]"
+            className="input_field w-[70%] bg-transparent placeholder:text-base md:placeholder:text-xl font-FoundersGroteskRegular lg:text-[21px] text-[18px]"
             placeholder="Email"
             isRequired
           />
-          <p
-            className={emailExist ? 'block text-right' : 'hidden'}
-          >
+          <p className={emailExist ? 'block text-right' : 'hidden'}>
             Required Field
           </p>
         </div>
@@ -104,9 +97,7 @@ export default function CustomForm({
             placeholder="Country"
             isRequired
           />
-          <p
-            className={countryExist ? 'block text-right' : 'hidden'}
-          >
+          <p className={countryExist ? 'block text-right' : 'hidden'}>
             Required Field
           </p>
         </div>
@@ -116,7 +107,7 @@ export default function CustomForm({
         label="subscribe"
         type="submit"
         value="Enter"
-        className={`text-base cursor-pointer lg:text-xl input_field ${
+        className={` font-FoundersGroteskRegular text-[18px]  cursor-pointer lg:text-xl input_field ${
           hideFields ? 'block' : 'hidden'
         }`}
         formValues={[email, firstName, country]}
