@@ -85,9 +85,9 @@ export default function Studio({
     <>
       <section className="mt-[132px] custom-sec">
         <div className="gallery">
-          <h2 className="font-FoundersGroteskMedium lg:text-[48px] md:text-[42px] text-[22px]">
+          {/* <h2 className="font-FoundersGroteskMedium lg:text-[48px] md:text-[42px] text-[22px]">
             Process
-          </h2>
+          </h2> */}
           {/* <video className='w-screen videoTag' autoPlay loop muted>
             <source src='/video.mp4' type='video/mp4' />
           </video> */}
@@ -110,9 +110,9 @@ export default function Studio({
           className="flex items-center justify-between"
           onClick={() => setPressActive(!pressActive)}
         >
-          <h2 className="font-FoundersGroteskMedium lg:text-[48px] md:text-[42px] text-[22px]">
+          {/* <h2 className="font-FoundersGroteskMedium lg:text-[48px] md:text-[42px] text-[22px]">
             Press
-          </h2>
+          </h2> */}
           <div className="sm:hidden">
             {pressActive ? <AiOutlineCaretUp /> : <AiOutlineCaretDown />}
           </div>
@@ -153,15 +153,15 @@ export default function Studio({
             </div>
           </div>
           <div className="mt-[42px] Exhibitions-sec">
-            <div>
+            {/* <div>
               <h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[28px] text-[20px]">
                 Exhibitions and Talks
               </h2>
-            </div>
-            <div className="grid gap-[13px] mt-8 lg:grid-cols-5 md:grid-cols-2">
+            </div> */}
+            <div className="grid  mt-8 lg:grid-cols-5 md:grid-cols-2">
               <section>
-                <div>
-                  <p className="font-FoundersGroteskMedium text-[22px]">2019</p>
+                <div class="mb-[13px]">
+                  {/* <p className="font-FoundersGroteskMedium text-[22px]">2019</p> */}
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     ARCHITECTURE AND DESIGN NOW TALK
                   </p>
@@ -169,22 +169,26 @@ export default function Studio({
                     Lethbridge University, AB
                   </p>
                 </div>
-                <div>
-                  <p className="font-FoundersGroteskMedium text-[22px] mt-[13px]">
+                <div class="mb-[13px]">
+                  {/* <p className="font-FoundersGroteskMedium text-[22px] mt-[13px]">
                     2017
-                  </p>
+                  </p> */}
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     MoV ECO CITIES
                   </p>
                   <p className="font-FoundersGroteskRegular text-[17px]">
                     Museum of Vancouver, BC
                   </p>
+                </div>
+                <div class="mb-[13px]">
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     URBANARIUM
                   </p>
                   <p className="font-FoundersGroteskRegular text-[17px]">
                     Robson Square, Vancouver, BC
                   </p>
+                </div>
+                <div class="mb-[13px]">
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     GRAY MAGAZINE PANEL
                   </p>
@@ -195,8 +199,8 @@ export default function Studio({
               </section>
 
               <section>
-                <div>
-                  <p className="font-FoundersGroteskMedium text-[22px]">2016</p>
+                <div class="mb-[13px]">
+                  {/* <p className="font-FoundersGroteskMedium text-[22px]">2016</p> */}
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     YOUR FUTURE HOME: CREATING THE NEW VANCOUVER
                   </p>
@@ -204,10 +208,10 @@ export default function Studio({
                     Exhibition Name, Museum of Vancouver, BC
                   </p>
                 </div>
-                <div>
-                  <p className="font-FoundersGroteskMedium text-[22px] mt-[13px]">
+                <div class="mb-[13px]">
+                  {/* <p className="font-FoundersGroteskMedium text-[22px] mt-[13px]">
                     2014
-                  </p>
+                  </p> */}
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     THE WEST COAST MODERN HOUSE BOOK
                   </p>
@@ -218,14 +222,16 @@ export default function Studio({
               </section>
 
               <section>
-                <div>
-                  <p className="font-FoundersGroteskMedium text-[22px]">2012</p>
+                <div class="mb-[13px]">
+                  {/* <p className="font-FoundersGroteskMedium text-[22px]">2012</p> */}
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     PECHA KULCHA TALK
                   </p>
                   <p className="font-FoundersGroteskRegular text-[17px]">
                     Venue, City of Richmond Culture Days, BC
-                  </p>
+                  </p>{' '}
+                </div>
+                <div class="mb-[13px]">
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     PECHA KULCHA 21 TALK
                   </p>
@@ -234,10 +240,10 @@ export default function Studio({
                   </p>
                 </div>
 
-                <div>
-                  <p className="font-FoundersGroteskMedium text-[22px] mt-[13px]">
+                <div class="mb-[13px]">
+                  {/* <p className="font-FoundersGroteskMedium text-[22px] mt-[13px]">
                     2011
-                  </p>
+                  </p> */}
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     VIEW FROM THE EDGE EXHIBITION
                   </p>
@@ -248,8 +254,8 @@ export default function Studio({
               </section>
 
               <section>
-                <div>
-                  <p className="font-FoundersGroteskMedium text-[22px]">2010</p>
+                <div class="mb-[13px]">
+                  {/* <p className="font-FoundersGroteskMedium text-[22px]">2010</p> */}
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     20+ CHANGE EXHIBITION
                   </p>
@@ -267,7 +273,9 @@ export default function Studio({
                   </p>
                   <p className="font-FoundersGroteskRegular text-[17px]">
                     The Gladstone Hotel, Toronto, ON
-                  </p>
+                  </p>{' '}
+                </div>
+                <div class="mb-[13px]">
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     HIGH PERFORMANCE EXHIBITION
                   </p>
@@ -279,7 +287,7 @@ export default function Studio({
 
               <section>
                 <div>
-                  <p className="font-FoundersGroteskMedium text-[22px]">2009</p>
+                  {/* <p className="font-FoundersGroteskMedium text-[22px]">2009</p> */}
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     IIDEX / NEOCON EXHIBITION
                   </p>
@@ -308,9 +316,9 @@ export default function Studio({
       {/* team section  */}
       <section className="custom-sec">
         <div>
-          <h2 className="font-FoundersGroteskMedium lg:text-[48px] md:text-[42px] text-[22px]">
+          {/* <h2 className="font-FoundersGroteskMedium lg:text-[48px] md:text-[42px] text-[22px]">
             Team
-          </h2>
+          </h2> */}
           {team.map((item, index) => (
             <MblTeam item={item} key={index} />
           ))}

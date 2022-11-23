@@ -69,42 +69,42 @@ function FullContent({ open, setOpen, project }) {
   return (
     <div className={`${open ? 'block' : 'hidden'}`}>
       <div className="border-b-2 border-black">
-        <p className="font-FoundersGroteskRegular lg:text-[23px] md:text-[22px] text-lg text-left mb-4 -mt-[22px]">
+        <p className="font-FoundersGroteskRegular lg:text-[23px] md:text-[22px] text-[18px] text-left mb-4 -mt-[22px]">
           {project?.detail}
         </p>
-        <p className="font-FoundersGroteskRegular lg:text-[23px] md:text-[22px] text-lg text-left mb-7">
+        <p className="font-FoundersGroteskRegular lg:text-[23px] md:text-[22px] text-[18px] text-left mb-7">
           {project?.tag_line}
         </p>
       </div>
       <ul>
         <li className=" text-left border-b-2 border-black">
-          <p className="font-FoundersGroteskMedium lg:text-[21px]">LOCATION</p>
-          <p className="font-FoundersGroteskRegular lg:text-[21px]">
+          {/* <p className="font-FoundersGroteskMedium lg:text-[21px]">LOCATION</p> */}
+          <p className="font-FoundersGroteskRegular text-[18px] lg:text-[21px] mt-[6px] mb-[6px]">
             {project?.location}
           </p>
         </li>
         <li className=" text-left border-b-2 border-black">
-          <p className="font-FoundersGroteskMedium lg:text-[21px]">YEAR</p>
-          <p className="font-FoundersGroteskRegular lg:text-[21px]">
+          {/* <p className="font-FoundersGroteskMedium lg:text-[21px]">YEAR</p> */}
+          <p className="font-FoundersGroteskRegular text-[18px] lg:text-[21px] mt-[6px] mb-[6px]">
             {project?.year}
           </p>
         </li>
         <li className=" text-left border-b-2 border-black">
-          <p className="font-FoundersGroteskMedium lg:text-[21px]">
+          {/* <p className="font-FoundersGroteskMedium lg:text-[21px]">
             SQUARE FOOTAGE
-          </p>
-          <p className="font-FoundersGroteskRegular lg:text-[21px]">
+          </p> */}
+          <p className="font-FoundersGroteskRegular text-[18px] lg:text-[21px] mt-[6px] mb-[6px]">
             {project?.area}
           </p>
         </li>
         <li className=" text-left border-b-2 border-black">
-          <p className="font-FoundersGroteskMedium lg:text-[21px]">Team</p>
+          {/* <p className="font-FoundersGroteskMedium lg:text-[21px]">Team</p> */}
           <div className="flex justify-between">
             {project.teammember?.map((team, index) => {
               return (
                 <p
                   key={index}
-                  className="font-FoundersGroteskRegular lg:text-[21px] flex justify-between"
+                  className="font-FoundersGroteskRegular text-[18px] lg:text-[21px] mt-[6px] mb-[6px] flex justify-between"
                 >
                   <span>{team?.member_name}</span>
                 </p>
@@ -113,13 +113,13 @@ function FullContent({ open, setOpen, project }) {
           </div>
         </li>
         <li className=" text-left border-b-2 border-black">
-          <p className="font-FoundersGroteskMedium lg:text-[21px]">
+          {/* <p className="font-FoundersGroteskMedium lg:text-[21px]">
             COLLABORATORS
-          </p>
+          </p> */}
           {project.Collaborators?.map((col, index) => (
             <p
               key={index}
-              className="font-FoundersGroteskRegular lg:text-[21px]"
+              className="font-FoundersGroteskRegular text-[18px] lg:text-[21px] mt-[6px] mb-[6px]"
             >
               {col}
             </p>
@@ -147,20 +147,20 @@ export default function SingleWork({ project }) {
           <div className="">
             <AudioPlayer audioURL={project.audio.asset.url} />
           </div>
-          <div className="mt-[21px] mb-[13px]">
+          <div className="mt-[13px] mb-[13px]">
             <p className="font-FoundersGroteskRegular lg:text-[23px] md:text-[22px] text-lg">
               {project?.excerpt}
             </p>
           </div>
           <div className="text-center mb-[42px]">
             <button
-              className="font-FoundersGroteskMedium lg:text-lg lg:text-[17px] text-[16px] underline"
+              className="font-FoundersGroteskRegular lg:text-lg lg:text-[17px] text-[18px] underline"
               onClick={() => {
                 setOpen(!open);
               }}
             >
               <span className={`${open ? 'hidden' : 'block'}  `}>
-                READ MORE
+                Read More
               </span>
             </button>
             <FullContent open={open} setOpen={setOpen} project={project} />

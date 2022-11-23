@@ -356,7 +356,7 @@ function AudioPlayer({ audioURL }) {
           {result}{' '}
         </div>
       </div>
-      <div className="my-[21px]">
+      <div className="mb-[21px]">
         {/* <div onClick={back30}>Back 30</div> */}
         {/* <div onClick={forward30}>Forward 30</div> */}
 
