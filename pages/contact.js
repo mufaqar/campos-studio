@@ -102,7 +102,7 @@ export default function Contact({ status, message, onValidated }) {
                 rel="noreferrer"
                 className="font-FoundersGroteskRegular lg:text-[21px] text-[18px] underline hover:no-underline"
               >
-                <span>Site by Maker Brothers Worldwide</span>
+                <span>Site by Maker Brothers Worldwide®</span>
               </a>
             </div>
           </div>
