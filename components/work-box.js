@@ -8,7 +8,7 @@ export default function WorkBox({ title, imageURL, imageCaption, slug }) {
       <div className="mt-[84px] mb-2">
         <div>
           <Link href={`/works/${slug}`}>
-            <figure className="cursor-pointer md:pr-[25%]">
+            <figure className="cursor-pointer lg:pr-[25%]">
               <OwnImage url={imageURL} alt={imageCaption} />
             </figure>
           </Link>

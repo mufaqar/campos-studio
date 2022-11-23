@@ -1,8 +1,8 @@
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
-import MailchimpFormContainer from "../components/NewsletterForm";
-import OwnImage from "../components/OwnImage";
+import Image from 'next/image';
+import Link from 'next/link';
+import { useState } from 'react';
+import MailchimpFormContainer from '../components/NewsletterForm';
+import OwnImage from '../components/OwnImage';
 
 export default function Contact({ status, message, onValidated }) {
   const [showForm, setShowForm] = useState(false);
@@ -18,7 +18,7 @@ export default function Contact({ status, message, onValidated }) {
 
   return (
     <>
-      <section className="mt-[42px] pt-[24px] md:pt-[38px] lg:pt-[72px] 2xl:pt-[56px] custom-sec">
+      <section className="mt-[132px] custom-sec">
         <div className="grid gap-12 lg:grid-cols-3 md:grid-cols-1">
           <div className="lg:w-full md:w-1/2">
             <h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[21px] text-[21px] border-b-2 border-black">
@@ -51,13 +51,13 @@ export default function Contact({ status, message, onValidated }) {
               Follow Along
             </h2>
             <div>
-              <div onClick={OpenForm} className={showForm && "hidden"}>
+              <div onClick={OpenForm} className={showForm && 'hidden'}>
                 <p className="font-FoundersGroteskRegular cursor-pointer lg:text-[21px] underline hover:no-underline">
                   <span>Join the mailing list</span>
                 </p>
               </div>
             </div>
-            <div className={showForm ? "block w-full lg:absolute" : "hidden"}>
+            <div className={showForm ? 'block w-full lg:absolute' : 'hidden'}>
               <MailchimpFormContainer
                 sendState={PassState}
                 hideFields={hideFields}
@@ -128,7 +128,6 @@ export default function Contact({ status, message, onValidated }) {
                 product design.
               </p>
             </div>
-            
           </div>
         </div>
       </section>

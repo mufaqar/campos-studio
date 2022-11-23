@@ -104,7 +104,7 @@ summary::marker {
 #waveform {
   width: 100%;
 }
-#waveform>wave{
+#waveform > wave {
   overflow: hidden !important;
 }
 #waveform > wave > wave {
@@ -149,6 +149,16 @@ summary::marker {
   .team {
     display: none;
   }
+
+  #waveform wave {
+    width: 300px;
+    max-width: 760px;
+  }
+
+  .book_image img {
+    width: 64px !important;
+    height: 64px !important;
+  }
 }
 
 @media (min-width: 340px) and (max-width: 468px) {
@@ -170,11 +180,11 @@ summary::marker {
   margin-top: 9px !important;
 }
 
-.halfimage{
+.halfimage {
   position: relative;
   padding-top: 9px;
 }
-.gallery-section > .halfimage::after{
+.gallery-section > .halfimage::after {
   content: '';
   width: 9px;
   height: 100%;
@@ -182,8 +192,8 @@ summary::marker {
   position: absolute;
   z-index: 10;
   right: -9px;
-  top:0;
+  top: 0;
 }
-#waveform>wave::wave-webkit-scrollbar {
+#waveform > wave::wave-webkit-scrollbar {
   display: none;
 }

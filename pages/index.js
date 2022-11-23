@@ -3,7 +3,7 @@ import Hero from '../components/hero';
 import WorkBox from '../components/work-box';
 import { sanityClient } from '../lib/sanity';
 
-// sanity Queries 
+// sanity Queries
 const projectQuery = `*[_type == "projects"]{
   title,
   featureimage{
@@ -13,19 +13,12 @@ const projectQuery = `*[_type == "projects"]{
     caption,
   },
   slug,
-}`
-
-
+}`;
 
 export default function Hippo({ projects }) {
-
- 
-
   return (
     <>
-      
-
-      <section className="custom-sec h-screen flex items-center">
+      <section className="custom-sec mt-[400px] mb-[300px] md:mb-0  md:h-screen md:mt-0 flex items-center">
         <div className="flex items-center ">
           <p className="font-SignifierLight lg:text-[26px] md:text-[32px] text-[18px] leading-[33.62px] ">
             Architecture informed by <br></br>critical regionalism in the
@@ -34,26 +27,26 @@ export default function Hippo({ projects }) {
         </div>
       </section>
 
-
       <section className="custom-sec">
-        {
-          projects.map((item, index) => (
-            <WorkBox title={item.title} imageURL={item.featureimage.asset.url} imageCaption={item.featureimage.caption} slug={item.slug.current} key={index} />
-          ))
-        }
+        {projects.map((item, index) => (
+          <WorkBox
+            title={item.title}
+            imageURL={item.featureimage.asset.url}
+            imageCaption={item.featureimage.caption}
+            slug={item.slug.current}
+            key={index}
+          />
+        ))}
       </section>
     </>
   );
 }
 
-
-
-
 export async function getStaticProps() {
   const projects = await sanityClient.fetch(projectQuery);
   return {
     props: {
-      projects
-    }
+      projects,
+    },
   };
 }

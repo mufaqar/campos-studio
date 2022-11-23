@@ -66,7 +66,6 @@ const projectSlugQuery = `*[_type == "projects" && slug.current == $slug][0]{
 }`;
 
 function FullContent({ open, setOpen, project }) {
-
   return (
     <div className={`${open ? 'block' : 'hidden'}`}>
       <div className="border-b-2 border-black">
@@ -155,12 +154,14 @@ export default function SingleWork({ project }) {
           </div>
           <div className="text-center mb-[42px]">
             <button
-              className="font-FoundersGroteskMedium lg:text-lg md:text-[17px] text-[13px]"
+              className="font-FoundersGroteskMedium lg:text-lg lg:text-[17px] text-[16px] underline"
               onClick={() => {
                 setOpen(!open);
               }}
             >
-              <span className={`${open ? 'hidden' : 'block'}`}>READ MORE</span>
+              <span className={`${open ? 'hidden' : 'block'}  `}>
+                READ MORE
+              </span>
             </button>
             <FullContent open={open} setOpen={setOpen} project={project} />
           </div>
@@ -171,10 +172,7 @@ export default function SingleWork({ project }) {
         {project.gallery?.images.map((img, index) => {
           if (img.size === 'half') {
             return (
-              <div
-                className="inline-block w-1/2 mt-0 halfimage "
-                key={index}
-              >
+              <div className="inline-block w-1/2 mt-0 halfimage " key={index}>
                 <figure className="relative gallery">
                   <OwnImage url={img.asset.url} alt="gallery4"></OwnImage>
                 </figure>
@@ -197,7 +195,7 @@ export default function SingleWork({ project }) {
             {project.links?.map((link, index) => (
               <li
                 key={index}
-                className="font-FoundersGroteskMedium lg:text-[36px] md:text-[36px] text-[24px] mb-[13px]"
+                className="font-FoundersGroteskMedium lg:text-[36px] md:text-[36px] text-[21px] mb-[13px]"
               >
                 <a href={link.link} target="_blank" rel="noreferrer">
                   <p className="flex items-center cursor-pointer lg:gap-10">
@@ -205,13 +203,13 @@ export default function SingleWork({ project }) {
                     {/* <Image src={Arrow} alt="Arrow"></Image> */}
                   </p>
                 </a>
-                <p className="text-xs font-FoundersGroteskRegular lg:text-lg md:text-lg">
+                <p className="text-xs font-FoundersGroteskRegular  md:text-lg text-[13px] ">
                   {link.short_text}
                 </p>
               </li>
             ))}
           </ul>
-          <button className="bg-[#FCB450] w-[18px] h-[18px]"></button>
+          <button className="bg-[#FCB450] w-[14px] h-[14px] md:w-[18px] md:h-[18px]"></button>
         </div>
       </section>
 

@@ -10,16 +10,16 @@ module.exports = {
         FoundersGroteskMedium: ['FoundersGrotesk-Medium', 'sans-serif'],
         FoundersGroteskRegular: ['FoundersGrotesk-Regular', 'sans-serif'],
         SignifierRegular: ['Signifier-Regular', 'sans-serif'],
-        SignifierLight: ['Signifier-Light', 'sans-serif']        
+        SignifierLight: ['Signifier-Light', 'sans-serif'],
       },
       screens: {
-        'w1366': '1366px',
-        'w1728': '1728px',
-        'w2560': '2560px',
-        'w348': '348px',
+        w1536: '1536px',
+        w1366: '1366px',
+        w1728: '1728px',
+        w2560: '2560px',
+        w348: '348px',
       },
     },
-
   },
   plugins: [],
 };

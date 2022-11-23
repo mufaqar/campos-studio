@@ -1,16 +1,16 @@
-import Image from "next/image";
-import Book from "../components/book";
-import Wallpeper from "../public/images/wallpeper.png";
-import Gray from "../public/images/GRAY.png";
-import Deezen from "../public/images/DEEZEN.png";
-import TheGlobe from "../public/images/THEGLOBE.png";
-import Canadian from "../public/images/CANADIAN.png";
-import Team from "../components/team";
-import { useState } from "react";
-import { AiOutlineCaretDown } from "react-icons/ai";
-import { AiOutlineCaretUp } from "react-icons/ai";
-import MblTeam from "../components/mblTeam";
-import { sanityClient } from "../lib/sanity";
+import Image from 'next/image';
+import Book from '../components/book';
+import Wallpeper from '../public/images/wallpeper.png';
+import Gray from '../public/images/GRAY.png';
+import Deezen from '../public/images/DEEZEN.png';
+import TheGlobe from '../public/images/THEGLOBE.png';
+import Canadian from '../public/images/CANADIAN.png';
+import Team from '../components/team';
+import { useState } from 'react';
+import { AiOutlineCaretDown } from 'react-icons/ai';
+import { AiOutlineCaretUp } from 'react-icons/ai';
+import MblTeam from '../components/mblTeam';
+import { sanityClient } from '../lib/sanity';
 // import video from '../public/video.mp4'
 
 // sanity Queries
@@ -61,7 +61,6 @@ export default function Studio({
   publications,
   books,
 }) {
-
   const [openTeamDetails, setOpenTeamDetails] = useState(null); // To handel Team Section
   const [pressActive, setPressActive] = useState(false);
   const [countUpdate, setCountUpdate] = useState(null);
@@ -84,7 +83,7 @@ export default function Studio({
 
   return (
     <>
-      <section className="pt-[24px] md:pt-[38px] mt-[42px] lg:pt-[72px] 2xl:pt-[56px] custom-sec">
+      <section className="mt-[132px] custom-sec">
         <div className="gallery">
           <h2 className="font-FoundersGroteskMedium lg:text-[48px] md:text-[42px] text-[22px]">
             Process
@@ -119,13 +118,13 @@ export default function Studio({
           </div>
         </div>
         <div
-          className={`${pressActive ? "block sm:block" : "hidden sm:block"}`}
+          className={`${pressActive ? 'block sm:block' : 'hidden sm:block'}`}
         >
           <div className="Press-sec">
             <div>
               {/* <h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[28px] text-[20px]"> Publications </h2> */}
             </div>
-            <div className="grid gap-[21px] mt-8 lg:grid-cols-4 md:grid-cols-3">
+            <div className="grid gap-[9px] mt-8 lg:grid-cols-4 md:grid-cols-3">
               {publications.map((publication, index) => (
                 <Book
                   icon={publication.image.asset.url}
@@ -142,7 +141,7 @@ export default function Studio({
                 Books
               </h2>*/}
             </div>
-            <div className="grid gap-[21px] mt-12 lg:grid-cols-4 md:grid-cols-3">
+            <div className="grid gap-[9px] mt-[21px] lg:grid-cols-4 md:grid-cols-3">
               {books.map((book, index) => (
                 <Book
                   icon={book.image.asset.url}
@@ -171,7 +170,9 @@ export default function Studio({
                   </p>
                 </div>
                 <div>
-                  <p className="font-FoundersGroteskMedium text-[22px] mt-[13px]">2017</p>
+                  <p className="font-FoundersGroteskMedium text-[22px] mt-[13px]">
+                    2017
+                  </p>
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     MoV ECO CITIES
                   </p>
@@ -204,7 +205,9 @@ export default function Studio({
                   </p>
                 </div>
                 <div>
-                  <p className="font-FoundersGroteskMedium text-[22px] mt-[13px]">2014</p>
+                  <p className="font-FoundersGroteskMedium text-[22px] mt-[13px]">
+                    2014
+                  </p>
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     THE WEST COAST MODERN HOUSE BOOK
                   </p>
@@ -232,7 +235,9 @@ export default function Studio({
                 </div>
 
                 <div>
-                  <p className="font-FoundersGroteskMedium text-[22px] mt-[13px]">2011</p>
+                  <p className="font-FoundersGroteskMedium text-[22px] mt-[13px]">
+                    2011
+                  </p>
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     VIEW FROM THE EDGE EXHIBITION
                   </p>
@@ -273,27 +278,28 @@ export default function Studio({
               </section>
 
               <section>
-              <div>
-                <p className="font-FoundersGroteskMedium text-[22px]">2009</p>
-                <p className="font-FoundersGroteskMedium text-[18px]">
-                  IIDEX / NEOCON EXHIBITION
-                </p>
-                <p className="font-FoundersGroteskRegular text-[17px]">
-                  Venue, Toronto, ON
-                </p>
-              </div>
+                <div>
+                  <p className="font-FoundersGroteskMedium text-[22px]">2009</p>
+                  <p className="font-FoundersGroteskMedium text-[18px]">
+                    IIDEX / NEOCON EXHIBITION
+                  </p>
+                  <p className="font-FoundersGroteskRegular text-[17px]">
+                    Venue, Toronto, ON
+                  </p>
+                </div>
 
-              <div>
-                <p className="font-FoundersGroteskMedium text-[22px] mt-[13px]">2004</p>
-                <p className="font-FoundersGroteskMedium text-[18px]">
-                  MAKING OUT EXHIBITION
-                </p>
-                <p className="font-FoundersGroteskRegular text-[17px]">
-                  Emily Carr University of Art and Design Vancouver, BC
-                </p>
-              </div>
+                <div>
+                  <p className="font-FoundersGroteskMedium text-[22px] mt-[13px]">
+                    2004
+                  </p>
+                  <p className="font-FoundersGroteskMedium text-[18px]">
+                    MAKING OUT EXHIBITION
+                  </p>
+                  <p className="font-FoundersGroteskRegular text-[17px]">
+                    Emily Carr University of Art and Design Vancouver, BC
+                  </p>
+                </div>
               </section>
-
             </div>
           </div>
         </div>
@@ -316,7 +322,7 @@ export default function Studio({
               <div
                 key={index}
                 className={`relative ${
-                  openTeamDetails === item._id && "col-start-1 row-num"
+                  openTeamDetails === item._id && 'col-start-1 row-num'
                 } `}
               >
                 <div
@@ -328,7 +334,7 @@ export default function Studio({
                 <div
                   onClick={() => TeamDetailClick()}
                   className={`${
-                    openTeamDetails === item._id ? "block" : "hidden"
+                    openTeamDetails === item._id ? 'block' : 'hidden'
                   } bg-black overflow-y-scroll -top-[42px] absolute h-full lg:left-[102.5%] w-screen  z-10 md:left-[103%] text-white custom-sec pl-[18px] pt-[13px]`}
                 >
                   <div className="lg:flex-row lg:gap-12">
@@ -340,7 +346,9 @@ export default function Studio({
                         {item?.member_name}
                       </h3>
                       <p className="text-white font-SignifierRegular lg:text-[18px] md:text-[17px]">
-                        {item?.designation ? item?.designation : 'Principal Designer'}
+                        {item?.designation
+                          ? item?.designation
+                          : 'Principal Designer'}
                       </p>
                     </div>
                     <div className="lg:max-w-[900px] w-[700px] team_content mt-[21px]">
