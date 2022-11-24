@@ -350,31 +350,17 @@ export default function Studio({
           <h2 className="font-FoundersGroteskMedium lg:text-4xl md:text-[31px] text-lg">
             Past Collaborators
           </h2>
-          {/* , , , , , Croll, Paul Crowley, Alix Demontrond, Hande Ersoy, Adrien
-            Fera, Mike Fugeta, Ashley Gesner, Matias T. Grez, Maria Herrera,
-            Paul Holley, Manuela Hurtavo, Arnold Jung, Zaid Kadhim, Nelly
-            Lachman, Mario Lambraño, Michael Lis, Michael Lis, Colin Mbugua,
-            Laura McMurran, David Morar, Juan David Moreno, Kate Richard, Clara
-            Sabel, Jan Stretzlig, Bardia Tajik, Alex Vanderlee, Yiming Wang,
-            Yanlan Wang, Britney Yan, Thomas Yuan, David Zeiben, Loriane Wong */}
-          <h2 className=" font-normal font-serif text-[18px] mb-[13px]">
-            Regan Appleton
-          </h2>
-          <h2 className=" font-normal font-serif text-[18px] mb-[13px]">
-            Romain Bael
-          </h2>
-          <h2 className=" font-normal font-serif text-[18px] mb-[13px]">
-            Jacquelyn Bortolussi
-          </h2>
-          <h2 className=" font-normal font-serif text-[18px] mb-[13px]">
-            Tom Chung
-          </h2>
-          <h2 className=" font-normal font-serif text-[18px] mb-[13px]">
-            Sarah Cree
-          </h2>
-          <h2 className=" font-normal font-serif text-[18px] mb-[13px]">
-            Jessie
-          </h2>
+          <p>
+            Regan Appleton , Romain Bael , Jacquelyn Bortolussi , Tom Chung ,
+            Sarah Cree, Jessie, Croll, Paul Crowley, Alix Demontrond, Hande
+            Ersoy, Adrien Fera, Mike Fugeta, Ashley Gesner, Matias T. Grez,
+            Maria Herrera, Paul Holley, Manuela Hurtavo, Arnold Jung, Zaid
+            Kadhim, Nelly Lachman, Mario Lambraño, Michael Lis, Michael Lis,
+            Colin Mbugua, Laura McMurran, David Morar, Juan David Moreno, Kate
+            Richard, Clara Sabel, Jan Stretzlig, Bardia Tajik, Alex Vanderlee,
+            Yiming Wang, Yanlan Wang, Britney Yan, Thomas Yuan, David Zeiben,
+            Loriane Wong
+          </p>
         </div>
       </section>
     </>
