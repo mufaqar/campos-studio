@@ -141,7 +141,7 @@ export default function SingleWork({ project }) {
 
       <section className="custom-sec">
         <div className="lg:w-[899px] md:w-[683px] w-full mx-auto">
-          <h2 className="font-FoundersGroteskMedium text-center lg:text-[60px] md:text-[56px] text-[36px] leading-[70px]">
+          <h2 className="font-FoundersGroteskMedium text-center lg:text-[60px] md:text-[56px] text-[36px]">
             {project.title}
           </h2>
           <div className="">

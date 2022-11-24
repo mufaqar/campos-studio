@@ -10,10 +10,10 @@ export default function MblTeam({ item }) {
               {' '}
               {item?.member_name}
             </h2>
-            <p className="text-sm font-SignifierRegular">
-              {item?.designation} Designer
-            </p>
           </summary>
+          <p className="text-sm font-SignifierRegular">
+            {item?.designation} Designer
+          </p>
           <div className="mt-5">
             <div>
               <figure className="relative h-[464px] w-full">

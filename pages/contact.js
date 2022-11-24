@@ -65,7 +65,7 @@ export default function Contact({ status, message, onValidated }) {
       <section>
         <div className="w-full md:w-2/3 ml-[9px] pr-[18px] md:mr-0 mt-[42px]">
           <figure className="">
-            <OwnImage url="/images/contactBg.png" alt="fill" />
+            <OwnImage url="/images/contact-us.webp" alt="fill" />
           </figure>
         </div>
         <div className="w-1/3"></div>

@@ -85,12 +85,6 @@ export default function Studio({
     <>
       <section className="mt-[132px] custom-sec">
         <div className="gallery">
-          {/* <h2 className="font-FoundersGroteskMedium lg:text-[48px] md:text-[42px] text-[22px]">
-            Process
-          </h2> */}
-          {/* <video className='w-screen videoTag' autoPlay loop muted>
-            <source src='/video.mp4' type='video/mp4' />
-          </video> */}
           <div className="iframe-container">
             <iframe
               src="https://player.vimeo.com/video/34901903?h=a1b3cf7c37&title=0&byline=0&portrait=0"
@@ -106,24 +100,8 @@ export default function Studio({
       </section>
       {/* Press */}
       <section className="custom-sec mt-[42px]">
-        <div
-          className="flex items-center justify-between"
-          onClick={() => setPressActive(!pressActive)}
-        >
-          {/* <h2 className="font-FoundersGroteskMedium lg:text-[48px] md:text-[42px] text-[22px]">
-            Press
-          </h2> */}
-          <div className="sm:hidden">
-            {pressActive ? <AiOutlineCaretUp /> : <AiOutlineCaretDown />}
-          </div>
-        </div>
-        <div
-          className={`${pressActive ? 'block sm:block' : 'hidden sm:block'}`}
-        >
+        <div>
           <div className="Press-sec">
-            <div>
-              {/* <h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[28px] text-[20px]"> Publications </h2> */}
-            </div>
             <div className="grid gap-[9px] mt-8 lg:grid-cols-4 md:grid-cols-3">
               {publications.map((publication, index) => (
                 <Book
@@ -136,11 +114,6 @@ export default function Studio({
             </div>
           </div>
           <div className="mt-8 Books-sec">
-            <div>
-              {/*<h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[28px] text-[20px]">
-                Books
-              </h2>*/}
-            </div>
             <div className="grid gap-[9px] mt-[21px] lg:grid-cols-4 md:grid-cols-3">
               {books.map((book, index) => (
                 <Book
@@ -160,7 +133,7 @@ export default function Studio({
             </div> */}
             <div className="grid  mt-8 lg:grid-cols-5 md:grid-cols-2">
               <section>
-                <div class="mb-[13px]">
+                <div className="mb-[13px]">
                   {/* <p className="font-FoundersGroteskMedium text-[22px]">2019</p> */}
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     ARCHITECTURE AND DESIGN NOW TALK
@@ -169,7 +142,7 @@ export default function Studio({
                     Lethbridge University, AB
                   </p>
                 </div>
-                <div class="mb-[13px]">
+                <div className="mb-[13px]">
                   {/* <p className="font-FoundersGroteskMedium text-[22px] mt-[13px]">
                     2017
                   </p> */}
@@ -180,7 +153,7 @@ export default function Studio({
                     Museum of Vancouver, BC
                   </p>
                 </div>
-                <div class="mb-[13px]">
+                <div className="mb-[13px]">
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     URBANARIUM
                   </p>
@@ -188,7 +161,7 @@ export default function Studio({
                     Robson Square, Vancouver, BC
                   </p>
                 </div>
-                <div class="mb-[13px]">
+                <div className="mb-[13px]">
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     GRAY MAGAZINE PANEL
                   </p>
@@ -199,7 +172,7 @@ export default function Studio({
               </section>
 
               <section>
-                <div class="mb-[13px]">
+                <div className="mb-[13px]">
                   {/* <p className="font-FoundersGroteskMedium text-[22px]">2016</p> */}
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     YOUR FUTURE HOME: CREATING THE NEW VANCOUVER
@@ -208,7 +181,7 @@ export default function Studio({
                     Exhibition Name, Museum of Vancouver, BC
                   </p>
                 </div>
-                <div class="mb-[13px]">
+                <div className="mb-[13px]">
                   {/* <p className="font-FoundersGroteskMedium text-[22px] mt-[13px]">
                     2014
                   </p> */}
@@ -222,7 +195,7 @@ export default function Studio({
               </section>
 
               <section>
-                <div class="mb-[13px]">
+                <div className="mb-[13px]">
                   {/* <p className="font-FoundersGroteskMedium text-[22px]">2012</p> */}
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     PECHA KULCHA TALK
@@ -231,7 +204,7 @@ export default function Studio({
                     Venue, City of Richmond Culture Days, BC
                   </p>{' '}
                 </div>
-                <div class="mb-[13px]">
+                <div className="mb-[13px]">
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     PECHA KULCHA 21 TALK
                   </p>
@@ -240,7 +213,7 @@ export default function Studio({
                   </p>
                 </div>
 
-                <div class="mb-[13px]">
+                <div className="mb-[13px]">
                   {/* <p className="font-FoundersGroteskMedium text-[22px] mt-[13px]">
                     2011
                   </p> */}
@@ -254,7 +227,7 @@ export default function Studio({
               </section>
 
               <section>
-                <div class="mb-[13px]">
+                <div className="mb-[13px]">
                   {/* <p className="font-FoundersGroteskMedium text-[22px]">2010</p> */}
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     20+ CHANGE EXHIBITION
@@ -275,7 +248,7 @@ export default function Studio({
                     The Gladstone Hotel, Toronto, ON
                   </p>{' '}
                 </div>
-                <div class="mb-[13px]">
+                <div className="mb-[13px]">
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     HIGH PERFORMANCE EXHIBITION
                   </p>
@@ -377,17 +350,31 @@ export default function Studio({
           <h2 className="font-FoundersGroteskMedium lg:text-4xl md:text-[31px] text-lg">
             Past Collaborators
           </h2>
-          <p className="text-base font-SignifierRegular lg:text-xl md:text-xl">
-            Regan Appleton, Romain Bael, Jacquelyn Bortolussi, Tom Chung, Sarah
-            Cree, Jessie Croll, Paul Crowley, Alix Demontrond, Hande Ersoy,
-            Adrien Fera, Mike Fugeta, Ashley Gesner, Matias T. Grez, Maria
-            Herrera, Paul Holley, Manuela Hurtavo, Arnold Jung, Zaid Kadhim,
-            Nelly Lachman, Mario Lambraño, Michael Lis, Michael Lis, Colin
-            Mbugua, Laura McMurran, David Morar, Juan David Moreno, Kate
-            Richard, Clara Sabel, Jan Stretzlig, Bardia Tajik, Alex Vanderlee,
-            Yiming Wang, Yanlan Wang, Britney Yan, Thomas Yuan, David Zeiben,
-            Loriane Wong
-          </p>
+          {/* , , , , , Croll, Paul Crowley, Alix Demontrond, Hande Ersoy, Adrien
+            Fera, Mike Fugeta, Ashley Gesner, Matias T. Grez, Maria Herrera,
+            Paul Holley, Manuela Hurtavo, Arnold Jung, Zaid Kadhim, Nelly
+            Lachman, Mario Lambraño, Michael Lis, Michael Lis, Colin Mbugua,
+            Laura McMurran, David Morar, Juan David Moreno, Kate Richard, Clara
+            Sabel, Jan Stretzlig, Bardia Tajik, Alex Vanderlee, Yiming Wang,
+            Yanlan Wang, Britney Yan, Thomas Yuan, David Zeiben, Loriane Wong */}
+          <h2 className=" font-normal font-serif text-[18px] mb-[13px]">
+            Regan Appleton
+          </h2>
+          <h2 className=" font-normal font-serif text-[18px] mb-[13px]">
+            Romain Bael
+          </h2>
+          <h2 className=" font-normal font-serif text-[18px] mb-[13px]">
+            Jacquelyn Bortolussi
+          </h2>
+          <h2 className=" font-normal font-serif text-[18px] mb-[13px]">
+            Tom Chung
+          </h2>
+          <h2 className=" font-normal font-serif text-[18px] mb-[13px]">
+            Sarah Cree
+          </h2>
+          <h2 className=" font-normal font-serif text-[18px] mb-[13px]">
+            Jessie
+          </h2>
         </div>
       </section>
     </>
