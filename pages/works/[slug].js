@@ -139,7 +139,7 @@ export default function SingleWork({ project }) {
         <OwnImage url={project.featureimage?.asset.url} alt={project.title} />
       </section>
 
-      <section className="custom-sec">
+      <section className="custom-sec2">
         <div className="lg:w-[899px] md:w-[683px] w-full mx-auto">
           <h2 className="font-FoundersGroteskMedium text-center lg:text-[60px] md:text-[56px] text-[36px]">
             {project.title}
