@@ -347,10 +347,13 @@ export default function Studio({
 
       <section className="mt-[42px] mb-4 custom-sec">
         <div className="lg:w-[805px] md:w-[754px] w-full">
-          <h2 className="font-FoundersGroteskMedium lg:text-4xl md:text-[31px] text-lg">
+          <h2
+            className="font-FoundersGroteskMedium lg:text-4xl md:text-[31px] text-lg"
+            onClick={() => setPressActive(!pressActive)}
+          >
             Past Collaborators
           </h2>
-          <p>
+          <p className={pressActive ? 'block' : 'md:block hidden'}>
             Regan Appleton , Romain Bael , Jacquelyn Bortolussi , Tom Chung ,
             Sarah Cree, Jessie, Croll, Paul Crowley, Alix Demontrond, Hande
             Ersoy, Adrien Fera, Mike Fugeta, Ashley Gesner, Matias T. Grez,

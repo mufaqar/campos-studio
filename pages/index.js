@@ -18,7 +18,7 @@ const projectQuery = `*[_type == "projects"]{
 export default function Hippo({ projects }) {
   return (
     <>
-      <section className="custom-sec mt-[400px] mb-[300px] md:mb-0  md:h-screen md:mt-0 flex items-center">
+      <section className="custom-sec md:mb-0 h-screen md:mt-0 flex items-center">
         <div className="flex items-center ">
           <p className="font-SignifierLight lg:text-[26px] md:text-[32px] text-[18px] leading-[33.62px] ">
             Architecture informed by <br></br>critical regionalism in the

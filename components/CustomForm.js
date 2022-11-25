@@ -42,7 +42,8 @@ export default function CustomForm({
   return (
     <form className="mt-1" onSubmit={(e) => handleSubmit(e)}>
       {status === 'sending' && (
-        <div className="mc__alert mc__alert--sending">sending...</div>
+        <div className="mc__alert mc__alert--sending"></div>
+        // sending message
       )}
       {status === 'error' && (
         <div
@@ -53,9 +54,9 @@ export default function CustomForm({
       {status === 'success' && (
         <div className="font-FoundersGroteskRegular flex items-center lg:text-[21px]">
           <p>Thank You</p>
-          <figure className="mt-2 ml-2">
+          {/* <figure className="mt-2 ml-2">
             <Image src={Logo} alt="hippo" width={40} height={20}></Image>
-          </figure>
+          </figure> */}
         </div>
       )}
 

@@ -189,7 +189,7 @@ export default function SingleWork({ project }) {
           }
         })}
       </section>
-      <section className="custom-sec">
+      <section className="custom-sec mb-[-42px]">
         <div className="lg:w-[899px] md:w-[683px] w-full  mx-auto">
           <ul>
             {project.links?.map((link, index) => (
