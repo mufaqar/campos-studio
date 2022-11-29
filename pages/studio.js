@@ -138,7 +138,7 @@ export default function Studio({
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     ARCHITECTURE AND DESIGN NOW TALK
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[17px]">
+                  <p className="font-FoundersGroteskRegular text-[16px]">
                     Lethbridge University, AB
                   </p>
                 </div>
@@ -149,7 +149,7 @@ export default function Studio({
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     MoV ECO CITIES
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[17px]">
+                  <p className="font-FoundersGroteskRegular text-[16px]">
                     Museum of Vancouver, BC
                   </p>
                 </div>
@@ -157,7 +157,7 @@ export default function Studio({
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     URBANARIUM
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[17px]">
+                  <p className="font-FoundersGroteskRegular text-[16px]">
                     Robson Square, Vancouver, BC
                   </p>
                 </div>
@@ -165,7 +165,7 @@ export default function Studio({
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     GRAY MAGAZINE PANEL
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[17px]">
+                  <p className="font-FoundersGroteskRegular text-[16px]">
                     Venue, Seattle, WA, United States of America
                   </p>
                 </div>
@@ -177,7 +177,7 @@ export default function Studio({
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     YOUR FUTURE HOME: CREATING THE NEW VANCOUVER
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[17px]">
+                  <p className="font-FoundersGroteskRegular text-[16px]">
                     Exhibition Name, Museum of Vancouver, BC
                   </p>
                 </div>
@@ -188,7 +188,7 @@ export default function Studio({
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     THE WEST COAST MODERN HOUSE BOOK
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[17px]">
+                  <p className="font-FoundersGroteskRegular text-[16px]">
                     Ocean Park, Wallace Street House
                   </p>
                 </div>
@@ -200,7 +200,7 @@ export default function Studio({
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     PECHA KULCHA TALK
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[17px]">
+                  <p className="font-FoundersGroteskRegular text-[16px]">
                     Venue, City of Richmond Culture Days, BC
                   </p>{' '}
                 </div>
@@ -208,7 +208,7 @@ export default function Studio({
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     PECHA KULCHA 21 TALK
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[17px]">
+                  <p className="font-FoundersGroteskRegular text-[16px]">
                     Vogue Theatre, Vancouver, BC
                   </p>
                 </div>
@@ -220,7 +220,7 @@ export default function Studio({
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     VIEW FROM THE EDGE EXHIBITION
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[17px]">
+                  <p className="font-FoundersGroteskRegular text-[16px]">
                     Architectural Institue of British Columbia, Vancouver, BC
                   </p>
                 </div>
@@ -232,19 +232,19 @@ export default function Studio({
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     20+ CHANGE EXHIBITION
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[17px]">
+                  <p className="font-FoundersGroteskRegular text-[16px]">
                     Dalhousie University of Architecture, Halifax, NS
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[17px]">
+                  <p className="font-FoundersGroteskRegular text-[16px]">
                     Emily Carr University of Art and Design Vancouver, BC
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[17px]">
+                  <p className="font-FoundersGroteskRegular text-[16px]">
                     AIBC Architecture Centre Gallery, Vancouver, BC
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[17px]">
+                  <p className="font-FoundersGroteskRegular text-[16px]">
                     La Maison de l’architecture du Quebec, Montreal, QC
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[17px]">
+                  <p className="font-FoundersGroteskRegular text-[16px]">
                     The Gladstone Hotel, Toronto, ON
                   </p>{' '}
                 </div>
@@ -252,7 +252,7 @@ export default function Studio({
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     HIGH PERFORMANCE EXHIBITION
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[17px]">
+                  <p className="font-FoundersGroteskRegular text-[16px]">
                     Emily Carr University of Art and Design Vancouver, BC
                   </p>
                 </div>
@@ -264,7 +264,7 @@ export default function Studio({
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     IIDEX / NEOCON EXHIBITION
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[17px]">
+                  <p className="font-FoundersGroteskRegular text-[16px]">
                     Venue, Toronto, ON
                   </p>
                 </div>
@@ -276,7 +276,7 @@ export default function Studio({
                   <p className="font-FoundersGroteskMedium text-[18px]">
                     MAKING OUT EXHIBITION
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[17px]">
+                  <p className="font-FoundersGroteskRegular text-[16px]">
                     Emily Carr University of Art and Design Vancouver, BC
                   </p>
                 </div>
