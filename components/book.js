@@ -13,10 +13,10 @@ export default function Book(props) {
           ></Image>
         </figure>
         <div className="ml-3">
-          <p className="font-FoundersGroteskMedium text-[16px] md:text-[18px]">
+          <p className="font-FoundersGroteskMedium text-[18px]">
             {props.title}
           </p>
-          <p className="font-FoundersGroteskRegular text-[13px] md:text-[15px]">
+          <p className="font-FoundersGroteskRegular text-[16px] ">
             {props.info}
           </p>
         </div>
