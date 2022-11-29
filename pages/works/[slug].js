@@ -141,7 +141,7 @@ export default function SingleWork({ project }) {
 
       <section className="custom-sec2">
         <div className="lg:w-[899px] md:w-[683px] w-full mx-auto">
-          <h2 className="font-FoundersGroteskMedium text-center lg:text-[60px] md:text-[56px] text-[36px]">
+          <h2 className="font-FoundersGroteskMedium text-center lg:text-[60px] md:text-[56px] text-[42px]">
             {project.title}
           </h2>
           <div className="">
@@ -203,7 +203,7 @@ export default function SingleWork({ project }) {
                     {/* <Image src={Arrow} alt="Arrow"></Image> */}
                   </p>
                 </a>
-                <p className="text-xs font-FoundersGroteskRegular  md:text-lg text-[13px] ">
+                <p className="font-FoundersGroteskRegular  md:text-lg text-[16px] ">
                   {link.short_text}
                 </p>
               </li>
