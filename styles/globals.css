@@ -46,11 +46,11 @@
 }
 
 .team_title {
-  @apply text-[20px] leading-[25.86px]  md:text-[15px] md:leading-[18px] xl:text-[17px] xl:leading-[20.4px]  2xl:text-[18px] 2xl:leading-[21.6px];
+  @apply text-[20px] leading-[25.86px]  md:text-[22px] md:leading-[26.4px] xl:text-[24px] xl:leading-[31.03px]  2xl:text-[28px] 2xl:leading-[36.2px];
 }
 
 .team_design {
-  @apply text-[12px] leading-[15.52px]  md:text-[15px] md:leading-[18px] xl:text-[17px] xl:leading-[20.4px]  2xl:text-[18px] 2xl:leading-[21.6px];
+  @apply text-[12px] leading-[15.52px]  md:text-[14px] md:leading-[16.8px] xl:text-[16px] xl:leading-[20.69px]  2xl:text-[20px] 2xl:leading-[25.86px];
 }
 
 /* .workBanerBg {

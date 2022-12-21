@@ -21,21 +21,21 @@ export default function Contact({ status, message, onValidated }) {
       <section className="md:mt-[132px] mt-[64px] custom-sec">
         <div className="grid gap-[13px] lg:grid-cols-3 md:grid-cols-1">
           <div className="lg:w-full md:w-1/2">
-            <h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[21px] text-[13px] ">
+            <h2 className="font-FoundersGroteskMedium campo_bodyfont2 ">
               Say hello
             </h2>
 
             <a href="mailto:mfernandez@camposstudio.ca">
-              <span className="font-FoundersGroteskRegular lg:text-[21px] text-[18px] underline hover:no-underline">
+              <span className="font-FoundersGroteskRegular campo_bodyfont underline hover:no-underline">
                 <span> Malen Fernandez</span>
               </span>
             </a>
           </div>
           <div className="lg:w-full md:w-1/2">
-            <h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[21px] text-[13px] ">
+            <h2 className="font-FoundersGroteskMedium campo_bodyfont2 ">
               Publishing
             </h2>
-            <p className="font-FoundersGroteskRegular lg:text-[21px] text-[18px]"></p>
+            <p className="font-FoundersGroteskRegular campo_bodyfont"></p>
             <a href="mailto:sbush@camposstudio.ca">
               <span className="font-FoundersGroteskRegular lg:text-[21px] underline hover:no-underline">
                 <span> Samantha Bush</span>
@@ -43,7 +43,7 @@ export default function Contact({ status, message, onValidated }) {
             </a>
           </div>
           <div className="lg:w-full md:w-1/2 relative">
-            <h2 className="font-FoundersGroteskMedium lg:text-[28px] md:text-[21px] text-[13px] ">
+            <h2 className="font-FoundersGroteskMedium campo_bodyfont2 ">
               Read on
             </h2>
             <div>
@@ -79,7 +79,7 @@ export default function Contact({ status, message, onValidated }) {
                   href="https://www.instagram.com/campos_studio/"
                   target="_blank"
                   rel="noreferrer"
-                  className="font-FoundersGroteskRegular lg:text-[21px] text-[18px] underline hover:no-underline"
+                  className="font-FoundersGroteskRegular campo_bodyfont underline hover:no-underline"
                 >
                   <span>Instagram</span>
                 </a>
@@ -100,7 +100,7 @@ export default function Contact({ status, message, onValidated }) {
                 href="https://www.makerbros.co"
                 target="_blank"
                 rel="noreferrer"
-                className="font-FoundersGroteskRegular lg:text-[21px] text-[18px] underline hover:no-underline"
+                className="font-FoundersGroteskRegular campo_bodyfont underline hover:no-underline"
               >
                 <span>Site by Maker Brothers Worldwide®</span>
               </a>
@@ -109,15 +109,15 @@ export default function Contact({ status, message, onValidated }) {
           <div className="flex order-3 gap-0 lg:w-full md:w-full md:gap-64 ">
             <div className="w-full md:w-2/3">
               <Link href="#">
-                <a className="font-FoundersGroteskRegular lg:text-[21px] text-[18px] underline hover:no-underline">
+                <a className="font-FoundersGroteskRegular campo_bodyfont underline hover:no-underline">
                   <span>+ 1 604 558 1881</span>
                 </a>
               </Link>
-              <p className="font-FoundersGroteskRegular lg:text-[21px] text-[18px] lg:w-[260px] mt-[13px]">
+              <p className="font-FoundersGroteskRegular campo_bodyfont lg:w-[260px] mt-[13px]">
                 1395 Odlum Drive <br /> Vancouver, BC V5L 3M1 <br />
                 Canada
               </p>
-              <p className="font-FoundersGroteskRegular lg:text-[21px] text-[18px]  mt-[42px] mb-[9px]">
+              <p className="font-FoundersGroteskRegular campo_bodyfont  mt-[42px] mb-[9px]">
                 Campos Studio is located in Vancouver British Columbia’s
                 Strathcona neighborhood. Steered by a compact group of
                 individuals, the studio maintains a vast body of work—including
