@@ -6,12 +6,11 @@ export default function MblTeam({ item }) {
       <div className="block mblTeam md:hidden">
         <details className="py-[13px] " closed>
           <summary className="">
-            <h2 className="text-xl font-SignifierRegular">
-              {' '}
+            <h2 className="team_title font-SignifierRegular">
               {item?.member_name}
             </h2>
           </summary>
-          <p className="text-sm font-SignifierRegular">
+          <p className="team_design font-SignifierRegular">
             {item?.designation} Designer
           </p>
           <div className="mt-5">
@@ -24,7 +23,7 @@ export default function MblTeam({ item }) {
                   alt=""
                 ></Image>
               </figure>
-              <p className="my-5 text-lg font-FoundersGroteskRegular">
+              <p className="my-5 campo_bodyfont font-FoundersGroteskRegular">
                 {item.about}
               </p>
             </div>

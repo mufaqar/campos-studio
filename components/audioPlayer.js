@@ -351,7 +351,10 @@ function AudioPlayer({ audioURL }) {
     <>
       <div className="flex items-center justify-center mt-[21px]">
         {/* <p className="md:text-2xl">Hear Campos Studio talk about this project </p> */}
-        <div className="progress campo_bodyfont2"> {result} </div>
+        <div className="progress campo_bodyfont2 font-FoundersGroteskRegular">
+          {' '}
+          {result}{' '}
+        </div>
       </div>
       <div className="mb-[21px]">
         {/* <div onClick={back30}>Back 30</div> */}

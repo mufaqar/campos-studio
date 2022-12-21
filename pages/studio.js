@@ -135,10 +135,10 @@ export default function Studio({
               <section>
                 <div className="mb-[13px]">
                   {/* <p className="font-FoundersGroteskMedium text-[22px]">2019</p> */}
-                  <p className="font-FoundersGroteskMedium text-[18px]">
+                  <p className="font-FoundersGroteskMedium campo_bodyfont">
                     ARCHITECTURE AND DESIGN NOW TALK
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[16px]">
+                  <p className="font-FoundersGroteskRegular campo_bodyfont2">
                     Lethbridge University, AB
                   </p>
                 </div>
@@ -146,26 +146,26 @@ export default function Studio({
                   {/* <p className="font-FoundersGroteskMedium text-[22px] mt-[13px]">
                     2017
                   </p> */}
-                  <p className="font-FoundersGroteskMedium text-[18px]">
+                  <p className="font-FoundersGroteskMedium campo_bodyfont">
                     MoV ECO CITIES
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[16px]">
+                  <p className="font-FoundersGroteskRegular campo_bodyfont2">
                     Museum of Vancouver, BC
                   </p>
                 </div>
                 <div className="mb-[13px]">
-                  <p className="font-FoundersGroteskMedium text-[18px]">
+                  <p className="font-FoundersGroteskMedium campo_bodyfont">
                     URBANARIUM
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[16px]">
+                  <p className="font-FoundersGroteskRegular campo_bodyfont2">
                     Robson Square, Vancouver, BC
                   </p>
                 </div>
                 <div className="mb-[13px]">
-                  <p className="font-FoundersGroteskMedium text-[18px]">
+                  <p className="font-FoundersGroteskMedium campo_bodyfont">
                     GRAY MAGAZINE PANEL
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[16px]">
+                  <p className="font-FoundersGroteskRegular campo_bodyfont2">
                     Venue, Seattle, WA, United States of America
                   </p>
                 </div>
@@ -174,10 +174,10 @@ export default function Studio({
               <section>
                 <div className="mb-[13px]">
                   {/* <p className="font-FoundersGroteskMedium text-[22px]">2016</p> */}
-                  <p className="font-FoundersGroteskMedium text-[18px]">
+                  <p className="font-FoundersGroteskMedium campo_bodyfont">
                     YOUR FUTURE HOME: CREATING THE NEW VANCOUVER
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[16px]">
+                  <p className="font-FoundersGroteskRegular campo_bodyfont2">
                     Exhibition Name, Museum of Vancouver, BC
                   </p>
                 </div>
@@ -185,10 +185,10 @@ export default function Studio({
                   {/* <p className="font-FoundersGroteskMedium text-[22px] mt-[13px]">
                     2014
                   </p> */}
-                  <p className="font-FoundersGroteskMedium text-[18px]">
+                  <p className="font-FoundersGroteskMedium campo_bodyfont">
                     THE WEST COAST MODERN HOUSE BOOK
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[16px]">
+                  <p className="font-FoundersGroteskRegular campo_bodyfont2">
                     Ocean Park, Wallace Street House
                   </p>
                 </div>
@@ -197,18 +197,18 @@ export default function Studio({
               <section>
                 <div className="mb-[13px]">
                   {/* <p className="font-FoundersGroteskMedium text-[22px]">2012</p> */}
-                  <p className="font-FoundersGroteskMedium text-[18px]">
+                  <p className="font-FoundersGroteskMedium campo_bodyfont">
                     PECHA KULCHA TALK
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[16px]">
+                  <p className="font-FoundersGroteskRegular campo_bodyfont2">
                     Venue, City of Richmond Culture Days, BC
                   </p>{' '}
                 </div>
                 <div className="mb-[13px]">
-                  <p className="font-FoundersGroteskMedium text-[18px]">
+                  <p className="font-FoundersGroteskMedium campo_bodyfont">
                     PECHA KULCHA 21 TALK
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[16px]">
+                  <p className="font-FoundersGroteskRegular campo_bodyfont2">
                     Vogue Theatre, Vancouver, BC
                   </p>
                 </div>
@@ -217,10 +217,10 @@ export default function Studio({
                   {/* <p className="font-FoundersGroteskMedium text-[22px] mt-[13px]">
                     2011
                   </p> */}
-                  <p className="font-FoundersGroteskMedium text-[18px]">
+                  <p className="font-FoundersGroteskMedium campo_bodyfont">
                     VIEW FROM THE EDGE EXHIBITION
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[16px]">
+                  <p className="font-FoundersGroteskRegular campo_bodyfont2">
                     Architectural Institue of British Columbia, Vancouver, BC
                   </p>
                 </div>
@@ -229,30 +229,30 @@ export default function Studio({
               <section>
                 <div className="mb-[13px]">
                   {/* <p className="font-FoundersGroteskMedium text-[22px]">2010</p> */}
-                  <p className="font-FoundersGroteskMedium text-[18px]">
+                  <p className="font-FoundersGroteskMedium campo_bodyfont">
                     20+ CHANGE EXHIBITION
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[16px]">
+                  <p className="font-FoundersGroteskRegular campo_bodyfont2">
                     Dalhousie University of Architecture, Halifax, NS
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[16px]">
+                  <p className="font-FoundersGroteskRegular campo_bodyfont2">
                     Emily Carr University of Art and Design Vancouver, BC
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[16px]">
+                  <p className="font-FoundersGroteskRegular campo_bodyfont2">
                     AIBC Architecture Centre Gallery, Vancouver, BC
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[16px]">
+                  <p className="font-FoundersGroteskRegular campo_bodyfont2">
                     La Maison de l’architecture du Quebec, Montreal, QC
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[16px]">
+                  <p className="font-FoundersGroteskRegular campo_bodyfont2">
                     The Gladstone Hotel, Toronto, ON
                   </p>{' '}
                 </div>
                 <div className="mb-[13px]">
-                  <p className="font-FoundersGroteskMedium text-[18px]">
+                  <p className="font-FoundersGroteskMedium campo_bodyfont">
                     HIGH PERFORMANCE EXHIBITION
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[16px]">
+                  <p className="font-FoundersGroteskRegular campo_bodyfont2">
                     Emily Carr University of Art and Design Vancouver, BC
                   </p>
                 </div>
@@ -261,22 +261,22 @@ export default function Studio({
               <section>
                 <div>
                   {/* <p className="font-FoundersGroteskMedium text-[22px]">2009</p> */}
-                  <p className="font-FoundersGroteskMedium text-[18px]">
+                  <p className="font-FoundersGroteskMedium campo_bodyfont">
                     IIDEX / NEOCON EXHIBITION
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[16px]">
+                  <p className="font-FoundersGroteskRegular campo_bodyfont2">
                     Venue, Toronto, ON
                   </p>
                 </div>
 
                 <div>
-                  <p className="font-FoundersGroteskMedium text-[22px] mt-[13px]">
+                  <p className="font-FoundersGroteskMedium campo_bodyfont">
                     2004
                   </p>
-                  <p className="font-FoundersGroteskMedium text-[18px]">
+                  <p className="font-FoundersGroteskMedium campo_bodyfont">
                     MAKING OUT EXHIBITION
                   </p>
-                  <p className="font-FoundersGroteskRegular text-[16px]">
+                  <p className="font-FoundersGroteskRegular campo_bodyfont2">
                     Emily Carr University of Art and Design Vancouver, BC
                   </p>
                 </div>
@@ -326,7 +326,7 @@ export default function Studio({
                       <h3 className="text-white font-normal font-serif lg:text-[27px] md:text-[24px] italic lg:hidden block">
                         {item?.member_name}
                       </h3>
-                      <p className="text-white font-SignifierRegular lg:text-[18px] md:text-[17px]">
+                      <p className="text-white font-SignifierRegular  md:text-[17px]">
                         {item?.designation
                           ? item?.designation
                           : 'Principal Designer'}
@@ -345,15 +345,21 @@ export default function Studio({
         </div>
       </section>
 
-      <section className="mt-[42px] mb-4 custom-sec">
+      <section className=" mb-4 custom-sec2">
         <div className="lg:w-[805px] md:w-[754px] w-full">
           <h2
-            className="font-FoundersGroteskMedium lg:text-4xl md:text-[31px] text-lg"
+            className="font-SignifierRegular team_title py-[13px]"
             onClick={() => setPressActive(!pressActive)}
           >
             Past Collaborators
           </h2>
-          <p className={pressActive ? 'block' : 'md:block hidden'}>
+          <p
+            className={
+              pressActive
+                ? 'block campo_bodyfont'
+                : 'md:block hidden campo_bodyfont'
+            }
+          >
             Regan Appleton , Romain Bael , Jacquelyn Bortolussi , Tom Chung ,
             Sarah Cree, Jessie, Croll, Paul Crowley, Alix Demontrond, Hande
             Ersoy, Adrien Fera, Mike Fugeta, Ashley Gesner, Matias T. Grez,

@@ -31,11 +31,11 @@
 }
 
 .campo_bodyfont {
-  @apply font-FoundersGroteskRegular text-[16px] leading-[19.2px]  md:text-[19px] md:leading-[22.8px] xl:text-[21px] xl:leading-[25.2px]  2xl:text-[24px] 2xl:leading-[28.8px];
+  @apply text-[16px] leading-[19.2px]  md:text-[19px] md:leading-[22.8px] xl:text-[21px] xl:leading-[25.2px]  2xl:text-[24px] 2xl:leading-[28.8px];
 }
 
 .campo_bodyfont2 {
-  @apply font-FoundersGroteskRegular text-[13px] leading-[15.6px]  md:text-[15px] md:leading-[18px] xl:text-[17px] xl:leading-[20.4px]  2xl:text-[18px] 2xl:leading-[21.6px];
+  @apply text-[13px] leading-[15.6px]  md:text-[15px] md:leading-[18px] xl:text-[17px] xl:leading-[20.4px]  2xl:text-[18px] 2xl:leading-[21.6px];
 }
 
 .campo_heading2 {
@@ -43,6 +43,14 @@
 }
 .campo_square {
   @apply bg-[#FCB450] w-[14px] h-[14px] md:w-[18px] md:h-[18px]  xl:w-[20px] xl:h-[20px] 2xl:w-[22px] 2xl:h-[22px];
+}
+
+.team_title {
+  @apply text-[20px] leading-[25.86px]  md:text-[15px] md:leading-[18px] xl:text-[17px] xl:leading-[20.4px]  2xl:text-[18px] 2xl:leading-[21.6px];
+}
+
+.team_design {
+  @apply text-[12px] leading-[15.52px]  md:text-[15px] md:leading-[18px] xl:text-[17px] xl:leading-[20.4px]  2xl:text-[18px] 2xl:leading-[21.6px];
 }
 
 /* .workBanerBg {

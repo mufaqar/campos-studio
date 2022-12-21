@@ -69,20 +69,28 @@ function FullContent({ open, setOpen, project }) {
   return (
     <div className={`${open ? 'block' : 'hidden'}`}>
       <div className="border-b-2 border-black">
-        <p className="campo_bodyfont">{project?.detail}</p>
-        <p className="campo_bodyfont text-left mb-7">{project?.tag_line}</p>
+        <p className="campo_bodyfont font-FoundersGroteskRegular">
+          {project?.detail}
+        </p>
+        <p className="campo_bodyfont font-FoundersGroteskRegular text-left mb-7">
+          {project?.tag_line}
+        </p>
       </div>
       <ul>
         <li className=" text-left border-b-2 border-black">
-          <p className="campo_bodyfont mt-[6px] mb-[6px]">
+          <p className="campo_bodyfont font-FoundersGroteskRegular mt-[6px] mb-[6px]">
             {project?.location}
           </p>
         </li>
         <li className=" text-left border-b-2 border-black">
-          <p className="campo_bodyfont mt-[6px] mb-[6px]">{project?.year}</p>
+          <p className="campo_bodyfont font-FoundersGroteskRegular mt-[6px] mb-[6px]">
+            {project?.year}
+          </p>
         </li>
         <li className=" text-left border-b-2 border-black">
-          <p className="campo_bodyfont mt-[6px] mb-[6px]">{project?.area}</p>
+          <p className="campo_bodyfont font-FoundersGroteskRegular mt-[6px] mb-[6px]">
+            {project?.area}
+          </p>
         </li>
         <li className=" text-left border-b-2 border-black">
           <div className="flex justify-between">
@@ -90,7 +98,7 @@ function FullContent({ open, setOpen, project }) {
               return (
                 <p
                   key={index}
-                  className="campo_bodyfont mt-[6px] mb-[6px] flex justify-between"
+                  className="campo_bodyfont font-FoundersGroteskRegular mt-[6px] mb-[6px] flex justify-between"
                 >
                   <span>{team?.member_name}</span>
                 </p>
@@ -103,7 +111,10 @@ function FullContent({ open, setOpen, project }) {
             COLLABORATORS
           </p> */}
           {project.Collaborators?.map((col, index) => (
-            <p key={index} className="campo_bodyfont mt-[6px] mb-[6px]">
+            <p
+              key={index}
+              className="campo_bodyfont font-FoundersGroteskRegular mt-[6px] mb-[6px]"
+            >
               {col}
             </p>
           ))}
@@ -129,11 +140,13 @@ export default function SingleWork({ project }) {
             <AudioPlayer audioURL={project.audio.asset.url} />
           </div>
           <div className="mt-[13px] mb-[13px]">
-            <p className="campo_bodyfont">{project?.excerpt}</p>
+            <p className="campo_bodyfont font-FoundersGroteskRegular">
+              {project?.excerpt}
+            </p>
           </div>
           <div className="text-center mb-[42px]">
             <button
-              className="campo_bodyfont underline"
+              className="campo_bodyfont font-FoundersGroteskRegular underline"
               onClick={() => {
                 setOpen(!open);
               }}
@@ -176,7 +189,9 @@ export default function SingleWork({ project }) {
                 <a href={link.link} target="_blank" rel="noreferrer">
                   {link.hading}
                 </a>
-                <p className="campo_bodyfont2">{link.short_text}</p>
+                <p className="campo_bodyfont font-FoundersGroteskRegular2">
+                  {link.short_text}
+                </p>
               </li>
             ))}
           </ul>
