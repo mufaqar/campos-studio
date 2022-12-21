@@ -37,7 +37,7 @@ export default function Header() {
   // x Header sticky when scroll up word x
 
   function handleClick() {
-    router.push('/');
+    //router.push('/');
     // setShowHippo(!showHippo);
   }
 
