@@ -27,7 +27,7 @@ export default function Contact({ status, message, onValidated }) {
 
             <a href="mailto:mfernandez@camposstudio.ca">
               <span className="font-FoundersGroteskRegular campo_bodyfont underline hover:no-underline">
-                <span> Malen Fernandez</span>
+                Malen Fernandez
               </span>
             </a>
           </div>
@@ -35,12 +35,9 @@ export default function Contact({ status, message, onValidated }) {
             <h2 className="font-FoundersGroteskMedium campo_bodyfont2 ">
               Publishing
             </h2>
-            <p className="font-FoundersGroteskRegular campo_bodyfont"></p>
-            <a href="mailto:sbush@camposstudio.ca">
-              <span className="font-FoundersGroteskRegular lg:text-[21px] underline hover:no-underline">
-                <span> Samantha Bush</span>
-              </span>
-            </a>
+            <p className="font-FoundersGroteskRegular campo_bodyfont underline hover:no-underline">
+              <a href="mailto:sbush@camposstudio.ca">Samantha Bush</a>
+            </p>
           </div>
           <div className="lg:w-full md:w-1/2 relative">
             <h2 className="font-FoundersGroteskMedium campo_bodyfont2 ">
@@ -49,7 +46,7 @@ export default function Contact({ status, message, onValidated }) {
             <div>
               <div onClick={OpenForm} className={showForm && 'hidden'}>
                 <p className="font-FoundersGroteskRegular cursor-pointer lg:text-[21px] underline hover:no-underline">
-                  <span>Hipo mail</span>
+                  Hipo mail
                 </p>
               </div>
             </div>
@@ -89,7 +86,7 @@ export default function Contact({ status, message, onValidated }) {
                   href="https://www.pinterest.ca/camposstudio/"
                   target="_blank"
                   rel="noreferrer"
-                  className="font-FoundersGroteskRegular lg:text-[21px]  text-[18px] underline hover:no-underline"
+                  className=" text-[18px] underline hover:no-underline"
                 >
                   <span>Pinterest</span>
                 </a>
@@ -102,7 +99,7 @@ export default function Contact({ status, message, onValidated }) {
                 rel="noreferrer"
                 className="font-FoundersGroteskRegular campo_bodyfont underline hover:no-underline"
               >
-                <span>Site by Maker Brothers Worldwide®</span>
+                Site by Maker Brothers Worldwide®
               </a>
             </div>
           </div>
@@ -110,7 +107,7 @@ export default function Contact({ status, message, onValidated }) {
             <div className="w-full md:w-2/3">
               <Link href="#">
                 <a className="font-FoundersGroteskRegular campo_bodyfont underline hover:no-underline">
-                  <span>+ 1 604 558 1881</span>
+                  + 1 604 558 1881
                 </a>
               </Link>
               <p className="font-FoundersGroteskRegular campo_bodyfont lg:w-[260px] mt-[13px]">

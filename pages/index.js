@@ -20,7 +20,7 @@ export default function Hippo({ projects }) {
     <>
       <section className="custom-sec md:mb-0 h-screen md:mt-0 flex items-center">
         <div className="flex items-center ">
-          <p className="font-SignifierLight lg:text-[26px] md:text-[32px] text-[18px] leading-[33.62px] ">
+          <p className="font-SignifierLight campos_home_title ">
             Architecture informed by <br></br>critical regionalism in the
             expanded field
           </p>

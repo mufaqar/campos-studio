@@ -26,6 +26,10 @@
   }
 }
 
+.campos_home_title {
+  @apply text-[18px] leading-[23.27px]  md:text-[24px] md:leading-[31.03px];
+}
+
 .campo_heading {
   @apply font-FoundersGroteskMedium cursor-pointer  text-[42px] leading-[50.4px]  md:text-[48px] md:leading-[57.6px]  xl:text-[54px] xl:leading-[64.8px] 2xl:text-[60px] 2xl:leading-[72px];
 }
