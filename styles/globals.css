@@ -26,6 +26,25 @@
   }
 }
 
+.campo_heading {
+  @apply font-FoundersGroteskMedium cursor-pointer  text-[42px] leading-[50.4px]  md:text-[48px] md:leading-[57.6px]  xl:text-[54px] xl:leading-[64.8px] 2xl:text-[60px] 2xl:leading-[72px];
+}
+
+.campo_bodyfont {
+  @apply font-FoundersGroteskRegular text-[16px] leading-[19.2px]  md:text-[19px] md:leading-[22.8px] xl:text-[21px] xl:leading-[25.2px]  2xl:text-[24px] 2xl:leading-[28.8px];
+}
+
+.campo_bodyfont2 {
+  @apply font-FoundersGroteskRegular text-[13px] leading-[15.6px]  md:text-[15px] md:leading-[18px] xl:text-[17px] xl:leading-[20.4px]  2xl:text-[18px] 2xl:leading-[21.6px];
+}
+
+.campo_heading2 {
+  @apply font-FoundersGroteskMedium cursor-pointer  text-[21px] leading-[25.2px]  md:text-[24px] md:leading-[28.8px]  xl:text-[27px] xl:leading-[32.4px] 2xl:text-[30px] 2xl:leading-[36px];
+}
+.campo_square {
+  @apply bg-[#FCB450] w-[14px] h-[14px] md:w-[18px] md:h-[18px]  xl:w-[20px] xl:h-[20px] 2xl:w-[22px] 2xl:h-[22px];
+}
+
 /* .workBanerBg {
   background-image: url(../public/images/workBanner.jpg);
   background-size: cover;

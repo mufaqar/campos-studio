@@ -69,42 +69,28 @@ function FullContent({ open, setOpen, project }) {
   return (
     <div className={`${open ? 'block' : 'hidden'}`}>
       <div className="border-b-2 border-black">
-        <p className="font-FoundersGroteskRegular lg:text-[23px] md:text-[22px] text-[18px] text-left mb-4 -mt-[22px]">
-          {project?.detail}
-        </p>
-        <p className="font-FoundersGroteskRegular lg:text-[23px] md:text-[22px] text-[18px] text-left mb-7">
-          {project?.tag_line}
-        </p>
+        <p className="campo_bodyfont">{project?.detail}</p>
+        <p className="campo_bodyfont text-left mb-7">{project?.tag_line}</p>
       </div>
       <ul>
         <li className=" text-left border-b-2 border-black">
-          {/* <p className="font-FoundersGroteskMedium lg:text-[21px]">LOCATION</p> */}
-          <p className="font-FoundersGroteskRegular text-[18px] lg:text-[21px] mt-[6px] mb-[6px]">
+          <p className="campo_bodyfont mt-[6px] mb-[6px]">
             {project?.location}
           </p>
         </li>
         <li className=" text-left border-b-2 border-black">
-          {/* <p className="font-FoundersGroteskMedium lg:text-[21px]">YEAR</p> */}
-          <p className="font-FoundersGroteskRegular text-[18px] lg:text-[21px] mt-[6px] mb-[6px]">
-            {project?.year}
-          </p>
+          <p className="campo_bodyfont mt-[6px] mb-[6px]">{project?.year}</p>
         </li>
         <li className=" text-left border-b-2 border-black">
-          {/* <p className="font-FoundersGroteskMedium lg:text-[21px]">
-            SQUARE FOOTAGE
-          </p> */}
-          <p className="font-FoundersGroteskRegular text-[18px] lg:text-[21px] mt-[6px] mb-[6px]">
-            {project?.area}
-          </p>
+          <p className="campo_bodyfont mt-[6px] mb-[6px]">{project?.area}</p>
         </li>
         <li className=" text-left border-b-2 border-black">
-          {/* <p className="font-FoundersGroteskMedium lg:text-[21px]">Team</p> */}
           <div className="flex justify-between">
             {project.teammember?.map((team, index) => {
               return (
                 <p
                   key={index}
-                  className="font-FoundersGroteskRegular text-[18px] lg:text-[21px] mt-[6px] mb-[6px] flex justify-between"
+                  className="campo_bodyfont mt-[6px] mb-[6px] flex justify-between"
                 >
                   <span>{team?.member_name}</span>
                 </p>
@@ -117,10 +103,7 @@ function FullContent({ open, setOpen, project }) {
             COLLABORATORS
           </p> */}
           {project.Collaborators?.map((col, index) => (
-            <p
-              key={index}
-              className="font-FoundersGroteskRegular text-[18px] lg:text-[21px] mt-[6px] mb-[6px]"
-            >
+            <p key={index} className="campo_bodyfont mt-[6px] mb-[6px]">
               {col}
             </p>
           ))}
@@ -141,20 +124,16 @@ export default function SingleWork({ project }) {
 
       <section className="custom-sec2">
         <div className="lg:w-[899px] md:w-[683px] w-full mx-auto">
-          <h2 className="font-FoundersGroteskMedium text-center lg:text-[60px] md:text-[56px] text-[42px]">
-            {project.title}
-          </h2>
+          <h2 className="campo_heading">{project.title}</h2>
           <div className="">
             <AudioPlayer audioURL={project.audio.asset.url} />
           </div>
           <div className="mt-[13px] mb-[13px]">
-            <p className="font-FoundersGroteskRegular lg:text-[23px] md:text-[22px] text-lg">
-              {project?.excerpt}
-            </p>
+            <p className="campo_bodyfont">{project?.excerpt}</p>
           </div>
           <div className="text-center mb-[42px]">
             <button
-              className="font-FoundersGroteskRegular lg:text-lg lg:text-[17px] text-[18px] underline"
+              className="campo_bodyfont underline"
               onClick={() => {
                 setOpen(!open);
               }}
@@ -193,23 +172,15 @@ export default function SingleWork({ project }) {
         <div className="lg:w-[899px] md:w-[683px] w-full  mx-auto">
           <ul>
             {project.links?.map((link, index) => (
-              <li
-                key={index}
-                className="font-FoundersGroteskMedium lg:text-[36px] md:text-[36px] text-[21px] mb-[13px]"
-              >
+              <li key={index} className="campo_heading2 mb-[13px]">
                 <a href={link.link} target="_blank" rel="noreferrer">
-                  <p className="flex items-center cursor-pointer lg:gap-10">
-                    {link.hading}
-                    {/* <Image src={Arrow} alt="Arrow"></Image> */}
-                  </p>
+                  {link.hading}
                 </a>
-                <p className="font-FoundersGroteskRegular  md:text-lg text-[16px] ">
-                  {link.short_text}
-                </p>
+                <p className="campo_bodyfont2">{link.short_text}</p>
               </li>
             ))}
           </ul>
-          <button className="bg-[#FCB450] w-[14px] h-[14px] md:w-[18px] md:h-[18px]"></button>
+          <button className="campo_square"></button>
         </div>
       </section>
 

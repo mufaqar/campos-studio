@@ -12,10 +12,8 @@ export default function WorkBox({ title, imageURL, imageCaption, slug }) {
               <OwnImage url={imageURL} alt={imageCaption} />
             </figure>
           </Link>
-          <h2 className="font-FoundersGroteskMedium cursor-pointer lg:text-[65px] md:text-[51px] text-[42px] leading-[50px]">
-            <Link href={`/works/${slug}`}>
-              <span>{title}</span>
-            </Link>
+          <h2 className="campo_heading">
+            <Link href={`/works/${slug}`}>{title}</Link>
           </h2>
         </div>
       </div>
