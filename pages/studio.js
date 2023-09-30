@@ -67,7 +67,7 @@ export default function Studio({
 
   const handleTeam = (id) => {
     if (openTeamDetails === id) {
-      return setOpenTeamDetails(null);
+      return  setOpenTeamDetails(null);
     }
     setOpenTeamDetails(id);
 
