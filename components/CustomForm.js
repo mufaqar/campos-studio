@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import Logo from '../public/images/logo.png';
-
 export default function CustomForm({
   status,
   message,
