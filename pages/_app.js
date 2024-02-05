@@ -3,6 +3,9 @@ import '../styles/globals.css'
 import { Provider } from 'react-redux'
 import { store } from '../lib/store'
 
+
+
+
 function MyApp({ Component, pageProps }) {
   return(
     <>
